@@ -1,0 +1,27 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px var(--text) solid;
+  margin: none;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 60px;
+  margin: auto;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+}
