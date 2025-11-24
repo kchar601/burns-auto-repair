@@ -36,7 +36,7 @@ function AppNav({ theme }) {
         </li>
       </ul>
       <div className={styles.logoContainer}>
-        <button className={styles.callbtn}>215-968-3791</button>
+        <button className={`cta ` + styles.callBtn}>215-968-3791</button>
       </div>
     </nav>
   );

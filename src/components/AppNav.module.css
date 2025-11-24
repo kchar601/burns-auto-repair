@@ -25,3 +25,8 @@
   margin: 0;
   justify-content: space-around;
 }
+
+.callBtn {
+  border: none;
+  border-radius: 1rem;
+}

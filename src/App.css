@@ -1,19 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Rambla:700|Heebo:400");
 
-:root {
-  --text: #060709;
-  --background: #f8f9fc;
-  --primary: #7a8699;
-  --secondary: #ff0000;
-  --accent: #4d85f5;
-  font-family: "Heebo";
-  font-weight: 400;
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #060709;
+    --background: #f8f9fc;
+    --primary: #7a8699;
+    --secondary: #ff0000;
+    --accent: #4d85f5;
+  }
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #f6f7f9;
-    --background: #06080f;
+    --background: #030407;
     --primary: #667285;
     --secondary: #ff0000;
     --accent: #0a42b2;
@@ -29,7 +28,8 @@ h5 {
   font-weight: 700;
 }
 
-html {
+html,
+* {
   font-size: 100%;
   color: var(--text);
   background-color: var(--background);
@@ -57,4 +57,10 @@ h5 {
 
 small {
   font-size: 0.75rem; /* 12px */
+}
+
+button.cta {
+  background-color: var(--accent);
+  color: var(--text);
+  padding: 1rem;
 }

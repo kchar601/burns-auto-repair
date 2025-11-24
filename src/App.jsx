@@ -1,9 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
-import AppNav from "./components/AppNav";
 import AppLayout from "./pages/AppLayout";
 import useSystemTheme from "./components/useSystemTheme";
 import "./App.css";
