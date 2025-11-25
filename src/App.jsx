@@ -11,11 +11,12 @@ export default function App() {
   const theme = useSystemTheme();
   return (
     <Router>
-      <AppLayout theme={theme} />
       <Routes>
-        <Route index element={<Homepage />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route element={<AppLayout theme={theme} />}>
+          <Route index element={<Homepage />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
       </Routes>
     </Router>
   );

@@ -1,21 +1,37 @@
 @import url("https://fonts.googleapis.com/css?family=Rambla:700|Heebo:400");
 
+:root {
+  font-family: "Heebo";
+  font-size: 100%;
+  color: var(--text);
+  background-color: var(--surface);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --text: #060709;
-    --background: #f8f9fc;
+    --text-variant: #272d3a;
+    --surface: #f8f9fc;
+    --surface-elevated: #d7d7da;
     --primary: #7a8699;
     --secondary: #ff0000;
+    --secondary-variant: #bd0202;
     --accent: #4d85f5;
+    --accent-variant: #2f71f5;
   }
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #f6f7f9;
-    --background: #030407;
-    --primary: #667285;
+    --text-variant: #999a9b;
+    --surface: #030407;
+    --surface-elevated: #111727;
+    --primary: #7b9ed4;
+    --primary-variant: #373d47;
     --secondary: #ff0000;
+    --secondary-variant: #bb0202;
     --accent: #0a42b2;
+    --accent-variant: #2e55a1;
   }
 }
 
@@ -27,13 +43,6 @@ h5 {
   font-family: "Rambla";
   font-weight: 700;
 }
-
-html,
-* {
-  font-size: 100%;
-  color: var(--text);
-  background-color: var(--background);
-} /* 16px */
 
 h1 {
   font-size: 4.21rem; /* 67.36px */
@@ -59,8 +68,23 @@ small {
   font-size: 0.75rem; /* 12px */
 }
 
+button {
+  font-size: 100%;
+}
+
 button.cta {
   background-color: var(--accent);
   color: var(--text);
   padding: 1rem;
+}
+
+button.cta:hover,
+button.cta:active,
+button.cta:focus {
+  background-color: var(--accent-variant);
+}
+
+.fa-solid {
+  background-color: transparent;
+  font-size: 1.333rem;
 }

@@ -3,7 +3,7 @@ import styles from "./AppNav.module.css";
 
 function AppNav({ theme }) {
   return (
-    <nav className={styles.navbar}>
+    <footer className={styles.footbar}>
       <NavLink className={styles.logoContainer} to="/">
         {theme === "dark" ? (
           <img
@@ -66,7 +66,7 @@ function AppNav({ theme }) {
           215-968-3791
         </button>
       </div>
-    </nav>
+    </footer>
   );
 }
 
