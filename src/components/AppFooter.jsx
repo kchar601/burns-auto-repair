@@ -4,20 +4,24 @@ import styles from "./AppNav.module.css";
 function AppNav({ theme }) {
   return (
     <footer className={styles.footbar}>
-      <NavLink className={styles.logoContainer} to="/">
-        {theme === "dark" ? (
-          <img
-            src="src\assets\burnsautologo white.png"
-            className={styles.logo}
-          ></img>
-        ) : (
-          <img
-            src="src\assets\burnsautologo dark.png"
-            className={styles.logo}
-          ></img>
-        )}
-        <img className={styles.logo} />
-      </NavLink>
+      <div className={styles.logoColumn}>
+        <NavLink className={styles.logoContainer} to="/">
+          {theme === "dark" ? (
+            <img
+              src="src\assets\burnsautologo white.png"
+              className={styles.logo}
+            ></img>
+          ) : (
+            <img
+              src="src\assets\burnsautologo dark.png"
+              className={styles.logo}
+            ></img>
+          )}
+        </NavLink>
+        <p className={(styles.textVariant, styles.pTight)}>
+          Serving Newtown and its surrounding area for over 40 years.
+        </p>
+      </div>
       <ul className={styles.links}>
         <li>
           <NavLink
