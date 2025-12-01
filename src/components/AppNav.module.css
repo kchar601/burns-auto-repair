@@ -1,3 +1,7 @@
+.textVariant {
+  color: var(--text-variant);
+}
+
 .navbar {
   background-color: var(--surface-elevated);
 }
@@ -30,12 +34,21 @@ a {
   color: var(--text);
 }
 
+.logoColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoColumn > .logoContainer {
+  margin: auto 0;
+}
+
 .logoContainer {
   display: flex;
   width: fit-content;
   margin: auto;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0;
   justify-content: center;
 }
 
