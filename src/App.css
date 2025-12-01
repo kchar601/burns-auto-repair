@@ -26,6 +26,7 @@
     --text-variant: #999a9b;
     --surface: #030407;
     --surface-elevated: #111727;
+    --surface-elevated-2: #1b253f;
     --primary: #7b9ed4;
     --primary-variant: #373d47;
     --secondary: #ff0000;
@@ -72,15 +73,15 @@ button {
   font-size: 100%;
 }
 
-button.cta {
+.cta {
   background-color: var(--accent);
   color: var(--text);
   padding: 1rem;
 }
 
-button.cta:hover,
-button.cta:active,
-button.cta:focus {
+.cta:hover,
+.cta:active,
+.cta:focus {
   background-color: var(--accent-variant);
 }
 
