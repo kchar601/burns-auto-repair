@@ -11,8 +11,8 @@
   :root {
     --text: #060709;
     --text-variant: #272d3a;
-    --surface: #f8f9fc;
-    --surface-elevated: #d7d7da;
+    --surface: rgb(248, 249, 252);
+    --surface-elevated: rgb(215, 215, 218);
     --primary: #7a8699;
     --secondary: #ff0000;
     --secondary-variant: #bd0202;
@@ -24,9 +24,10 @@
   :root {
     --text: #f6f7f9;
     --text-variant: #999a9b;
-    --surface: #030407;
-    --surface-elevated: #111727;
-    --surface-elevated-2: #1b253f;
+    --surface: rgb(3, 4, 7);
+    --surface-rgb: 3, 4, 7;
+    --surface-elevated: rgb(17, 23, 39);
+    --surface-elevated-2: rgb(27, 37, 63);
     --primary: #7b9ed4;
     --primary-variant: #373d47;
     --secondary: #ff0000;
