@@ -1,7 +1,12 @@
+import { React, useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./AppNav.module.css";
+import "animate.css";
 
 function AppNav({ theme }) {
+  const [navOpen, setNavOpen] = useState(false);
+  const [animation, setAnimation] = useState("");
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarInner}>
@@ -19,7 +24,11 @@ function AppNav({ theme }) {
           )}
           <img className={styles.logo} />
         </NavLink>
-        <ul className={styles.links}>
+        <ul
+          className={`${styles.links} ${
+            styles.navLinks
+          } animate__animated ${animation} ${navOpen ? "" : styles.toggleHide}`}
+        >
           <li>
             <NavLink
               className={({ isActive }) => (isActive ? styles.active : "")}
@@ -61,15 +70,30 @@ function AppNav({ theme }) {
             </NavLink>
           </li>
         </ul>
-        <div className={styles.logoContainer}>
+        <div className={`${styles.logoContainer} ${styles.hide}`}>
           <a className={`cta ` + styles.callBtn} href="Tel: (215) 968-3791">
             <i className="fa-solid fa-phone"></i>
             215-968-3791
           </a>
         </div>
+        <button className={styles.hamburger} onClick={toggleHide}>
+          <i className="fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
   );
+
+  async function toggleHide() {
+    if (navOpen) {
+      await setAnimation("animate__fadeOutUp");
+      setTimeout(() => {
+        setNavOpen(!navOpen);
+      }, 700);
+    } else {
+      await setAnimation("animate__fadeInDown");
+      setNavOpen(!navOpen);
+    }
+  }
 }
 
 export default AppNav;

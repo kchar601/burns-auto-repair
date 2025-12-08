@@ -112,7 +112,7 @@ i {
   padding: 2rem;
   border-top: 1px var(--text-variant) solid;
   max-width: 60%;
-  margin: 2rem auto;
+  margin: 2rem auto 0;
 }
 
 .socials * a {
@@ -142,4 +142,80 @@ i {
 
 .noMargin {
   margin: 0;
+}
+
+.hamburger {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 1rem;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.hamburger > i {
+  font-size: 2rem;
+}
+
+@media (max-width: 1300px) {
+  .navbarInner {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .navbar {
+    display: block;
+  }
+
+  .navbarInner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 8px;
+    margin: 0px;
+    margin-bottom: 8px;
+    width: fit-content;
+  }
+
+  .toggleHide {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .logo {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .hamburger {
+    display: block;
+    width: fit-content;
+    justify-self: end;
+  }
+
+  .navLinks {
+    z-index: 10;
+    background-color: var(--surface-elevated);
+    position: absolute;
+    top: 92px;
+    width: 100vw;
+    padding: 2rem 0;
+    font-size: 1.333rem;
+  }
+  .navLinks li {
+    padding: 8px;
+    margin: auto;
+  }
 }
