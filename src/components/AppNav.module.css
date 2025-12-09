@@ -90,9 +90,14 @@ a {
 .linksVert {
   flex-direction: column;
   margin: 0 auto;
+  padding-right: 8px;
 }
-.linksVert * {
+.linksVert *:not(h5) {
   margin: 0.5rem 0 0;
+  overflow-wrap: normal;
+}
+h5:has(+ .linksVert) {
+  margin: 0;
 }
 
 .callBtn {
@@ -163,6 +168,12 @@ i {
   }
 }
 
+@media (max-width: 1150px) {
+  .footbarInner {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 800px) {
   .logo {
     height: 60px;
@@ -217,5 +228,51 @@ i {
   .navLinks li {
     padding: 8px;
     margin: auto;
+  }
+
+  .footbarInner {
+    display: grid;
+    /* Create 2 columns for the middle row to share */
+    grid-template-columns: 1fr 1fr;
+    /* Remove named areas and let the children flow naturally */
+    grid-template-areas: none;
+    gap: 2rem 1rem; /* 2rem vertical gap, 1rem horizontal gap */
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  /* 1. Make the First Item (Logo) span the full top row */
+  .footbarInner > *:nth-child(1) {
+    grid-column: 1 / -1; /* Spans from start to end */
+    justify-self: center; /* Centers the element horizontally */
+    text-align: center;
+  }
+
+  /* 2. Middle items (Links) will naturally fill the 2 columns (1fr 1fr) */
+  /* We just need to align their text properly */
+  .linksVert {
+    padding-right: 0; /* Remove desktop padding */
+    align-items: center; /* Center align the flex items */
+    text-align: center;
+  }
+
+  /* Reset the h5 margin so it centers correctly above the links */
+  h5:has(+ .linksVert) {
+    margin: 0;
+    text-align: center;
+  }
+
+  /* 3. Make the Last Item (Socials) span the full bottom row */
+  .footbarInner > *:nth-child(4) {
+    grid-column: 1 / -1; /* Spans from start to end */
+    justify-self: center;
+    width: 100%; /* Ensure flex contents inside have room */
+  }
+
+  /* Ensure social icons center nicely */
+  .socialsInner {
+    justify-content: center;
   }
 }

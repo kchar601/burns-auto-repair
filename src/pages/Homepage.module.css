@@ -26,6 +26,10 @@
   margin: 8px 16px;
 }
 
+.heroOverlay p {
+  display: inline-block;
+}
+
 .heroImg {
   width: 100%;
 }
@@ -86,9 +90,23 @@
 @media (max-width: 930px) {
   .hero {
     grid-template-columns: 1fr;
+    max-height: fit-content;
+  }
+  .heroOverlay {
+    text-align: center;
+  }
+  .heroOverlay p {
+    max-width: 80%;
+    margin: auto;
   }
   .heroImg {
     width: 100%;
     object-position: 100% 70%;
+  }
+}
+
+@media (max-width: 560px) {
+  .heroOverlay h1 {
+    font-size: 3.158rem;
   }
 }
