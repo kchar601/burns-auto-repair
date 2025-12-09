@@ -1,0 +1,8 @@
+.serviceContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4rem;
+  margin: auto;
+  column-gap: 16px;
+  background-color: var(--text);
+}

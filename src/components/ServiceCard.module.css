@@ -1,0 +1,25 @@
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  /* border: 1px var(--text-variant) solid; */
+  border-radius: 8px;
+  padding: 4rem;
+  /* box-shadow: 0px 0px 20px 5px var(--surface-elevated); */
+  background-color: var(--text);
+  color: var(--surface);
+  text-align: center;
+}
+
+.iconContainer {
+  margin: auto;
+  padding: 1rem;
+}
+
+.iconContainer i {
+  margin: 0;
+}
+
+.cardContainer h5 {
+  margin: 8px 0px 0px;
+}
