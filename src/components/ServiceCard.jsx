@@ -1,10 +1,10 @@
 import styles from "./ServiceCard.module.css";
-function ServiceCard({ icon, cardTitle, subTitle }) {
+function ServiceCard({ icon, cardTitle, children }) {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.iconContainer}>{icon}</div>
       <h5>{cardTitle}</h5>
-      <p>{subTitle}</p>
+      <p>{children}</p>
     </div>
   );
 }
