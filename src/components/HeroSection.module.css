@@ -100,10 +100,20 @@
   }
 }
 
+@media screen and (min-width: 930px) and (max-width: 1150px) {
+  .heroOverlay {
+    padding: 4rem;
+    width: auto;
+  }
+  .hero {
+    height: 100%;
+  }
+}
+
 @media (max-width: 930px) {
   .hero {
     grid-template-columns: 1fr;
-    max-height: fit-content;
+    height: fit-content;
   }
   .heroOverlay {
     text-align: center;

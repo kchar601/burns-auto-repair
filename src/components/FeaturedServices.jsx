@@ -1,5 +1,6 @@
 import ServiceCard from "./ServiceCard";
 import styles from "./FeaturedServices.module.css";
+import CtaLink from "./CtaLink";
 
 function FeaturedServices() {
   return (
@@ -31,8 +32,8 @@ function FeaturedServices() {
           Expert repair of batteries, alternators, and electrical components.
         </ServiceCard>
       </div>
-      <div>
-        <a className={styles.cta}>View All Services</a>
+      <div className={styles.linkContainer}>
+        <CtaLink link="/services">View All Services</CtaLink>
       </div>
     </>
   );

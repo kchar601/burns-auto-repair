@@ -1,0 +1,23 @@
+.cta {
+  background-color: var(--accent);
+  color: var(--text);
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cta:hover,
+.cta:active,
+.cta:focus {
+  background-color: var(--accent-variant);
+  cursor: pointer;
+}
+
+.icon {
+  border: none;
+}
+
+.icon i {
+  margin-right: 0.5rem;
+}

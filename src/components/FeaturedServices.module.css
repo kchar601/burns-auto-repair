@@ -1,10 +1,18 @@
 .serviceContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 4rem 2rem;
   margin: auto;
   column-gap: 16px;
   background-color: var(--text);
+}
+
+.linkContainer {
+  display: flex;
+  background-color: var(--text);
+  padding: 0 0 2rem;
+  margin: auto;
+  justify-content: center;
 }
 
 .cta {
@@ -13,4 +21,17 @@
   padding: 1rem;
   width: fit-content;
   border-radius: 8px;
+}
+
+.cta:hover,
+.cta:active,
+.cta:focus {
+  background-color: var(--accent-variant);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 991px) and (max-width: 1278px) {
+  .serviceContainer > :nth-child(4) {
+    display: none;
+  }
 }

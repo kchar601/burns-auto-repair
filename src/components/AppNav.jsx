@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { NavLink } from "react-router-dom";
+import CtaLink from "./CtaLink";
 import styles from "./AppNav.module.css";
 import "animate.css";
 
@@ -71,10 +72,12 @@ function AppNav({ theme }) {
           </li>
         </ul>
         <div className={`${styles.logoContainer} ${styles.hide}`}>
-          <a className={`cta ` + styles.callBtn} href="Tel: (215) 968-3791">
-            <i className="fa-solid fa-phone"></i>
+          <CtaLink
+            link={"Tel: (215) 968-3791"}
+            icon={<i className="fa-solid fa-phone"></i>}
+          >
             215-968-3791
-          </a>
+          </CtaLink>
         </div>
         <button className={styles.hamburger} onClick={toggleHide}>
           <i className="fa-solid fa-bars"></i>

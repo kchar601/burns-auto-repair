@@ -1,6 +1,7 @@
 .cardContainer {
   display: grid;
   grid-template-columns: 1fr;
+  width: 240px;
   margin: auto;
   /* border: 1px var(--text-variant) solid; */
   border-radius: 8px;

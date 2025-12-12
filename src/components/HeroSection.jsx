@@ -1,3 +1,4 @@
+import CtaLink from "./CtaLink";
 import styles from "./HeroSection.module.css";
 
 function HeroSection() {
@@ -11,9 +12,7 @@ function HeroSection() {
           since 1964.
         </p>
         <span>
-          <a className={styles.cta} href="Tel: (215) 968-3791">
-            Schedule Service
-          </a>
+          <CtaLink link="Tel: (215) 968-3791">Schedule Service</CtaLink>
         </span>
       </div>
       <img className={styles.heroImg} src="src\assets\shopzoomed.jpg" />
