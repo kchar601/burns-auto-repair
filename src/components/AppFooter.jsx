@@ -1,27 +1,31 @@
 import { NavLink } from "react-router-dom";
 import styles from "./AppNav.module.css";
+import SmartStatus from "./SmartStatus";
 
 function AppNav({ theme }) {
   return (
     <footer className={styles.footbar}>
       <div className={styles.footbarInner}>
-        <NavLink
-          className={`${styles.logoContainer} ${styles.logoContainerFooter}`}
-          to="/"
-        >
-          {theme === "dark" ? (
-            <img
-              src="src\assets\burnsautologo white.png"
-              className={styles.logo}
-            ></img>
-          ) : (
-            <img
-              src="src\assets\burnsautologo dark.png"
-              className={styles.logo}
-            ></img>
-          )}
-          <img className={styles.logo} />
-        </NavLink>
+        <div className={styles.logoAndHours}>
+          <NavLink
+            className={`${styles.logoContainer} ${styles.logoContainerFooter}`}
+            to="/"
+          >
+            {theme === "dark" ? (
+              <img
+                src="src\assets\burnsautologo white.png"
+                className={styles.logo}
+              ></img>
+            ) : (
+              <img
+                src="src\assets\burnsautologo dark.png"
+                className={styles.logo}
+              ></img>
+            )}
+            <img className={styles.logo} />
+          </NavLink>
+          <SmartStatus />
+        </div>
         <div>
           <h5>Quick Links</h5>
           <ul className={`${styles.links} ${styles.linksVert}`}>
@@ -67,7 +71,7 @@ function AppNav({ theme }) {
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
               <a>
-                <i class="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
               </a>
             </div>
           </ul>

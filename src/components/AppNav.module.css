@@ -25,7 +25,7 @@
 
 .footbarInner {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.3fr 0.8fr 1fr 1fr;
   margin: 0 auto;
   max-width: 70%;
 }
@@ -150,6 +150,11 @@ h5:has(+ .linksVert) {
 }
 .hamburger > i {
   font-size: 2rem;
+}
+
+.logoAndHours {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 1300px) {
