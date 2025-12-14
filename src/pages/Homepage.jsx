@@ -2,6 +2,7 @@ import HeroSection from "./../components/HeroSection";
 import FeaturedServices from "./../components/FeaturedServices";
 import styles from "./Homepage.module.css";
 import ValueProp from "./../components/ValueProp";
+import TestimonialsCarousel from "./../components/TestimonialsCarousel";
 
 function Homepage() {
   return (
@@ -9,6 +10,7 @@ function Homepage() {
       <HeroSection />
       <FeaturedServices />
       <ValueProp />
+      <TestimonialsCarousel />
     </div>
   );
 }
