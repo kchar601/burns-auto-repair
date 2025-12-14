@@ -1,0 +1,61 @@
+.container {
+  padding: 16px 16px 0;
+  color: var(--text, #fff);
+  font-size: 14px;
+  text-align: center;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.toggle {
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  padding: 0;
+  font-size: 13px;
+}
+
+.hours {
+  text-align: left;
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.hours p {
+  margin: 4px 0 8px;
+}
+
+.hours strong + p {
+  margin: 4px 0 0;
+}
+
+.statusMessage::before {
+  content: "–";
+  margin: 0px 4px;
+}
+
+@media screen and (min-width: 721px) and (max-width: 850px),
+  screen and (min-width: 1151px) and (max-width: 1207px) {
+  .statusMessage::before {
+    content: "";
+    margin: 0px 4px;
+  }
+}
