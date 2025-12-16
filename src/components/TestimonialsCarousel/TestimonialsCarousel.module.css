@@ -1,5 +1,5 @@
 .section {
-  padding: 0px 24px 128px;
+  padding: 64px 24px;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -12,6 +12,7 @@
 
 .carouselWrapper {
   display: flex;
+  margin: 64px 0px 0px;
   align-items: center;
   gap: 12px;
   width: 100%;

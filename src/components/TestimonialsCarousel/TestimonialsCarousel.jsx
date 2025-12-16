@@ -13,7 +13,10 @@ export default function TestimonialsCarousel() {
   return (
     <section className={styles.section}>
       <h2 className={styles.title}>What Our Customers Say</h2>
-
+      <p>
+        Don't just take our word for it. Here's what our satisfied customers
+        have to say.
+      </p>
       <div className={styles.carouselWrapper}>
         <button ref={prevRef} className={styles.navBtn}>
           ‹
