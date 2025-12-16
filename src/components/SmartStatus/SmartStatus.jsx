@@ -23,6 +23,13 @@ const HOURS = {
   },
 };
 
+const formatTo12Hour = (timeStr) => {
+  const [hours, minutes] = timeStr.split(":").map(Number);
+  const period = hours >= 12 ? "pm" : "am";
+  const displayHours = hours % 12 || 12;
+  return `${displayHours}:${minutes.toString().padStart(2, "0")}${period}`;
+};
+
 const getDayType = (day) => {
   if (day >= 1 && day <= 5) return "weekday";
   if (day === 6) return "saturday";
@@ -47,8 +54,8 @@ const getStatus = (schedule) => {
   return {
     open,
     message: open
-      ? `Open (closes ${today.close})`
-      : `Closed (opens ${today.open})`,
+      ? `Open (closes ${formatTo12Hour(today.close)})`
+      : `Closed (opens ${formatTo12Hour(today.open)})`,
   };
 };
 
@@ -88,14 +95,14 @@ export default function SmartStatus() {
       {showHours && (
         <div className={styles.hours}>
           <strong>Mon – Fri</strong>
-          <p>Auto Repair: 8:00 – 4:30</p>
-          <p>Gas: 7:00 – 8:00</p>
+          <p>Auto Repair: 8:00am – 4:30pm</p>
+          <p>Gas: 7:00am – 8:00pm</p>
           <strong>Saturday</strong>
-          <p>Auto Repair: 7:00 – 12:00</p>
-          <p>Gas: 7:00 – 5:00</p>
+          <p>Auto Repair: 7:00 – 12:00pm</p>
+          <p>Gas: 7:00am – 5:00pm</p>
           <strong>Sunday</strong>
           <p>Auto Repair: Closed</p>
-          <p>Gas: 8:00 – 4:00</p>
+          <p>Gas: 8:00am – 4:00pm</p>
         </div>
       )}
     </div>
