@@ -1,5 +1,5 @@
 import styles from "./ValueProp.module.css";
-import CtaLink from "./CtaLink";
+import CtaLink from "../CtaLink/CtaLink";
 
 function ValueProp() {
   return (

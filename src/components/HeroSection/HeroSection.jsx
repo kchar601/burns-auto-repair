@@ -1,4 +1,4 @@
-import CtaLink from "./CtaLink";
+import CtaLink from "../CtaLink/CtaLink";
 import styles from "./HeroSection.module.css";
 
 function HeroSection() {

@@ -1,6 +1,6 @@
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "../ServiceCard/ServiceCard";
 import styles from "./FeaturedServices.module.css";
-import CtaLink from "./CtaLink";
+import CtaLink from "../CtaLink/CtaLink";
 
 function FeaturedServices() {
   return (

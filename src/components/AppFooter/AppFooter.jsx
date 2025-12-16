@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import styles from "./AppNav.module.css";
-import SmartStatus from "./SmartStatus";
+import styles from "../AppNav/AppNav.module.css";
+import SmartStatus from "../SmartStatus/SmartStatus";
 
-function AppNav({ theme }) {
+function AppFooter({ theme }) {
   return (
     <footer className={styles.footbar}>
       <div className={styles.footbarInner}>
@@ -85,4 +85,4 @@ function AppNav({ theme }) {
   );
 }
 
-export default AppNav;
+export default AppFooter;

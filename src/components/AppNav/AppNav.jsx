@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import { NavLink } from "react-router-dom";
-import CtaLink from "./CtaLink";
+import CtaLink from "../CtaLink/CtaLink";
 import styles from "./AppNav.module.css";
 import "animate.css";
 

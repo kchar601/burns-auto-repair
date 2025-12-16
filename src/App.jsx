@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Homepage from "./pages/Homepage";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
-import About from "./pages/About";
-import Testimonials from "./pages/Testimonials";
-import AppLayout from "./pages/AppLayout";
-import useSystemTheme from "./components/useSystemTheme";
+import Homepage from "./pages/Homepage/Homepage";
+import Services from "./pages/Services/Services";
+import Contact from "./pages/Contact/Contact";
+import About from "./pages/About/About";
+import Testimonials from "./pages/Testimonials/Testimonials";
+import AppLayout from "./pages/AppLayout/AppLayout";
+import useSystemTheme from "./components/useSystemTheme/useSystemTheme";
 import "./App.css";
 
 export default function App() {
