@@ -6,15 +6,13 @@ import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
 import Testimonials from "./pages/Testimonials/Testimonials";
 import AppLayout from "./pages/AppLayout/AppLayout";
-import useSystemTheme from "./components/useSystemTheme/useSystemTheme";
 import "./App.css";
 
 export default function App() {
-  const theme = useSystemTheme();
   return (
     <Router>
       <Routes>
-        <Route element={<AppLayout theme={theme} />}>
+        <Route element={<AppLayout />}>
           <Route index element={<Homepage />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />

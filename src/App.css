@@ -5,36 +5,20 @@
   font-size: 100%;
   color: var(--text);
   background-color: var(--surface);
-}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --text: #060709;
-    --text-variant: #272d3a;
-    --surface: rgb(248, 249, 252);
-    --surface-elevated: rgb(215, 215, 218);
-    --primary: #7a8699;
-    --secondary: #ff0000;
-    --secondary-variant: #bd0202;
-    --accent: #4d85f5;
-    --accent-variant: #2f71f5;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #f6f7f9;
-    --text-variant: #999a9b;
-    --surface: rgb(3, 4, 7);
-    --surface-rgb: 3, 4, 7;
-    --surface-elevated: rgb(17, 23, 39);
-    --surface-elevated-2: rgb(27, 37, 63);
-    --primary: #7b9ed4;
-    --primary-variant: #373d47;
-    --secondary: #ff0000;
-    --secondary-variant: #bb0202;
-    --accent: #0a42b2;
-    --accent-variant: #2e55a1;
-  }
+  --text: #f6f7f9;
+  --text-variant: #999a9b;
+  --surface: rgb(3, 4, 7);
+  --surface-rgb: 3, 4, 7;
+  --surface-elevated: rgb(17, 23, 39);
+  --surface-elevated-2: rgb(27, 37, 63);
+  --primary: #7b9ed4;
+  --primary-variant: #373d47;
+  --secondary: #ff0000;
+  --secondary-variant: #bb0202;
+  --accent: #0a42b2;
+  --accent-variant: #2e55a1;
+  --swiper-navigation-color: var(--text);
 }
 
 h1,

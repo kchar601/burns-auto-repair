@@ -4,7 +4,7 @@ import CtaLink from "../CtaLink/CtaLink";
 import styles from "./AppNav.module.css";
 import "animate.css";
 
-function AppNav({ theme }) {
+function AppNav() {
   const [navOpen, setNavOpen] = useState(false);
   const [animation, setAnimation] = useState("");
 
@@ -12,17 +12,11 @@ function AppNav({ theme }) {
     <nav className={styles.navbar}>
       <div className={styles.navbarInner}>
         <NavLink className={styles.logoContainer} to="/">
-          {theme === "dark" ? (
-            <img
-              src="src\assets\burnsautologo white.png"
-              className={styles.logo}
-            ></img>
-          ) : (
-            <img
-              src="src\assets\burnsautologo dark.png"
-              className={styles.logo}
-            ></img>
-          )}
+          <img
+            src="src\assets\burnsautologo white.png"
+            className={styles.logo}
+          ></img>
+
           <img className={styles.logo} />
         </NavLink>
         <ul
