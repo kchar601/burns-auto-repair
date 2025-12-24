@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import styles from "../AppNav/AppNav.module.css";
 import SmartStatus from "../SmartStatus/SmartStatus";
 
-function AppFooter({ theme }) {
+function AppFooter() {
   return (
     <footer className={styles.footbar}>
       <div className={styles.footbarInner}>
@@ -11,18 +11,10 @@ function AppFooter({ theme }) {
             className={`${styles.logoContainer} ${styles.logoContainerFooter}`}
             to="/"
           >
-            {theme === "dark" ? (
-              <img
-                src="src\assets\burnsautologo white.png"
-                className={styles.logo}
-              ></img>
-            ) : (
-              <img
-                src="src\assets\burnsautologo dark.png"
-                className={styles.logo}
-              ></img>
-            )}
-            <img className={styles.logo} />
+            <img
+              src="src\assets\burnsautologo white.png"
+              className={styles.logo}
+            ></img>
           </NavLink>
           <SmartStatus />
         </div>
@@ -67,10 +59,10 @@ function AppFooter({ theme }) {
             <li>19 N Sycamore Street</li>
             <li className={styles.noMargin}>Newtown, PA 18940</li>
             <div className={styles.socialsInner}>
-              <a>
+              <a href="https://www.facebook.com/BurnsAutoRepair19/">
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
-              <a>
+              <a href="https://www.instagram.com/burnsautorepair/">
                 <i className="fa-brands fa-instagram"></i>
               </a>
             </div>

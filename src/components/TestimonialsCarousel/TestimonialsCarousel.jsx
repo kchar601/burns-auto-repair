@@ -48,7 +48,11 @@ export default function TestimonialsCarousel() {
           {testimonials.map((t, i) => (
             <SwiperSlide key={i} className={styles.slide}>
               <div className={styles.card}>
-                <strong>{t.name}</strong>
+                <div className={styles.flexApart}>
+                  <strong>{t.name}</strong>
+                  <span>{t.date}</span>
+                </div>
+                <p className={styles.cardHeader}>{t.title}</p>
                 <div>{renderStars(t.rating)}</div>
                 <p>{t.text}</p>
               </div>

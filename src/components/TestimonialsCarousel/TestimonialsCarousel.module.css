@@ -39,11 +39,18 @@
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
+.flexApart {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .cardHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  margin: 8px 0px;
+  font-size: 1.333rem;
 }
 
 .navBtn {

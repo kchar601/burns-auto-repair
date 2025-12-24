@@ -81,7 +81,7 @@ export default function SmartStatus() {
           className={styles.dot}
           style={{ backgroundColor: gasStatus.open ? "#22c55e" : "#ef4444" }}
         />
-        <strong>Gas Station</strong>
+        <strong>Gas & Pickup</strong>
         <span className={styles.statusMessage}>{gasStatus.message}</span>
       </div>
 
