@@ -1,5 +1,11 @@
+import styles from "./About.module.css";
+
 function About() {
-  return <div>About</div>;
+  return (
+    <div className={styles.pageContainer}>
+      <PageHeader />
+    </div>
+  );
 }
 
 export default About;
