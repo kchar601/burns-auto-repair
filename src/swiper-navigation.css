@@ -2,6 +2,7 @@
   --swiper-navigation-size: 44px;
   --swiper-navigation-top-offset: 6%;
   --swiper-navigation-sides-offset: -42px;
+  container: swiper / inline-size;
 
   /*
   

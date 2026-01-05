@@ -62,3 +62,11 @@ button {
   background-color: transparent;
   font-size: 1.333rem;
 }
+
+@media screen and (max-width: 453px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    background: none !important;
+    color: black;
+  }
+}

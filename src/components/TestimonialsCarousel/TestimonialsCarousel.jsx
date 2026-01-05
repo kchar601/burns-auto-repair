@@ -2,10 +2,10 @@ import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "../../swiper-navigation.css";
+import "../../swiper-overrides.css";
 import styles from "./TestimonialsCarousel.module.css";
 import testimonials from "../../data/testimonials.json";
 
@@ -31,6 +31,15 @@ export default function TestimonialsCarousel() {
         have to say.
       </p>
       <div className={styles.carouselWrapper}>
+        <a
+          target="_blank"
+          href="https://www.surecritic.com/reviews/burns-auto-repair-inc?nhd=1"
+        >
+          <img
+            src="https://www.surecritic.com/assets/business_badge.png"
+            alt="Burns Auto Repair  Reviews"
+          />
+        </a>
         <Swiper
           modules={[Navigation, Autoplay]}
           slidesPerView={1}
@@ -52,8 +61,9 @@ export default function TestimonialsCarousel() {
                   <strong>{t.name}</strong>
                   <span>{t.date}</span>
                 </div>
-                <p className={styles.cardHeader}>{t.title}</p>
                 <div>{renderStars(t.rating)}</div>
+                <p className={styles.cardHeader}>{t.title}</p>
+
                 <p>{t.text}</p>
               </div>
             </SwiperSlide>
