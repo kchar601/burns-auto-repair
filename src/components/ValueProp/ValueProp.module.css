@@ -81,4 +81,11 @@
     text-align: center;
     font-size: 2.369rem;
   }
+  .container {
+    padding: 4rem 1rem 8rem;
+    margin: auto;
+  }
+  .textColumn *:last-child {
+    margin: auto;
+  }
 }

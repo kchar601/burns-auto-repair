@@ -270,4 +270,9 @@ h5:has(+ .linksVert) {
   .socialsInner {
     justify-content: center;
   }
+
+  .logo {
+    width: auto;
+    margin: auto;
+  }
 }

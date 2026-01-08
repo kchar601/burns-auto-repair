@@ -1,3 +1,4 @@
+import PageHeader from "./../../components/PageHeader/PageHeader";
 import styles from "./About.module.css";
 
 function About() {

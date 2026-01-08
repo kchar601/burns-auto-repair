@@ -19,7 +19,7 @@
 }
 
 .swiperContainer {
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 10px;
 }
 
@@ -73,6 +73,16 @@
 .swiperContainer :global(.swiper-slide) {
   display: flex;
   height: auto;
+}
+
+@media screen and (max-width: 802px) {
+  .section {
+    padding: 64px 0px;
+    max-width: 100%;
+  }
+  .section p {
+    padding: 0 1rem;
+  }
 }
 
 @media screen and (max-width: 453px) {

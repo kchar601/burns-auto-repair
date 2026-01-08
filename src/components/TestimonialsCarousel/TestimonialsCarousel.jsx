@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "../../swiper-navigation.css";
-import "../../swiper-overrides.css";
 import styles from "./TestimonialsCarousel.module.css";
 import testimonials from "../../data/testimonials.json";
 
