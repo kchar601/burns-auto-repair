@@ -7,7 +7,7 @@ import CtaLink from "../../Components/CtaLink/CtaLink";
 
 function Homepage() {
   return (
-    <div className={styles.home}>
+    <main className={styles.home}>
       <HeroSection />
       <FeaturedServices outline={false} />
       <TestimonialsCarousel />
@@ -26,7 +26,7 @@ function Homepage() {
         </ul>
         <CtaLink link={"/about"}>Learn More About Us</CtaLink>
       </ValueProp>
-    </div>
+    </main>
   );
 }
 
