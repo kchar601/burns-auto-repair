@@ -72,6 +72,10 @@ function AppFooter() {
       <small className={styles.copywrite}>
         © {new Date().getFullYear()} Burns Auto Repair, Inc. All rights
         reserved.
+        <br />
+        <a href="https://" className={styles.callingCard}>
+          Made by Keith Charlton
+        </a>
       </small>
     </footer>
   );

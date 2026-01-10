@@ -51,6 +51,10 @@ const getStatus = (schedule) => {
 
   const open = isWithinRange(minutesNow, openTime, closeTime);
 
+  if (dayType === "saturday" && !open) {
+    return { open: false, message: "Closed until Monday" };
+  }
+
   return {
     open,
     message: open
