@@ -1,29 +1,77 @@
-.details {
+.container {
+  border: 1px solid var(--text-variant);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
   max-width: 500px;
-  overflow: hidden; /* Keep this line to prevent an odd blue outline around the element in Safari. */
-}
-details > summary {
-  list-style-type: "▶️";
+  max-height: 7rem;
+  color: var(--surface);
+  transition: max-height 1000ms;
 }
 
-details[open] > summary {
-  list-style-type: "🔽";
+.container:has(.details[open]) {
+  max-height: none;
+  transition: max-height 400ms ease-in-out;
 }
+
+.details[open] ~ .details {
+  max-width: 100%;
+  overflow: hidden;
+  color: var(--surface);
+}
+.details > .summary {
+  display: flex;
+  align-items: center;
+  font-size: 1.333rem;
+  padding: 1rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.details > .summary::after {
+  content: "+";
+  font-size: 3rem;
+  font-weight: 400;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  transition: transform 600ms ease-in-out;
+}
+
+.details[open] > .summary::after {
+  transform: rotate(45deg);
+  transition: transform 400ms ease-in-out;
+}
+
 div.content {
-  max-width: 500px;
   box-sizing: border-box;
-  padding: 0 10px;
   max-height: 0;
+  padding: 0px 0px 0px 1rem;
   overflow: hidden;
   border: 2px solid transparent;
-  transition: max-height 400ms ease-out, border 0ms 400ms linear;
+  transition: max-height 400ms ease-out, padding 600ms;
+  color: var(--surface);
 }
-details[open] + div.content {
-  max-height: 800px; /* Set a max-height value enough to show all the content */
-  border-color: #888;
-  transition: max-height 400ms ease-out, border 0ms linear;
+.details[open] + div.content {
+  padding: 0px 0px 1rem 1rem;
+  max-height: 800px;
+  transition: max-height 400ms, padding 200ms;
 }
-details[open] span::before {
+.details[open] span::before {
   rotate: 90deg;
   transition: rotate 200ms ease-out;
+}
+
+.iconContainer {
+  display: inline-block;
+  margin: 0px 1rem 0px 0px;
+  padding: 1.3rem 1.2rem 1.3rem 1.3rem;
+  background-color: var(--accent);
+  color: var(--text);
+  border-radius: 50%;
+  justify-self: end;
+}
+
+.iconContainer i {
+  font-size: 1.777rem;
+  margin: 0;
 }

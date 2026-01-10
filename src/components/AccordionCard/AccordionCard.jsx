@@ -1,9 +1,10 @@
 import styles from "./AccordionCard.module.css";
-function AccordionCard({ title, content }) {
+function AccordionCard({ icon, title, content }) {
   return (
-    <div>
+    <div className={styles.container}>
       <details className={styles.details}>
         <summary className={styles.summary}>
+          <div className={styles.iconContainer}>{icon}</div>
           <span>{title}</span>
         </summary>
       </details>

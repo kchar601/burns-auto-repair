@@ -1,5 +1,12 @@
+.page {
+  background-color: var(--text);
+}
 .serviceContainer {
   display: flex;
-  flex-direction: row;
-  margin: 0px 20%;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+  max-width: 1600px;
+  gap: 1rem;
+  margin: auto;
 }
