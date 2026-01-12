@@ -1,6 +1,3 @@
-.page {
-  background-color: var(--text);
-}
 .serviceContainer {
   display: flex;
   flex-wrap: wrap;
@@ -9,4 +6,5 @@
   max-width: 1600px;
   gap: 1rem;
   margin: auto;
+  justify-content: center;
 }

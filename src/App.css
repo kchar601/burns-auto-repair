@@ -70,3 +70,8 @@ button {
     color: black;
   }
 }
+
+.subPage {
+  background-color: var(--text);
+  color: var(--surface);
+}

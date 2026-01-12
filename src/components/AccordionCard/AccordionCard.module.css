@@ -5,12 +5,12 @@
   max-width: 500px;
   max-height: 7rem;
   color: var(--surface);
-  transition: max-height 1000ms;
+  transition: max-height 2000ms;
 }
 
 .container:has(.details[open]) {
   max-height: none;
-  transition: max-height 400ms ease-in-out;
+  transition: max-height 2000ms ease-in-out;
 }
 
 .details[open] ~ .details {
@@ -48,12 +48,12 @@ div.content {
   padding: 0px 0px 0px 1rem;
   overflow: hidden;
   border: 2px solid transparent;
-  transition: max-height 400ms ease-out, padding 600ms;
+  transition: max-height 600ms ease-out, padding 600ms;
   color: var(--surface);
 }
 .details[open] + div.content {
   padding: 0px 0px 1rem 1rem;
-  max-height: 800px;
+  max-height: 7rem;
   transition: max-height 400ms, padding 200ms;
 }
 .details[open] span::before {
@@ -74,4 +74,13 @@ div.content {
 .iconContainer i {
   font-size: 1.777rem;
   margin: 0;
+}
+
+@media screen and (max-width: 1600px) {
+  .details > .summary {
+    font-size: 1.2rem;
+  }
+  .container {
+    max-width: 400px;
+  }
 }

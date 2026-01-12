@@ -77,7 +77,8 @@ function renderStars(count) {
   return Array.from({ length: 5 }).map((_, i) => (
     <span
       key={i}
-      style={{ color: i < count ? "#facc15" : "#e5e7eb", fontSize: "24px" }}
+      className={styles.stars}
+      style={{ color: i < count ? "#facc15" : "#e5e7eb" }}
     >
       ★
     </span>

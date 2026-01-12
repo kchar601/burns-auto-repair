@@ -3,7 +3,7 @@ import styles from "./Services.module.css";
 import AccordionCard from "./../../components/AccordionCard/AccordionCard";
 function Services() {
   return (
-    <main className={styles.page}>
+    <main className="subPage">
       <PageHeader
         title={"Our Services"}
         sub={
