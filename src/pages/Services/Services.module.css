@@ -8,3 +8,8 @@
   margin: auto;
   justify-content: center;
 }
+
+.tabsContainer {
+  width: 100%;
+  margin: 4rem 15%;
+}

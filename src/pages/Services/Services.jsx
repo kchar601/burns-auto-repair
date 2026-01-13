@@ -1,6 +1,24 @@
 import PageHeader from "./../../components/PageHeader/PageHeader";
 import styles from "./Services.module.css";
 import AccordionCard from "./../../components/AccordionCard/AccordionCard";
+import TabsCard from "./../../components/TabsCard/TabsCard";
+
+const tabs = [
+  {
+    title: "Diagnostics",
+    content: (
+      <>
+        <h3>Check Engine Light On?</h3>
+        <h5>We'll diagnose it quickly and explain what actually matters.</h5>
+      </>
+    ),
+  },
+  { title: "Maintenance" },
+  { title: "Brakes" },
+  { title: "Engine" },
+  { title: "Electrical" },
+];
+
 function Services() {
   return (
     <main className="subPage">
@@ -10,7 +28,17 @@ function Services() {
           "We offer a comprehensive range of auto repair and maintenance services to keep your vehicle running at peak performance. Our certified technicians have the expertise and equipment to handle any job."
         }
       />
-      <div className={styles.serviceContainer}>
+      <div className={styles.tabsContainer}>
+        <TabsCard tabs={tabs} />
+      </div>
+    </main>
+  );
+}
+
+export default Services;
+
+{
+  /* <div className={styles.serviceContainer}>
         <AccordionCard
           title={"General Repairs"}
           content={
@@ -96,9 +124,5 @@ function Services() {
           }
           icon={<i className="fa-solid fa-triangle-exclamation"></i>}
         />
-      </div>
-    </main>
-  );
+      </div> */
 }
-
-export default Services;
