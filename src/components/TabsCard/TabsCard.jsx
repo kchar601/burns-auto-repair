@@ -28,7 +28,7 @@ function Tab({ key, title, onClick, isActive }) {
     <button
       key={key}
       onClick={onClick}
-      className={`${styles.tab}` + (isActive ? `${styles.tab}` : "")}
+      className={`${styles.tab} ${isActive ? styles.activeTab : ""}`}
     >
       {title}
     </button>

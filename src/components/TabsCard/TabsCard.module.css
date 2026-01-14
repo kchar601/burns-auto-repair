@@ -1,2 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid var(--surface-elevated);
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  gap: 32px;
+  box-shadow: 5px 5px 10px 6px rgba(0, 0, 0, 0.3);
+}
 .tabsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.tab {
+  padding: 2rem;
+  border: 1px solid var(--surface-elevated);
+  border-top: none;
+  border-left: none;
+  font-size: 1.333rem;
+  background-color: var(--primary);
+  font-family: "Rambla";
+  font-weight: 700;
+  color: var(--surface);
+}
+.tab:last-child {
+  border-bottom: none;
+}
+.tab:hover,
+.tab:active,
+.tab:focus {
+  background-color: var(--primary-variant);
+}
+.tab.activeTab {
+  background-color: var(--surface-elevated-2);
+  color: var(--text);
 }
