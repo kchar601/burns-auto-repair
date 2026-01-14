@@ -8,17 +8,90 @@
 
   --text: #f6f7f9;
   --text-variant: #999a9b;
-  --surface: rgb(3, 4, 7);
+  --surface: rgb(7, 3, 3);
   --surface-rgb: 3, 4, 7;
-  --surface-elevated: rgb(17, 23, 39);
+  /* --surface-elevated: rgb(99, 19, 19); */
+  --surface-elevated: rgb(71, 71, 71);
+  /* --surface-elevated: rgb(17, 23, 39); */
   --surface-elevated-2: rgb(27, 37, 63);
   --primary: #7b9ed4;
-  --primary-variant: #373d47;
+  --primary-variant: #4d89dd;
+  --accent: #bd0000;
+  --accent-variant: #8f0101;
+  /* --secondary: #bd0000;
+  --secondary-variant: #8f0101; */
+  --secondary: #0a42b2;
+  --secondary-variant: #2e55a1;
+  /* --accent: #0a42b2;
+  --accent-variant: #2e55a1; */
+  --swiper-navigation-color: var(--text);
+
+  /* --surface: #0b0909;
+  --text: #fcfbfb;
   --secondary: #ff0000;
   --secondary-variant: #bb0202;
-  --accent: #0a42b2;
-  --accent-variant: #2e55a1;
-  --swiper-navigation-color: var(--text);
+  --primary: #bfbfad;
+  --secondary: #a3aa91; */
+
+  --text-50: #f6f5ef;
+  --text-100: #edebde;
+  --text-200: #dad7be;
+  --text-300: #c8c49d;
+  --text-400: #b6b07c;
+  --text-500: #a39c5c;
+  --text-600: #837d49;
+  --text-700: #625e37;
+  --text-800: #413e25;
+  --text-900: #211f12;
+  --text-950: #101009;
+
+  --background-50: #f5f5f0;
+  --background-100: #ebebe0;
+  --background-200: #d6d6c2;
+  --background-300: #c2c2a3;
+  --background-400: #adad85;
+  --background-500: #999966;
+  --background-600: #7a7a52;
+  --background-700: #5c5c3d;
+  --background-800: #3d3d29;
+  --background-900: #1f1f14;
+  --background-950: #0f0f0a;
+
+  --primary-50: #f3f2f2;
+  --primary-100: #e7e5e4;
+  --primary-200: #ceccca;
+  --primary-300: #b6b2af;
+  --primary-400: #9d9995;
+  --primary-500: #857f7a;
+  --primary-600: #6a6662;
+  --primary-700: #504c49;
+  --primary-800: #353331;
+  --primary-900: #1b1918;
+  --primary-950: #0d0d0c;
+
+  --secondary-50: #f3f3f2;
+  --secondary-100: #e6e6e5;
+  --secondary-200: #cdcdcb;
+  --secondary-300: #b4b4b1;
+  --secondary-400: #9b9b97;
+  --secondary-500: #82827d;
+  --secondary-600: #686864;
+  --secondary-700: #4e4e4b;
+  --secondary-800: #343432;
+  --secondary-900: #1a1a19;
+  --secondary-950: #0d0d0c;
+
+  --accent-50: #ffe5e5;
+  --accent-100: #ffcccc;
+  --accent-200: #ff9999;
+  --accent-300: #ff6666;
+  --accent-400: #ff3333;
+  --accent-500: #ff0000;
+  --accent-600: #cc0000;
+  --accent-700: #990000;
+  --accent-800: #660000;
+  --accent-900: #330000;
+  --accent-950: #1a0000;
 }
 
 h1,
