@@ -5,18 +5,96 @@ import TabsCard from "./../../components/TabsCard/TabsCard";
 
 const tabs = [
   {
-    title: "Diagnostics",
+    title: "State Inspections & Emissions",
+    slug: "state-inspections-emissions",
     content: (
       <>
-        <h3>Check Engine Light On?</h3>
-        <h5>We'll diagnose it quickly and explain what actually matters.</h5>
+        <h3>State Inspections & Emissions</h3>
+        <p>
+          Certified PA state inspections and emissions testing to keep your
+          vehicle legal, safe, and road-ready.
+        </p>
       </>
     ),
   },
-  { title: "Maintenance" },
-  { title: "Brakes" },
-  { title: "Engine" },
-  { title: "Electrical" },
+  {
+    title: "Scheduled Maintenance",
+    slug: "scheduled-maintenance",
+    content: (
+      <>
+        <h3>Scheduled Maintenance</h3>
+        <p>
+          Factory-recommended maintenance to extend the life of your vehicle and
+          prevent costly repairs down the road.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Brakes & Tires",
+    slug: "brakes-tires",
+    content: (
+      <>
+        <h3>Brakes & Tires</h3>
+        <p>
+          Brake inspections, repairs, tire services, and replacements to keep
+          you safe and confident on the road.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Steering & Suspension",
+    slug: "steering-suspension",
+    content: (
+      <>
+        <h3>Steering & Suspension</h3>
+        <p>
+          Ride quality, handling, alignment, and suspension issues diagnosed and
+          repaired to restore a smoother, safer drive
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "AC & Heating",
+    slug: "ac-heating",
+    content: (
+      <>
+        <h3>AC & Heating</h3>
+        <p>
+          Climate control system diagnostics and repairs to keep you comfortable
+          year-round.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Check Engine & Diagnostics",
+    slug: "check-engine-diagnostics",
+    content: (
+      <>
+        <h3>Check Engine & Diagnostics</h3>
+        <p>
+          Warning lights, drivability issues, and performance concerns explained
+          clearly before any work is done.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Electrical Systems",
+    slug: "electrical-systems",
+    content: (
+      <>
+        <h3>Electrical Systems</h3>
+        <p>
+          Battery, starter, alternator, and electrical system diagnostics and
+          repairs you can trust.
+        </p>
+      </>
+    ),
+  },
 ];
 
 function Services() {

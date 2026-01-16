@@ -4,7 +4,6 @@
   padding: 4rem 4rem 2rem;
   margin: auto;
   column-gap: 16px;
-  background-color: var(--primary-50);
 }
 
 .linkContainer {
@@ -12,7 +11,6 @@
   padding: 0 0 2rem;
   margin: auto;
   justify-content: center;
-  background-color: var(--primary-50);
 }
 
 .cta {

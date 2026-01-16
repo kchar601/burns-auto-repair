@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Rambla:700|Heebo:400");
+@import url("https://fonts.googleapis.com/css?family=Rambla:700|Poppins:400");
 
 :root {
-  font-family: "Heebo";
-  font-weight: 500;
+  font-family: "Poppins";
+  font-weight: 400;
   font-size: 100%;
-  color: var(--text-50);
-  background-color: var(--background-950);
 
   /* --text: #f6f7f9;
   --text-variant: #999a9b;
@@ -94,6 +92,8 @@
   --accent-900: #320101;
   --accent-950: #190000;
 
+  color: var(--text-50);
+  background-color: var(--background-950);
   --swiper-navigation-color: var(--text-50);
 }
 
@@ -147,7 +147,7 @@ button {
   }
 }
 
-.subPage {
+/* .subPage {
   background-color: var(--text-50);
   color: var(--background-950);
-}
+} */

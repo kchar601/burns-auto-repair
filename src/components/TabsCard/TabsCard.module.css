@@ -1,12 +1,13 @@
 .container {
-  display: flex;
-  flex-direction: row;
-  border: 2px solid var(--primary-500);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* border: 2px solid var(--primary-700); */
   width: 100%;
   overflow: hidden;
   border-radius: 16px;
-  gap: 32px;
-  box-shadow: 5px 5px 10px 6px rgb(from var(--primary-500) r g b / 0.7);
+  /* box-shadow: 5px 5px 10px 6px rgb(from var(--primary-800) r g b / 0.5); */
+  background-color: var(--primary-800);
+  color: var(--text-50);
 }
 .tabsContainer {
   display: flex;
@@ -14,13 +15,14 @@
 }
 .tab {
   padding: 2rem;
-  border: 1px solid var(--primary-900);
+  border: 1px solid var(--primary-800);
   border-top: none;
   border-left: none;
   font-size: 1.333rem;
-  background-color: var(--primary-300);
+  background-color: var(--primary-700);
   font-family: "Rambla";
   font-weight: 700;
+  color: var(--text-50);
 }
 .tab:last-child {
   border-bottom: none;
@@ -28,14 +30,17 @@
 .tab:hover,
 .tab:active,
 .tab:focus {
-  background-color: var(--primary-400);
+  background-color: var(--primary-600);
 }
 .tab.activeTab {
   background-color: var(--accent-600);
-  color: var(--text-50);
 }
 .tab.activeTab:hover,
 .tab.activeTab.active,
 .tab.activeTab.focus {
   background-color: var(--accent-700);
+}
+
+.content {
+  padding: 2rem 4rem;
 }

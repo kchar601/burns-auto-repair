@@ -41,12 +41,37 @@ function AppFooter() {
         <div>
           <h5>Services</h5>
           <ul className={`${styles.links} ${styles.linksVert}`}>
-            <li>General Maintenance</li>
-            <li>PA Inspections</li>
-            <li>Oil Changes</li>
-            <li>Scheduled Maintenance</li>
-            <li>Brakes & Tires</li>
-            <li>AC & Heating</li>
+            <li>
+              <NavLink to="/services?tab=inspections-emissions">
+                State Inspections & Emissions
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/services?tab=scheduled-maintenance">
+                Scheduled Maintenance
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/services?tab=brakes-tires">Brakes & Tires</NavLink>
+            </li>
+            <li>
+              <NavLink to="/services?tab=steering-suspension">
+                Steering & Suspension
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/services?tab=ac-heating">AC & Heating</NavLink>
+            </li>
+            <li>
+              <NavLink to="/services?tab=check-engine-diagnostics">
+                Check Engine & Diagnostics
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/services?tab=electrical-systems">
+                Electrical Systems
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div>

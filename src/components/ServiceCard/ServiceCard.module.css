@@ -6,8 +6,8 @@
   border-radius: 8px;
   padding: 1rem;
   /* box-shadow: 0px 0px 10px 2px var(--background-800); */
-  background-color: var(--primary-200);
-  color: var(--text-950);
+  background-color: var(--primary-800);
+  color: var(--text-50);
   text-align: center;
   height: -webkit-fill-available;
 }
@@ -31,5 +31,5 @@
 
 .outline {
   border-radius: 8px;
-  border: 2px var(--primary-400) solid;
+  border: 2px var(--primary-600) solid;
 }
