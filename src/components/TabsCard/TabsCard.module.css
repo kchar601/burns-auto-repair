@@ -1,12 +1,12 @@
 .container {
   display: flex;
   flex-direction: row;
-  border: 2px solid var(--surface-elevated);
+  border: 2px solid var(--primary-500);
   width: 100%;
   overflow: hidden;
   border-radius: 16px;
   gap: 32px;
-  box-shadow: 5px 5px 10px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px 6px rgb(from var(--primary-500) r g b / 0.7);
 }
 .tabsContainer {
   display: flex;
@@ -14,14 +14,13 @@
 }
 .tab {
   padding: 2rem;
-  border: 1px solid var(--surface-elevated);
+  border: 1px solid var(--primary-900);
   border-top: none;
   border-left: none;
   font-size: 1.333rem;
-  background-color: var(--primary);
+  background-color: var(--primary-300);
   font-family: "Rambla";
   font-weight: 700;
-  color: var(--surface);
 }
 .tab:last-child {
   border-bottom: none;
@@ -29,9 +28,14 @@
 .tab:hover,
 .tab:active,
 .tab:focus {
-  background-color: var(--primary-variant);
+  background-color: var(--primary-400);
 }
 .tab.activeTab {
-  background-color: var(--surface-elevated-2);
-  color: var(--text);
+  background-color: var(--accent-600);
+  color: var(--text-50);
+}
+.tab.activeTab:hover,
+.tab.activeTab.active,
+.tab.activeTab.focus {
+  background-color: var(--accent-700);
 }

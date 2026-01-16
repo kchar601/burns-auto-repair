@@ -57,7 +57,7 @@
 .swiper-button-prev {
   left: var(--swiper-navigation-sides-offset, 4px);
   right: auto;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+  background: linear-gradient(to left, rgb(from #0f0f0a r g b / 0.7), #0f0f0a);
   justify-content: end;
   .swiper-navigation-icon {
     transform: rotate(180deg);
@@ -66,7 +66,7 @@
 .swiper-button-next {
   right: var(--swiper-navigation-sides-offset, 4px);
   left: auto;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+  background: linear-gradient(to left, #0f0f0a, rgb(from #0f0f0a r g b / 0.7));
   justify-content: start;
 }
 .swiper-horizontal {

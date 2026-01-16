@@ -12,7 +12,7 @@ const isWithinRange = (now, start, end) => {
 
 const HOURS = {
   mechanics: {
-    weekday: { open: "8:00", close: "16:30" },
+    weekday: { open: "8:00", close: "17:00" },
     saturday: { open: "7:00", close: "12:00" },
     sunday: null,
   },
@@ -76,7 +76,7 @@ export default function SmartStatus() {
           className={styles.dot}
           style={{ backgroundColor: mechStatus.open ? "#22c55e" : "#ef4444" }}
         />
-        <strong>Auto Repair</strong>
+        <span>Auto Repair</span>
         <span className={styles.statusMessage}>{mechStatus.message}</span>
       </div>
 
@@ -85,7 +85,7 @@ export default function SmartStatus() {
           className={styles.dot}
           style={{ backgroundColor: gasStatus.open ? "#22c55e" : "#ef4444" }}
         />
-        <strong>Gas & Pickup</strong>
+        <span>Gas & Pickup</span>
         <span className={styles.statusMessage}>{gasStatus.message}</span>
       </div>
 
@@ -98,13 +98,13 @@ export default function SmartStatus() {
 
       {showHours && (
         <div className={styles.hours}>
-          <strong>Mon – Fri</strong>
-          <p>Auto Repair: 8:00am – 4:30pm</p>
+          <span>Mon – Fri</span>
+          <p>Auto Repair: 8:00am – 5:00pm</p>
           <p>Gas: 7:00am – 8:00pm</p>
-          <strong>Saturday</strong>
-          <p>Auto Repair: 7:00 – 12:00pm</p>
+          <span>Saturday</span>
+          <p>Auto Repair: 7:00am – 12:00pm</p>
           <p>Gas: 7:00am – 5:00pm</p>
-          <strong>Sunday</strong>
+          <span>Sunday</span>
           <p>Auto Repair: Closed</p>
           <p>Gas: 8:00am – 4:00pm</p>
         </div>

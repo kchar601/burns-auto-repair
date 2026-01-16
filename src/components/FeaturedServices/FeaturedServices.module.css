@@ -4,30 +4,21 @@
   padding: 4rem 4rem 2rem;
   margin: auto;
   column-gap: 16px;
-  background-color: var(--text);
+  background-color: var(--primary-50);
 }
 
 .linkContainer {
   display: flex;
-  background-color: var(--text);
   padding: 0 0 2rem;
   margin: auto;
   justify-content: center;
+  background-color: var(--primary-50);
 }
 
 .cta {
-  background-color: var(--accent);
-  color: var(--text);
   padding: 1rem;
   width: fit-content;
   border-radius: 8px;
-}
-
-.cta:hover,
-.cta:active,
-.cta:focus {
-  background-color: var(--accent-variant);
-  cursor: pointer;
 }
 
 @media screen and (min-width: 991px) and (max-width: 1278px) {

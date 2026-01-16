@@ -57,7 +57,7 @@ export default function TestimonialsCarousel() {
             <SwiperSlide key={i} className={styles.slide}>
               <div className={styles.card}>
                 <div className={styles.flexApart}>
-                  <strong>{t.name}</strong>
+                  <span className={styles.custName}>{t.name}</span>
                   <span>{t.date}</span>
                 </div>
                 <div>{renderStars(t.rating)}</div>

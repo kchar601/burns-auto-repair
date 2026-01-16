@@ -9,7 +9,7 @@ function Homepage() {
   return (
     <main className={styles.home}>
       <HeroSection />
-      <FeaturedServices outline={false} />
+      <FeaturedServices outline={true} />
       <TestimonialsCarousel />
       <ValueProp img={"src/assets/shop-upclose.jpeg"}>
         <h2>Why Choose Burns Auto Repair?</h2>

@@ -1,6 +1,6 @@
 .container {
   padding: 16px 16px 0;
-  color: var(--text, #fff);
+  color: var(--text-50, #fff);
   font-size: 14px;
   text-align: center;
 }
