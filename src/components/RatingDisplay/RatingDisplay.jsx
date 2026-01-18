@@ -7,7 +7,7 @@ function RatingDisplay() {
         <span className={styles.stars}>★★★★★</span>
         <span className={styles.rating}>4.98</span>
       </div>
-      <p className={styles.subRating}>Based on over 1300 customer reviews</p>
+      <p className={styles.subRating}>Based on 1300+ customer reviews</p>
     </div>
   );
 }

@@ -40,6 +40,7 @@ a {
 .footbar * a:focus,
 .footbar * a:active {
   color: var(--primary-300);
+  text-decoration: underline;
 }
 
 .logoColumn {
@@ -125,7 +126,7 @@ h5:has(+ .linksVert) {
   margin: 2rem auto 0;
 }
 
-.socials * a {
+.socials * .socialLink {
   color: var(--text-50);
   background-color: var(--accent-600);
   width: fit-content;
@@ -136,9 +137,9 @@ h5:has(+ .linksVert) {
   /* padding: 2px; */
 }
 
-.socials * a:hover,
-.socials * a:focus,
-.socials * a:active {
+.socials * .socialLink:hover,
+.socials * .socialLink:focus,
+.socials * .socialLink:active {
   background-color: var(--accent-700);
 }
 

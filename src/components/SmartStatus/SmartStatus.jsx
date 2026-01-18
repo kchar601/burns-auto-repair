@@ -74,7 +74,7 @@ export default function SmartStatus() {
       <div className={styles.row}>
         <span
           className={styles.dot}
-          style={{ backgroundColor: mechStatus.open ? "#22c55e" : "#ef4444" }}
+          style={{ backgroundColor: mechStatus.open ? "#00B44B" : "#ca0202" }}
         />
         <span>Auto Repair</span>
         <span className={styles.statusMessage}>{mechStatus.message}</span>
@@ -83,7 +83,7 @@ export default function SmartStatus() {
       <div className={styles.row}>
         <span
           className={styles.dot}
-          style={{ backgroundColor: gasStatus.open ? "#22c55e" : "#ef4444" }}
+          style={{ backgroundColor: gasStatus.open ? "#00B44B" : "#ca0202" }}
         />
         <span>Gas & Pickup</span>
         <span className={styles.statusMessage}>{gasStatus.message}</span>

@@ -1,13 +1,12 @@
 import HeroSection from "../../components/HeroSection/HeroSection";
 import FeaturedServices from "../../components/FeaturedServices/FeaturedServices";
-import styles from "./Homepage.module.css";
 import ValueProp from "../../components/ValueProp/ValueProp";
 import TestimonialsCarousel from "../../components/TestimonialsCarousel/TestimonialsCarousel";
 import CtaLink from "../../Components/CtaLink/CtaLink";
 
 function Homepage() {
   return (
-    <main className={styles.home}>
+    <main>
       <HeroSection />
       <FeaturedServices outline={true} />
       <TestimonialsCarousel />

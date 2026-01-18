@@ -79,15 +79,33 @@ function AppFooter() {
           <ul
             className={`${styles.links} ${styles.linksVert} ${styles.socials}`}
           >
-            <li>(215) 968-3791</li>
-            <li>burnsauto19@gmail.com</li>
-            <li>19 N Sycamore Street</li>
-            <li className={styles.noMargin}>Newtown, PA 18940</li>
+            <li>
+              <a href="Tel: (215) 968-3791">(215) 968-3791</a>
+            </li>
+            <li>
+              <a href="mailTo:burnsauto19@gmail.com">burnsauto19@gmail.com</a>
+            </li>
+            <li className={styles.noMargin}>
+              <a
+                href="https://maps.app.goo.gl/XPAXPgE9K1cnejQG6"
+                target="_blank"
+              >
+                19 N Sycamore Street
+                <br />
+                Newtown, PA 18940
+              </a>
+            </li>
             <div className={styles.socialsInner}>
-              <a href="https://www.facebook.com/BurnsAutoRepair19/">
+              <a
+                className={styles.socialLink}
+                href="https://www.facebook.com/BurnsAutoRepair19/"
+              >
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
-              <a href="https://www.instagram.com/burnsautorepair/">
+              <a
+                className={styles.socialLink}
+                href="https://www.instagram.com/burnsautorepair/"
+              >
                 <i className="fa-brands fa-instagram"></i>
               </a>
             </div>
