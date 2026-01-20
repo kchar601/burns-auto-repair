@@ -1,0 +1,13 @@
+.container {
+  padding: 4rem 0;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-700);
+}
+
+.container h4 {
+  margin-top: 0;
+}

@@ -2,6 +2,7 @@ import PageHeader from "./../../components/PageHeader/PageHeader";
 import styles from "./Services.module.css";
 import AccordionCard from "./../../components/AccordionCard/AccordionCard";
 import TabsCard from "./../../components/TabsCard/TabsCard";
+import CtaBanner from "./../../components/CtaBanner/CtaBanner";
 
 const tabs = [
   {
@@ -109,6 +110,14 @@ function Services() {
       <div className={styles.tabsContainer}>
         <TabsCard tabs={tabs} />
       </div>
+      <CtaBanner
+        title={"Not Sure What You Need?"}
+        body={
+          "We're happy to accomodate customers who want an expert's opinion on what service is required to keep their car running effectively."
+        }
+        ctaText={"Schedule an Appointment Today"}
+        link={"Tel: (215) 968-3791"}
+      />
     </main>
   );
 }
