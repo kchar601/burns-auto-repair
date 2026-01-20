@@ -7,6 +7,7 @@ import About from "./pages/About/About";
 import Testimonials from "./pages/Testimonials/Testimonials";
 import AppLayout from "./pages/AppLayout/AppLayout";
 import "./App.css";
+import StyleGuide from "./pages/StyleGuide/StyleGuide";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/styleguide" element={<StyleGuide />} />
         </Route>
       </Routes>
     </Router>
