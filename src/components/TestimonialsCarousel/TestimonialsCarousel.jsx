@@ -7,6 +7,7 @@ import "swiper/css/scrollbar";
 import "../../swiper-navigation.css";
 import styles from "./TestimonialsCarousel.module.css";
 import testimonials from "../../data/testimonials.json";
+import renderStars from "./RenderStars";
 
 export default function TestimonialsCarousel() {
   const prevRef = useRef(null);
@@ -71,16 +72,4 @@ export default function TestimonialsCarousel() {
       </div>
     </section>
   );
-}
-
-function renderStars(count) {
-  return Array.from({ length: 5 }).map((_, i) => (
-    <span
-      key={i}
-      className={styles.stars}
-      style={{ color: i < count ? "#facc15" : "#e5e7eb" }}
-    >
-      ★
-    </span>
-  ));
 }

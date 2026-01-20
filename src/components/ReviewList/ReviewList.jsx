@@ -1,11 +1,12 @@
 import testimonials from "../../data/testimonials.json";
 import styles from "./ReviewList.module.css";
+import renderStars from "./../TestimonialsCarousel/RenderStars";
 
 function ReviewList() {
   return (
     <section className={styles.container}>
       {testimonials.map((t, i) => (
-        <div className={styles.card}>
+        <div key={i} className={styles.card}>
           <div className={styles.flexApart}>
             <span className={styles.custName}>{t.name}</span>
             <span>{t.date}</span>

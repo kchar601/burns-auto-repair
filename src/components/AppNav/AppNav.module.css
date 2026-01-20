@@ -87,18 +87,25 @@ a {
 .links li * {
   text-decoration: none;
 }
+.navbar * .links li a {
+  position: relative;
+  padding-bottom: 0.25rem;
+  background: linear-gradient(
+      to right,
+      var(--accent-600) 0%,
+      var(--accent-600) 100%
+    )
+    bottom left no-repeat;
+  background-size: 0% 3px;
+  transition: background-size 0.5s ease;
+}
 .navbar * .links li a.active {
-  color: var(--accent-500);
+  background-size: 100% 3px;
 }
 .navbar * .links li a:hover,
 .navbar * .links li a:focus,
 .navbar * .links li a:active {
   color: var(--primary-200);
-}
-.navbar * .links li a.active:hover,
-.navbar * .links li a.active:focus,
-.navbar * .links li a.active:active {
-  color: var(--accent-600);
 }
 
 .linksVert {
@@ -133,7 +140,7 @@ h5:has(+ .linksVert) {
   border-radius: 50%;
   aspect-ratio: 1;
   margin-right: 1rem;
-  font-size: 18px;
+  font-size: 22px;
   /* padding: 2px; */
 }
 
@@ -145,7 +152,7 @@ h5:has(+ .linksVert) {
 
 .socials * a i {
   margin: auto;
-  padding: 8px 8px 8px 6px;
+  padding: 10px 8px 8px 6px;
 }
 
 .socialsInner {

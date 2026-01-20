@@ -6,6 +6,8 @@
   text-decoration: none;
   cursor: pointer;
   width: fit-content;
+  font-weight: 600;
+  letter-spacing: 1.3px;
 }
 
 .cta:hover,
@@ -21,4 +23,8 @@
 
 .icon i {
   margin-right: 0.5rem;
+}
+
+.cta.altColor {
+  background-color: var(--background-800);
 }
