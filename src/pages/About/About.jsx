@@ -3,6 +3,7 @@ import PageHeader from "./../../components/PageHeader/PageHeader";
 function About() {
   return (
     <main>
+      <title>About | Burns Auto Repair | Newtown, PA</title>
       <PageHeader
         title={"About Us"}
         sub={

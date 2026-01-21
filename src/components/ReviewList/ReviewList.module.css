@@ -1,0 +1,62 @@
+.container {
+  column-count: 3;
+  column-gap: 1.5rem;
+
+  max-height: 220vh;
+  overflow: hidden;
+
+  /* Fade out bottom */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 75%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(to bottom, black 0%, black 75%, transparent 100%);
+}
+
+.card {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  background-color: var(--primary-50);
+  color: var(--text-950);
+}
+
+.flexApart {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0px;
+  font-size: 1.333rem;
+}
+
+.cardHeader,
+.custName {
+  font-family: "Rambla";
+  font-weight: 700;
+}
+.custName {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    column-count: 1;
+  }
+}

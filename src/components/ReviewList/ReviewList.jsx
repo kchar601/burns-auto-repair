@@ -5,7 +5,7 @@ import renderStars from "./../TestimonialsCarousel/RenderStars";
 function ReviewList() {
   return (
     <section className={styles.container}>
-      {testimonials.map((t, i) => (
+      {sortedTestimonials.map((t, i) => (
         <div key={i} className={styles.card}>
           <div className={styles.flexApart}>
             <span className={styles.custName}>{t.name}</span>
@@ -20,5 +20,9 @@ function ReviewList() {
     </section>
   );
 }
+
+const sortedTestimonials = [...testimonials].sort(
+  (a, b) => new Date(b.date) - new Date(a.date)
+);
 
 export default ReviewList;
