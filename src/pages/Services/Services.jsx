@@ -102,9 +102,9 @@ function Services() {
   return (
     <main className="subPage">
       <PageHeader
-        title={"Our Services"}
+        title={"Old-School Service, Modern Technology"}
         sub={
-          "We offer a comprehensive range of auto repair and maintenance services to keep your vehicle running at peak performance. Our certified technicians have the expertise and equipment to handle any job."
+          "Whether you drive a classic domestic or a modern import, our team combines advanced diagnostic tools with the honest, hard-working values of a traditional garage."
         }
       />
       <div className={styles.tabsContainer}>

@@ -11,14 +11,14 @@ function Homepage() {
       <FeaturedServices outline={true} />
       <TestimonialsCarousel />
       <ValueProp img={"src/assets/shop-upclose.jpeg"}>
-        <h2>Why Choose Burns Auto Repair?</h2>
+        <h2>The "No-Nonsense" Guarantee</h2>
         <p>
-          Since 1998, ProAuto Repair has been the trusted choice for automotive
-          service and repair in the community. Our team of certified technicians
-          combines decades of experience with the latest diagnostic technology.
+          We know the anxiety that comes with visiting an auto shop: "Do I
+          really need this part? Are they overcharging me?" At Burns' Auto
+          Repair, we silence that noise.
         </p>
         <ul>
-          <li>50 Years of Serving Newtown</li>
+          <li>Nearly 70 Years of Serving Newtown</li>
           <li>Family Owned & Operated</li>
           <li>Honest & Transparent Pricing</li>
           <li>ASE Certified Technicians</li>

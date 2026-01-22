@@ -5,11 +5,11 @@ function HeroSection() {
   return (
     <div className={styles.hero}>
       <div className={styles.heroOverlay}>
-        <h1>Keeping Newtown Moving Since 1964</h1>
+        <h1>Newtown's Trusted Garage Since 1957</h1>
         <p>
-          We don't just fix cars; we serve neighbors. Experience the difference
-          of a family-run shop that has been a staple of the Newtown community
-          since 1964.
+          From our family to yours—we don't just fix cars; we keep our neighbors
+          safe on the road. Experience the peace of mind that comes with a
+          mechanic you can actually trust.
         </p>
         <span>
           <CtaLink link="Tel: (215) 968-3791">Schedule Service</CtaLink>
