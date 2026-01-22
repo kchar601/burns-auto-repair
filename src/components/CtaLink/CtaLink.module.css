@@ -17,14 +17,28 @@
   cursor: pointer;
 }
 
-.icon {
+.icon:not(.iconEnd) {
   border: none;
 }
 
-.icon i {
+.icon:not(.iconEnd) i {
   margin-right: 0.5rem;
 }
 
+.iconEnd i {
+  margin-left: 0.5rem;
+}
+
 .cta.altColor {
-  background-color: var(--background-800);
+  background-color: var(--text-50);
+  color: var(--background-950);
+}
+
+@media screen and (max-width: 400px) {
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }

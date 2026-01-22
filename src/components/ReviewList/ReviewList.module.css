@@ -1,4 +1,9 @@
 .container {
+  position: relative;
+  anchor-name: --container;
+}
+
+.reviewsContent {
   column-count: 3;
   column-gap: 1.5rem;
 
@@ -8,11 +13,16 @@
   /* Fade out bottom */
   -webkit-mask-image: linear-gradient(
     to bottom,
-    black 0%,
-    black 75%,
+    #0f0f0a 0%,
+    #0f0f0a 50%,
     transparent 100%
   );
-  mask-image: linear-gradient(to bottom, black 0%, black 75%, transparent 100%);
+  mask-image: linear-gradient(
+    to bottom,
+    #0f0f0a 0%,
+    #0f0f0a 50%,
+    transparent 100%
+  );
 }
 
 .card {
@@ -50,13 +60,35 @@
 }
 
 @media (max-width: 1024px) {
-  .container {
+  .reviewsContent {
     column-count: 2;
   }
 }
 
 @media (max-width: 640px) {
-  .container {
+  .reviewsContent {
     column-count: 1;
   }
+}
+
+.nameLine {
+  display: flex;
+  gap: 8px;
+}
+
+.nameLine :first-child::after {
+  content: "-";
+  margin-left: 8px;
+}
+
+.reviewLink {
+  color: var(--text-950);
+}
+
+.seeAll {
+  position: absolute;
+  position-anchor: --container;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
 }
