@@ -36,8 +36,9 @@ export default function TestimonialsCarousel() {
           href="https://www.surecritic.com/reviews/burns-auto-repair-inc?nhd=1"
         >
           <img
-            src="https://www.surecritic.com/assets/business_badge.png"
+            src="src\assets\SURECRITIC.png"
             alt="Burns Auto Repair  Reviews"
+            width="240px"
           />
         </a>
         <Swiper
