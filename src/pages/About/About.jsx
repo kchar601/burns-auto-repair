@@ -2,13 +2,22 @@ import PageHeader from "./../../components/PageHeader/PageHeader";
 import YouTube from "react-youtube";
 
 function About() {
+  const opts = {
+    height: "390",
+    width: "640",
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    },
+  };
+
   return (
     <main>
       <title>About | Burns Auto Repair | Newtown, PA</title>
       <PageHeader
         title={"A Legacy Under the Hood"}
         sub={
-          "Your partner in automotive safety. We are more than just a repair shop—we are your neighbors, proudly serving Newtown for generations."
+          "Your partner in automotive safety. We are more than just a repair shop — we are your neighbors, proudly serving Newtown for generations."
         }
       />
       <p>
@@ -24,7 +33,7 @@ function About() {
         When you bring your car to Burns, you aren't just a ticket number;
         you're a neighbor.
       </p>
-      <YouTube videoId="lQAWI_3EKV0" />
+      <YouTube opts={opts} videoId="lQAWI_3EKV0" />
     </main>
   );
 }

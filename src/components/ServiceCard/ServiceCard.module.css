@@ -33,3 +33,9 @@
   border-radius: 8px;
   border: 2px var(--primary-600) solid;
 }
+
+@media screen and (max-width: 987px) {
+  .cardContainer {
+    margin: unset;
+  }
+}

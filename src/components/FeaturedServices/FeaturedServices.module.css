@@ -19,8 +19,15 @@
   border-radius: 8px;
 }
 
-@media screen and (min-width: 991px) and (max-width: 1278px) {
+@media screen and (min-width: 988px) and (max-width: 1278px) {
   .serviceContainer > :nth-child(4) {
     display: none;
+  }
+}
+
+@media screen and (max-width: 987px) {
+  .serviceContainer {
+    justify-content: center;
+    gap: 16px;
   }
 }

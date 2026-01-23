@@ -7,7 +7,7 @@
 
 .heroOverlay {
   position: absolute;
-  top: 35%;
+  top: 20%;
   left: 7%;
   background-color: rgb(from var(--background-950) r g b / 0.95);
   width: 35%;
@@ -66,14 +66,14 @@
 
 @media (max-width: 1400px) {
   .heroOverlay {
-    top: 30%;
+    top: 25%;
     left: 5%;
   }
 }
 
 @media (max-width: 1290px) {
   .heroOverlay {
-    top: 20%;
+    top: 25%;
     left: 5%;
     width: 45%;
   }

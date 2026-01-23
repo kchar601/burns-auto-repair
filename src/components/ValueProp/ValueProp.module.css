@@ -74,6 +74,9 @@
   .textColumn h2 {
     margin-bottom: 16px;
   }
+  .textColumn ul + * {
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 802px) {
@@ -83,9 +86,6 @@
   }
   .container {
     padding: 4rem 1rem 8rem;
-    margin: auto;
-  }
-  .textColumn *:last-child {
     margin: auto;
   }
 }
