@@ -2,7 +2,8 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 import FeaturedServices from "../../components/FeaturedServices/FeaturedServices";
 import ValueProp from "../../components/ValueProp/ValueProp";
 import TestimonialsCarousel from "../../components/TestimonialsCarousel/TestimonialsCarousel";
-import CtaLink from "../../Components/CtaLink/CtaLink";
+import CtaLink from "../../components/CtaLink/CtaLink";
+import shopUpclosImage from "../../assets/shop-upclose.jpeg";
 
 function Homepage() {
   return (
@@ -10,7 +11,7 @@ function Homepage() {
       <HeroSection />
       <FeaturedServices outline={true} />
       <TestimonialsCarousel />
-      <ValueProp img={"src/assets/shop-upclose.jpeg"}>
+      <ValueProp img={shopUpclosImage}>
         <h2>The "No-Nonsense" Guarantee</h2>
         <p>
           We know the anxiety that comes with visiting an auto shop: "Do I

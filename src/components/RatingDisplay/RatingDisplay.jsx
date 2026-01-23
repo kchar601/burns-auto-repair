@@ -1,4 +1,5 @@
 import styles from "./RatingDisplay.module.css";
+import sureCriticLogo from "../../assets/SURECRITIC.png";
 
 function RatingDisplay() {
   return (
@@ -13,7 +14,7 @@ function RatingDisplay() {
         href="https://www.surecritic.com/reviews/burns-auto-repair-inc?nhd=1"
       >
         <img
-          src="src\assets\SURECRITIC.png"
+          src={sureCriticLogo}
           alt="Burns Auto Repair  Reviews"
           width="240px"
         />

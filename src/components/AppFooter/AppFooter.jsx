@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styles from "../AppNav/AppNav.module.css";
 import SmartStatus from "../SmartStatus/SmartStatus";
+import Logo from "../../assets/burnsautologo white.png";
 
 function AppFooter() {
   return (
@@ -11,10 +12,7 @@ function AppFooter() {
             className={`${styles.logoContainer} ${styles.logoContainerFooter}`}
             to="/"
           >
-            <img
-              src="src\assets\burnsautologo white.png"
-              className={styles.logo}
-            ></img>
+            <img src={Logo} className={styles.logo}></img>
           </NavLink>
           <SmartStatus />
         </div>

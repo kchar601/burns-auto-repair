@@ -1,5 +1,6 @@
 import CtaLink from "../CtaLink/CtaLink";
 import styles from "./HeroSection.module.css";
+import heroImage from "../../assets/shopzoomed.jpg";
 
 function HeroSection() {
   return (
@@ -15,7 +16,7 @@ function HeroSection() {
           <CtaLink link="Tel: (215) 968-3791">Schedule Service</CtaLink>
         </span>
       </div>
-      <img className={styles.heroImg} src="src\assets\shopzoomed.jpg" />
+      <img className={styles.heroImg} src={heroImage} />
     </div>
   );
 }

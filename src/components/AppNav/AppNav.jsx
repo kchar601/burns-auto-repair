@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import CtaLink from "../CtaLink/CtaLink";
 import styles from "./AppNav.module.css";
 import "animate.css";
+import Logo from "../../assets/burnsautologo white.png";
 
 function AppNav() {
   const [navOpen, setNavOpen] = useState(false);
@@ -12,10 +13,7 @@ function AppNav() {
     <nav className={styles.navbar}>
       <div className={styles.navbarInner}>
         <NavLink className={styles.logoContainer} to="/">
-          <img
-            src="src\assets\burnsautologo white.png"
-            className={styles.logo}
-          ></img>
+          <img src={Logo} className={styles.logo}></img>
 
           <img className={styles.logo} />
         </NavLink>

@@ -8,6 +8,7 @@ import "../../swiper-navigation.css";
 import styles from "./TestimonialsCarousel.module.css";
 import testimonials from "../../data/testimonials.json";
 import renderStars from "./RenderStars";
+import sureCriticLogo from "../../assets/SURECRITIC.png";
 
 export default function TestimonialsCarousel() {
   const prevRef = useRef(null);
@@ -36,7 +37,7 @@ export default function TestimonialsCarousel() {
           href="https://www.surecritic.com/reviews/burns-auto-repair-inc?nhd=1"
         >
           <img
-            src="src\assets\SURECRITIC.png"
+            src={sureCriticLogo}
             alt="Burns Auto Repair  Reviews"
             width="240px"
           />
