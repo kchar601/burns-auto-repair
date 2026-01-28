@@ -14,6 +14,10 @@ function TabsCard({ tabs }) {
     setSearchParams({ tab: slug });
   };
 
+  const handleSelectChange = (e) => {
+    setSearchParams({ tab: e.target.value });
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.tabsContainer}>
@@ -26,6 +30,19 @@ function TabsCard({ tabs }) {
           />
         ))}
       </div>
+
+      <select
+        className={styles.tabsSelect}
+        value={tabs[activeTab].slug}
+        onChange={handleSelectChange}
+      >
+        {tabs.map((tab) => (
+          <option key={tab.slug} value={tab.slug}>
+            {tab.title}
+            <i className="fa-solid fa-chevron-down"></i>
+          </option>
+        ))}
+      </select>
 
       <div className={styles.content}>{tabs[activeTab].content}</div>
     </div>

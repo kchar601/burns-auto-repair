@@ -19,3 +19,9 @@
   max-width: 40%;
   margin: auto;
 }
+
+@media screen and (max-width: 720px) {
+  .subText {
+    max-width: 80%;
+  }
+}

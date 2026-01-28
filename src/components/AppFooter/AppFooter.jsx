@@ -97,12 +97,14 @@ function AppFooter() {
               <a
                 className={styles.socialLink}
                 href="https://www.facebook.com/BurnsAutoRepair19/"
+                target="_blank"
               >
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
               <a
                 className={styles.socialLink}
                 href="https://www.instagram.com/burnsautorepair/"
+                target="_blank"
               >
                 <i className="fa-brands fa-instagram"></i>
               </a>

@@ -6,9 +6,12 @@ function About() {
     height: "390",
     width: "640",
     playerVars: {
-      // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
     },
+  };
+
+  const _onReady = (event) => {
+    event.target.pauseVideo();
   };
 
   return (
@@ -33,7 +36,7 @@ function About() {
         When you bring your car to Burns, you aren't just a ticket number;
         you're a neighbor.
       </p>
-      <YouTube opts={opts} videoId="lQAWI_3EKV0" />
+      <YouTube opts={opts} videoId="lQAWI_3EKV0" onReady={_onReady} />
     </main>
   );
 }

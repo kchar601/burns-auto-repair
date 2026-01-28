@@ -237,7 +237,7 @@ h5:has(+ .linksVert) {
 
   .navLinks {
     z-index: 10;
-    background-color: var(--surface-elevated);
+    background-color: var(--primary-700);
     position: absolute;
     top: 92px;
     width: 100vw;
