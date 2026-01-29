@@ -25,9 +25,96 @@ const tabs = [
       <>
         <h3>Scheduled Maintenance</h3>
         <p>
-          Factory-recommended maintenance to extend the life of your vehicle and
-          prevent costly repairs down the road.
+          Every car comes with a roadmap for longevity. Whether it's a high-tech
+          import or a classic domestic, we use advanced diagnostic tools to pull
+          the exact factory requirements for your specific year, make, and
+          model. We don't just guess—we follow the data, but we apply real-world
+          experience to it.
         </p>
+        <h4>Essential Maintenance Services</h4>
+        <table>
+          <tr>
+            <th>Service</th>
+            <th>Why It Matters</th>
+            <th>Our Approach</th>
+          </tr>
+          <tr>
+            <td>
+              <strong>Oil & Filter</strong>
+            </td>
+            <td>Prevents internal engine wear.</td>
+            <td>
+              Regular intervals based on your specific oil type to maintain a
+              healthy engine.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Fluid Flushes</strong>
+            </td>
+            <td>Protects transmissions and prevents overheating.</td>
+            <td>We test the fluid quality before recommending a flush.</td>
+          </tr>
+          <tr>
+            <td>Air Filters</td>
+            <td>Keeps the engine breathing and the cabin fresh</td>
+            <td>
+              We'll show you the dirty filter so you see the need for yourself.
+            </td>
+          </tr>
+          <tr>
+            <td>Tire Rotation</td>
+            <td>Prevents uneven wear and saves you money on rubber.</td>
+            <td>Included with state inspections to maximize tire life</td>
+          </tr>
+        </table>
+        <ul>
+          <li>
+            <strong>Oil & Filter Changes:</strong> The simplest way to prevent
+            engine wear. We recommend intervals based on your driving habits and
+            oil type.
+          </li>
+
+          <li>
+            <strong>Fluid Flushes (Transmission & Coolant):</strong> Heat is the
+            enemy of your car. Regular flushes keep your transmission shifting
+            smoothly and your engine running cool.
+          </li>
+
+          <li>
+            <strong>Air & Cabin Filters:</strong> Protecting your engine from
+            debris and your lungs from allergens.
+          </li>
+
+          <li>
+            <strong>Tire Rotations:</strong> Extending the life of your rubber
+            and ensuring a balanced, safe ride.
+          </li>
+        </ul>
+        <h5>The "Burns" Difference: Cutting Through the BS</h5>
+        <p>
+          Most shops use "scheduled maintenance" as an excuse to pad the bill.
+          We do things differently. When we look up your vehicle’s mileage-based
+          recommendations, we give you a transparent breakdown of two things:
+        </p>
+        <ul>
+          <li>
+            <strong>The Essentials:</strong> What is actually required to keep
+            your car safe, efficient, and under warranty.
+          </li>
+
+          <li>
+            <strong>The "Expert Opinion":</strong> What the manufacturer
+            suggests vs. what we actually see under the hood.
+          </li>
+
+          <li>
+            <strong>Our Promise:</strong> If a "recommended" flush or
+            replacement isn't actually necessary for the health of your specific
+            vehicle yet, we'll tell you. We'd rather have your trust for the
+            next ten years than an extra $50 today.
+          </li>
+        </ul>
       </>
     ),
   },
@@ -113,7 +200,7 @@ function Services() {
       <CtaBanner
         title={"Not Sure What You Need?"}
         body={
-          "We're happy to accomodate customers who want an expert's opinion on what service is required to keep their car running effectively."
+          "We're happy to provide an expert's second opinion on any \"required\" maintenance list you've been given elsewhere."
         }
         ctaText={"Schedule an Appointment Today"}
         link={"Tel: (215) 968-3791"}

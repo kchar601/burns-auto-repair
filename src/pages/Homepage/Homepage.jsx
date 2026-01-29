@@ -10,22 +10,24 @@ function Homepage() {
     <main>
       <HeroSection />
       <FeaturedServices outline={true} />
-      <TestimonialsCarousel />
+
       <ValueProp img={shopUpclosImage}>
-        <h2>The "No-Nonsense" Guarantee</h2>
+        <h2>Our Integrity Speaks for Itself</h2>
         <p>
-          We know the anxiety that comes with visiting an auto shop: "Do I
-          really need this part? Are they overcharging me?" At Burns' Auto
-          Repair, we silence that noise.
+          We know the anxiety that comes with visiting an auto repair shop: "Do
+          I really need this part? Are they overcharging me?" At Burns' Auto
+          Repair, our customers' trust and satisfaction is what drives our
+          Business.
         </p>
         <ul>
-          <li>Nearly 70 Years of Serving Newtown</li>
+          <li>Nearly 70 Years of Serving Our Community</li>
           <li>Family Owned & Operated</li>
           <li>Honest & Transparent Pricing</li>
           <li>ASE Certified Technicians</li>
         </ul>
         <CtaLink link={"/about"}>Learn More About Us</CtaLink>
       </ValueProp>
+      <TestimonialsCarousel />
     </main>
   );
 }

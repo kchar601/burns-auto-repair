@@ -24,6 +24,7 @@
   font-family: "Rambla";
   font-weight: 700;
   color: var(--text-50);
+  height: -webkit-fill-available;
 }
 .tab:last-child {
   border-bottom: none;
@@ -85,4 +86,15 @@
   .tabsSelect {
     display: none;
   }
+}
+
+h3,
+h4,
+h5 {
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+table {
+  border-spacing: 16px;
 }

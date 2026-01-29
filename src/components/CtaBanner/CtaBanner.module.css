@@ -11,3 +11,7 @@
 .container h4 {
   margin-top: 0;
 }
+
+.container p {
+  padding-bottom: 2rem;
+}
