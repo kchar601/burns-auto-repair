@@ -13,6 +13,7 @@
 .tabsContainer {
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 .tab {
   padding: 2rem;
@@ -44,7 +45,9 @@
 }
 
 .content {
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 0rem;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 800px) {

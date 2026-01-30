@@ -51,17 +51,15 @@
   background-color: var(--accent-variant);
 }
 
-@media (max-width: 1700px) {
-  .heroOverlay {
-    top: 30%;
-    width: 40%;
-  }
-  .heroOverlay h1 {
-    margin: 8px 0px;
-  }
-  .heroOverlay p {
-    padding: 0 0.5rem 0 0;
-  }
+.heroOverlay {
+  top: 30%;
+  width: 40%;
+}
+.heroOverlay h1 {
+  margin: 8px 0px;
+}
+.heroOverlay p {
+  padding: 0 0.5rem 0 0;
 }
 
 @media (max-width: 1400px) {

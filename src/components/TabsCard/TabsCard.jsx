@@ -1,14 +1,46 @@
+import { useRef, useEffect, useLayoutEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import styles from "./TabsCard.module.css";
 
 function TabsCard({ tabs }) {
   const [searchParams, setSearchParams] = useSearchParams();
+  const [contentHeight, setContentHeight] = useState("auto");
+  const contentRef = useRef(null);
 
   const tabParam = searchParams.get("tab");
 
   const activeTabIndex = tabs.findIndex((tab) => tab.slug === tabParam);
 
   const activeTab = activeTabIndex !== -1 ? activeTabIndex : 0;
+
+  // Initialize height on mount with delay to ensure DOM is ready
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const element = contentRef.current;
+      if (element) {
+        const initialHeight = element.scrollHeight;
+        setContentHeight(initialHeight + "px");
+      }
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Update height when tab changes (useLayoutEffect for smooth transitions)
+  useLayoutEffect(() => {
+    const element = contentRef.current;
+    if (element) {
+      // Measure the true content height by temporarily removing height constraint
+      const previousHeight = element.style.height;
+      element.style.height = "auto";
+      const trueHeight = element.scrollHeight;
+      element.style.height = previousHeight;
+
+      // Use setTimeout to allow the height change to be set on next frame
+      setTimeout(() => {
+        setContentHeight(trueHeight + "px");
+      }, 0);
+    }
+  }, [activeTab]);
 
   const handleTabClick = (slug) => {
     setSearchParams({ tab: slug });
@@ -44,7 +76,13 @@ function TabsCard({ tabs }) {
         ))}
       </select>
 
-      <div className={styles.content}>{tabs[activeTab].content}</div>
+      <div
+        className={styles.content}
+        ref={contentRef}
+        style={{ height: contentHeight }}
+      >
+        {tabs[activeTab].content}
+      </div>
     </div>
   );
 }

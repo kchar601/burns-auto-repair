@@ -10,11 +10,82 @@ const tabs = [
     slug: "state-inspections-emissions",
     content: (
       <>
-        <h3>State Inspections & Emissions</h3>
+        <h3>PA State Inspections: The "No-Stress" Guide</h3>
         <p>
-          Certified PA state inspections and emissions testing to keep your
-          vehicle legal, safe, and road-ready.
+          If you are a Pennsylvania resident, you already know the drill: once a
+          year, your vehicle needs a check-up. But at Burns’ Auto Repair, we
+          view the state inspection as more than just a legal hoop to jump
+          through—it is your yearly "health check" to ensure your car is safe
+          for your family and our community.
         </p>
+
+        <h4>Part 1: The Safety Inspection</h4>
+        <p>
+          <i>What are we actually looking for?</i> When we pull your car into
+          the bay, we aren't just looking for reasons to fail you. We are
+          looking for safety hazards that could endanger you or other drivers.
+          Per PennDOT regulations, our certified mechanics inspect:
+        </p>
+        <ul>
+          <li>
+            <strong>Brakes:</strong> We measure pad thickness and check for
+            leaking lines. (You want to know your car will stop when it needs
+            to!)
+          </li>
+          <li>
+            <strong>Tires:</strong> We check tread depth and look for dangerous
+            dry rot or sidewall bubbles.
+          </li>
+          <li>
+            <strong>Steering & Suspension:</strong> We check for loose tie rods,
+            ball joints, and worn shocks that affect your ability to control the
+            car.
+          </li>
+          <li>
+            <strong>Lights & Electrical:</strong> Headlights, turn signals, and
+            brake lights must all be functional.
+          </li>
+          <li>
+            <strong>Glass & Mirrors:</strong> We check for windshield cracks
+            that obstruct your view.
+          </li>
+          <li>
+            <strong>Exhaust & Fuel Systems:</strong> We look for leaks that
+            could allow dangerous fumes (like Carbon Monoxide) to enter your
+            cabin.
+          </li>
+        </ul>
+
+        <h4>Part 2: The Emissions Test</h4>
+        <p>
+          Since we are in the Philadelphia region, air quality standards are
+          stricter. We test your car's computer to ensure it isn't releasing
+          harmful pollutants.{" "}
+          <strong>
+            If your Check Engine light is illuminated, your vehicle will
+            automatically fail the PA Emissions test.
+          </strong>
+          <br />
+          <br />
+          <em>
+            <strong>Pro Tip:</strong> Don't clear the code right before you come
+            in! The system needs time to reset. Bring it to us first for a
+            diagnostic.
+          </em>
+        </p>
+
+        <div class="checklist-box">
+          <h4>📝 What to Bring</h4>
+          <p>
+            You can get inspected up to <strong>90 days</strong> before your
+            stickers expire. When you come in, please have:
+          </p>
+          <ul>
+            <li>Valid PA Registration Card</li>
+            <li>Valid Insurance Card (Physical or Digital)</li>
+            <li>Your Wheel Lock Key (if your tires have locks)</li>
+          </ul>
+        </div>
       </>
     ),
   },
