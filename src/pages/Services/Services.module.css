@@ -1,10 +1,104 @@
 .serviceContainer {
   display: flex;
   flex-wrap: wrap;
-  grid-template-columns: repeat(3, 1fr);
   padding: 2rem;
   max-width: 1600px;
-  gap: 1rem;
+  gap: 2rem;
   margin: auto;
   justify-content: center;
+}
+
+/* Main slanted section */
+.slantContainer {
+  display: grid;
+  grid-template-columns: minmax(260px, 540px) 1fr;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+/* Left: image */
+.slantImageWrap {
+  position: relative;
+  height: 100%;
+  min-height: 520px;
+  overflow: hidden;
+
+  /* skinny top → wide bottom */
+  clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
+}
+
+.slantImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right: content */
+.slantContent {
+  padding: 2rem 4rem 2rem 0;
+  position: relative;
+}
+
+/* Optional angled divider for visual continuity */
+.slantContent::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: -2rem;
+  width: 2px;
+  height: calc(100% + 4rem);
+  background: rgba(0, 0, 0, 0.08);
+  transform: skewX(-12deg);
+  transform-origin: top;
+}
+
+/* Basic list spacing only */
+.slantContent ul {
+  margin-left: 1rem;
+}
+
+/* ---------- Responsive ---------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .slantContainer {
+    grid-template-columns: minmax(220px, 340px) 1fr;
+    gap: 1.5rem;
+  }
+
+  .slantContent {
+    padding: 1.5rem 1.5rem 1.5rem 0;
+  }
+
+  .slantImageWrap {
+    min-height: 460px;
+    clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .slantContainer {
+    grid-template-columns: 1fr;
+    border-radius: 18px;
+  }
+
+  .slantImageWrap {
+    min-height: 220px;
+    clip-path: none;
+  }
+
+  .slantContent {
+    padding: 1.5rem;
+  }
+
+  .slantContent::before {
+    display: none;
+  }
+}
+
+.scheduledServices h3 {
+  text-align: center;
+  margin: 4rem 0rem 1rem;
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Rambla:700|Poppins:400;600");
+@import url("https://fonts.googleapis.com/css?family=Rambla:700|Poppins:400;500;600;700");
 
 :root {
   font-family: "Poppins";
@@ -107,7 +107,7 @@ h5 {
 }
 
 h1 {
-  font-size: 4.21rem; /* 67.36px */
+  font-size: 3.2rem; /* 67.36px */
 }
 
 h2 {
@@ -132,6 +132,12 @@ small {
 
 button {
   font-size: 100%;
+}
+
+strong,
+th {
+  font-weight: 600;
+  letter-spacing: 1.5px;
 }
 
 .fa-solid {

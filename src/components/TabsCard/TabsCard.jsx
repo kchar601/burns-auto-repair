@@ -2,7 +2,7 @@ import { useRef, useEffect, useLayoutEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import styles from "./TabsCard.module.css";
 
-function TabsCard({ tabs }) {
+function TabsCard({ tabs, title }) {
   const [searchParams, setSearchParams] = useSearchParams();
   const [contentHeight, setContentHeight] = useState("auto");
   const contentRef = useRef(null);
@@ -51,39 +51,42 @@ function TabsCard({ tabs }) {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.tabsContainer}>
-        {tabs.map((tab, index) => (
-          <Tab
-            key={tab.slug}
-            title={tab.title}
-            isActive={index === activeTab}
-            onClick={() => handleTabClick(tab.slug)}
-          />
-        ))}
-      </div>
+    <>
+      {title && <h3>${title}</h3>}
+      <div className={styles.container}>
+        <div className={styles.tabsContainer}>
+          {tabs.map((tab, index) => (
+            <Tab
+              key={tab.slug}
+              title={tab.title}
+              isActive={index === activeTab}
+              onClick={() => handleTabClick(tab.slug)}
+            />
+          ))}
+        </div>
 
-      <select
-        className={styles.tabsSelect}
-        value={tabs[activeTab].slug}
-        onChange={handleSelectChange}
-      >
-        {tabs.map((tab) => (
-          <option key={tab.slug} value={tab.slug}>
-            {tab.title}
-            <i className="fa-solid fa-chevron-down"></i>
-          </option>
-        ))}
-      </select>
+        <select
+          className={styles.tabsSelect}
+          value={tabs[activeTab].slug}
+          onChange={handleSelectChange}
+        >
+          {tabs.map((tab) => (
+            <option key={tab.slug} value={tab.slug}>
+              {tab.title}
+              <i className="fa-solid fa-chevron-down"></i>
+            </option>
+          ))}
+        </select>
 
-      <div
-        className={styles.content}
-        ref={contentRef}
-        style={{ height: contentHeight }}
-      >
-        {tabs[activeTab].content}
+        <div
+          className={styles.content}
+          ref={contentRef}
+          style={{ height: contentHeight }}
+        >
+          {tabs[activeTab].content}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

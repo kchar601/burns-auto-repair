@@ -4,6 +4,7 @@ import ValueProp from "../../components/ValueProp/ValueProp";
 import TestimonialsCarousel from "../../components/TestimonialsCarousel/TestimonialsCarousel";
 import CtaLink from "../../components/CtaLink/CtaLink";
 import shopUpclosImage from "../../assets/shop-upclose.jpeg";
+import styles from "../../components/ValueProp/ValueProp.module.css";
 
 function Homepage() {
   return (
@@ -19,11 +20,13 @@ function Homepage() {
           Repair, our customers' trust and satisfaction is what drives our
           Business.
         </p>
-        <ul>
-          <li>Nearly 70 Years of Serving Our Community</li>
-          <li>Family Owned & Operated</li>
-          <li>Honest & Transparent Pricing</li>
-          <li>ASE Certified Technicians</li>
+        <ul className={styles.home}>
+          <li className={styles.check}>
+            Nearly 70 Years of Serving Our Community
+          </li>
+          <li className={styles.check}>Family Owned & Operated</li>
+          <li className={styles.check}>Honest & Transparent Pricing</li>
+          <li className={styles.check}>ASE Certified Technicians</li>
         </ul>
         <CtaLink link={"/about"}>Learn More About Us</CtaLink>
       </ValueProp>
