@@ -1,16 +1,25 @@
 import styles from "./ValueProp.module.css";
 
-function ValueProp({ img, children, reverse }) {
+function ValueProp({ img, iframe, children, reverse }) {
+  // Choose the media: prefer iframe when provided and no img is passed
+  const media =
+    iframe && !img ? (
+      <div className={styles.imageColumn}>{iframe}</div>
+    ) : img ? (
+      <img className={styles.imageColumn} src={img} alt="" />
+    ) : null;
+
   if (reverse)
     return (
       <div className={styles.container}>
         <div className={styles.textColumn}>{children}</div>
-        <img className={styles.imageColumn} src={img} />
+        {media}
       </div>
     );
+
   return (
     <div className={styles.container}>
-      <img className={styles.imageColumn} src={img} />
+      {media}
       <div className={styles.textColumn}>{children}</div>
     </div>
   );
