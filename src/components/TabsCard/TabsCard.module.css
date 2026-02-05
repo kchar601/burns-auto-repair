@@ -101,3 +101,34 @@ h5 {
 table {
   border-spacing: 16px;
 }
+
+.selectWrap {
+  display: none;
+}
+
+.selectIcon {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .selectWrap {
+    display: block;
+    position: relative;
+  }
+
+  .tabsSelect {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    /* … keep your existing select styles … */
+  }
+
+  .selectIcon {
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}
