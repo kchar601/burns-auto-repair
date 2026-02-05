@@ -1,10 +1,10 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import styles from "./TabsCard.module.css";
 
 function TabsCard({ tabs, title, id = "services-tabs" }) {
   const contentRef = useRef(null);
-  const [activeTab, setActiveTab] = useState(0);
+  const contentInnerRef = useRef(null);
   const [contentHeight, setContentHeight] = useState("auto");
 
   const { hash } = useLocation();
@@ -16,26 +16,39 @@ function TabsCard({ tabs, title, id = "services-tabs" }) {
     return map;
   }, [tabs]);
 
-  // ✅ Sync tab from React Router hash
-  useEffect(() => {
+  const activeTab = useMemo(() => {
     const slug = (hash || "").replace("#", "").trim();
     const idx = slugToIndex.get(slug);
-    setActiveTab(typeof idx === "number" ? idx : 0);
+    return typeof idx === "number" ? idx : 0;
   }, [hash, slugToIndex]);
 
-  // Set initial height
-  useEffect(() => {
-    const el = contentRef.current;
-    if (!el) return;
-    setContentHeight(el.scrollHeight + "px");
-  }, []);
+  const syncContentHeight = () => {
+    const content = contentRef.current;
+    const inner = contentInnerRef.current;
+    if (!content || !inner) return;
 
-  // Animate height on change
+    content.style.height = "auto";
+    setContentHeight(`${inner.getBoundingClientRect().height}px`);
+  };
+
+  // Animate height on tab/content change and keep it in sync for late layout shifts
   useLayoutEffect(() => {
-    const el = contentRef.current;
-    if (!el) return;
-    el.style.height = "auto";
-    setContentHeight(el.scrollHeight + "px");
+    syncContentHeight();
+
+    const inner = contentInnerRef.current;
+    if (!inner) return;
+
+    const observer = new ResizeObserver(() => {
+      syncContentHeight();
+    });
+
+    observer.observe(inner);
+    window.addEventListener("resize", syncContentHeight);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", syncContentHeight);
+    };
   }, [activeTab, tabs]);
 
   const setHash = (slug) => {
@@ -91,7 +104,7 @@ function TabsCard({ tabs, title, id = "services-tabs" }) {
             ref={contentRef}
             style={{ height: contentHeight }}
           >
-            {tabs[activeTab]?.content}
+            <div ref={contentInnerRef}>{tabs[activeTab]?.content}</div>
           </div>
         </div>
       </section>
