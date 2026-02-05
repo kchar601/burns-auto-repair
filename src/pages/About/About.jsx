@@ -11,7 +11,7 @@ function About() {
   };
 
   const _onReady = (event) => {
-    event.target.pauseVideo();
+    event.target.setVolume(0);
   };
 
   return (
