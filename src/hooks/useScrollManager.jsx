@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation as useRouterLocation } from "react-router-dom";
 
 export function useScrollManager({
   offset = 32,
@@ -7,7 +7,7 @@ export function useScrollManager({
   tabSlugs = [],
   behavior = "smooth",
 } = {}) {
-  const { pathname, hash } = useLocation();
+  const { pathname, hash } = useRouterLocation();
   const tabSet = useMemo(() => new Set(tabSlugs), [tabSlugs]);
   const prevPathRef = useRef(pathname);
 
@@ -25,10 +25,7 @@ export function useScrollManager({
     const slug = hash.replace("#", "").trim();
     if (!slug) return;
 
-    const targetId = tabSet.has(slug) ? "services-tabs" : slug;
-    document
-      .getElementById(targetId)
-      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const targetId = tabSet.has(slug) ? tabsAnchorId : slug;
 
     let tries = 0;
     const maxTries = 15;
@@ -37,9 +34,8 @@ export function useScrollManager({
       const el = document.getElementById(targetId);
 
       if (el) {
-        el.scrollIntoView({ behavior, block: "start" });
-        // compensate for sticky header
-        window.scrollBy({ top: -offset, left: 0, behavior: "instant" });
+        const top = Math.max(el.getBoundingClientRect().top + window.scrollY - offset, 0);
+        window.scrollTo({ top, behavior });
         return;
       }
 
