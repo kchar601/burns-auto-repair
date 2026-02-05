@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-export const useScrollToTop = () => {
-  const { pathname } = useLocation();
+export const useScrollToTop = (top = 0) => {
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [pathname]);
+    if (hash) return; // let hash scrolling handle it
+    window.scrollTo({ top, behavior: "smooth" });
+  }, [pathname, hash, top]);
 };

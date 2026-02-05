@@ -40,33 +40,58 @@ function AppFooter() {
           <h5>Services</h5>
           <ul className={`${styles.links} ${styles.linksVert}`}>
             <li>
-              <NavLink to="/services?tab=inspections-emissions">
+              <NavLink
+                to="/services#state-inspections-emissions"
+                onClick={() => scrollToId("state-inspections-emissions")}
+              >
                 State Inspections & Emissions
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services?tab=scheduled-maintenance">
+              <NavLink
+                to="/services#scheduled-maintenance"
+                onClick={() => scrollToId("scheduled-maintenance")}
+              >
                 Scheduled Maintenance
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services?tab=brakes-tires">Brakes & Tires</NavLink>
+              <NavLink
+                to="/services?tab=brakes-tires"
+                onClick={() => scrollToId("services-tabs")}
+              >
+                Brakes & Tires
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/services?tab=steering-suspension">
+              <NavLink
+                to="/services?tab=steering-suspension"
+                onClick={() => scrollToId("services-tabs")}
+              >
                 Steering & Suspension
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services?tab=ac-heating">AC & Heating</NavLink>
+              <NavLink
+                to="/services?tab=ac-heating"
+                onClick={() => scrollToId("services-tabs")}
+              >
+                AC & Heating
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/services?tab=check-engine-diagnostics">
+              <NavLink
+                to="/services?tab=check-engine-diagnostics"
+                onClick={() => scrollToId("services-tabs")}
+              >
                 Check Engine & Diagnostics
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services?tab=electrical-systems">
+              <NavLink
+                to="/services?tab=electrical-systems"
+                onClick={() => scrollToId("services-tabs")}
+              >
                 Electrical Systems
               </NavLink>
             </li>
@@ -125,3 +150,10 @@ function AppFooter() {
 }
 
 export default AppFooter;
+
+const scrollToId = (id) => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const y = el.getBoundingClientRect().top + window.scrollY - 32;
+  window.scrollTo({ top: y, behavior: "smooth" });
+};

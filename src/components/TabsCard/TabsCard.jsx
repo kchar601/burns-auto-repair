@@ -52,8 +52,8 @@ function TabsCard({ tabs, title }) {
 
   return (
     <>
-      {title && <h3>${title}</h3>}
-      <div className={styles.container}>
+      {title && <h3>{title}</h3>}
+      <div className={styles.container} id="services-tabs">
         <div className={styles.tabsContainer}>
           {tabs.map((tab, index) => (
             <Tab

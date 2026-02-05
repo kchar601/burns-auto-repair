@@ -7,204 +7,51 @@ import ValueProp from "./../../components/ValueProp/ValueProp";
 
 const tabs = [
   {
-    title: "State Inspections & Emissions",
-    slug: "state-inspections-emissions",
-    content: (
-      <>
-        <h3>PA State Inspections & Emissions</h3>
-
-        <p>
-          If you're a Pennsylvania resident, you already know the routine: once
-          a year, your vehicle needs a state inspection. At Burns' Auto Repair,
-          we treat that inspection as more than a legal requirement — it's a
-          yearly safety check designed to protect you, your passengers, and
-          everyone else on the road.
-        </p>
-
-        <p>
-          Our goal isn't to fail vehicles. It's to make sure they're genuinely
-          safe, compliant, and evaluated honestly.
-        </p>
-
-        <h4>The Safety Inspection</h4>
-
-        <p>
-          When your car comes into the bay, we're looking for real safety
-          concerns — not technicalities. Following PennDOT regulations, our
-          certified technicians inspect:
-        </p>
-
-        <ul>
-          <li>
-            <strong>Brakes</strong> - Measuring pad thickness and checking for
-            leaks so you can stop confidently.
-          </li>
-          <li>
-            <strong>Tires</strong> - Verifying tread depth and inspecting for
-            dry rot or sidewall damage.
-          </li>
-          <li>
-            <strong>Steering & Suspension</strong> - Checking components that
-            affect control and stability.
-          </li>
-          <li>
-            <strong>Lights & Electrical</strong> - Ensuring all required safety
-            lighting functions properly.
-          </li>
-          <li>
-            <strong>Glass & Mirrors</strong> - Confirming clear visibility with
-            no obstructing cracks.
-          </li>
-          <li>
-            <strong>Exhaust & Fuel Systems</strong> - Inspecting for leaks that
-            could allow harmful fumes into the cabin.
-          </li>
-        </ul>
-
-        <h4>Emissions Testing</h4>
-
-        <p>
-          Because we're in the Philadelphia region, emissions standards are more
-          strict. We connect to your vehicle's onboard computer to ensure it's
-          not releasing excessive pollutants.
-        </p>
-
-        <p>
-          <strong>
-            If your Check Engine Light is on, your vehicle will automatically
-            fail emissions.
-          </strong>
-        </p>
-
-        <p>
-          <em>
-            Pro tip: Don't clear the code right before your appointment. The
-            system needs time to reset. If the light is on, bring it to us first
-            — we'll diagnose it properly and explain your options.
-          </em>
-        </p>
-
-        <div className="checklist-box">
-          <h4>📝 What to Bring</h4>
-          <ul>
-            <li>Valid PA registration</li>
-            <li>Valid insurance (physical or digital)</li>
-            <li>Wheel lock key (if applicable)</li>
-          </ul>
-        </div>
-      </>
-    ),
-  },
-  {
-    title: "Scheduled Maintenance",
-    slug: "scheduled-maintenance",
-    content: (
-      <>
-        <h3>Scheduled Maintenance</h3>
-        <p>
-          Every car comes with a roadmap for longevity. Whether it's a high-tech
-          import or a classic domestic, we use advanced diagnostic tools to pull
-          the exact factory requirements for your specific year, make, and
-          model. We don't just guess—we follow the data, but we apply real-world
-          experience to it.
-        </p>
-        <h4>Essential Maintenance Services</h4>
-        <table>
-          <tr>
-            <th>Service</th>
-            <th>Why It Matters</th>
-            <th>Our Approach</th>
-          </tr>
-          <tr>
-            <td>
-              <strong>Oil & Filter</strong>
-            </td>
-            <td>Prevents internal engine wear.</td>
-            <td>
-              Regular intervals based on your specific oil type to maintain a
-              healthy engine.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Fluid Flushes</strong>
-            </td>
-            <td>Protects transmissions and prevents overheating.</td>
-            <td>We test the fluid quality before recommending a flush.</td>
-          </tr>
-          <tr>
-            <td>Air Filters</td>
-            <td>Keeps the engine breathing and the cabin fresh</td>
-            <td>
-              We'll show you the dirty filter so you see the need for yourself.
-            </td>
-          </tr>
-          <tr>
-            <td>Tire Rotation</td>
-            <td>Prevents uneven wear and saves you money on rubber.</td>
-            <td>Included with state inspections to maximize tire life</td>
-          </tr>
-        </table>
-        <ul>
-          <li>
-            <strong>Oil & Filter Changes:</strong> The simplest way to prevent
-            engine wear. We recommend intervals based on your driving habits and
-            oil type.
-          </li>
-
-          <li>
-            <strong>Fluid Flushes (Transmission & Coolant):</strong> Heat is the
-            enemy of your car. Regular flushes keep your transmission shifting
-            smoothly and your engine running cool.
-          </li>
-
-          <li>
-            <strong>Air & Cabin Filters:</strong> Protecting your engine from
-            debris and your lungs from allergens.
-          </li>
-
-          <li>
-            <strong>Tire Rotations:</strong> Extending the life of your rubber
-            and ensuring a balanced, safe ride.
-          </li>
-        </ul>
-        <h5>The "Burns" Difference: Cutting Through the BS</h5>
-        <p>
-          Most shops use "scheduled maintenance" as an excuse to pad the bill.
-          We do things differently. When we look up your vehicle's mileage-based
-          recommendations, we give you a transparent breakdown of two things:
-        </p>
-        <ul>
-          <li>
-            <strong>The Essentials:</strong> What is actually required to keep
-            your car safe, efficient, and under warranty.
-          </li>
-
-          <li>
-            <strong>The "Expert Opinion":</strong> What the manufacturer
-            suggests vs. what we actually see under the hood.
-          </li>
-
-          <li>
-            <strong>Our Promise:</strong> If a "recommended" flush or
-            replacement isn't actually necessary for the health of your specific
-            vehicle yet, we'll tell you. We'd rather have your trust for the
-            next ten years than an extra $50 today.
-          </li>
-        </ul>
-      </>
-    ),
-  },
-  {
     title: "Brakes & Tires",
     slug: "brakes-tires",
     content: (
       <>
         <h3>Brakes & Tires</h3>
+
         <p>
-          Brake inspections, repairs, tire services, and replacements to keep
-          you safe and confident on the road.
+          Your brakes and tires are your vehicle’s primary safety systems. When
+          either one is compromised, stopping distances increase, handling
+          suffers, and risks rise quickly.
         </p>
+
+        <h4>Brake Services</h4>
+
+        <p>
+          Squealing, grinding, vibration, or a soft pedal are all signs your
+          braking system needs attention. We inspect components thoroughly
+          before recommending repairs.
+        </p>
+
+        <ul>
+          <li>Brake pads & rotors</li>
+          <li>Calipers & hydraulic components</li>
+          <li>Brake fluid service</li>
+          <li>ABS and electronic braking systems</li>
+        </ul>
+
+        <p>
+          We measure components and explain our findings so you understand
+          what’s needed — and why.
+        </p>
+
+        <h4>Tire Services</h4>
+
+        <p>
+          Tires affect braking, steering, ride quality, and fuel efficiency. We
+          help you get the most out of your investment.
+        </p>
+
+        <ul>
+          <li>Flat repairs</li>
+          <li>Tire rotations</li>
+          <li>Tire replacement guidance</li>
+          <li>Wear pattern analysis</li>
+        </ul>
       </>
     ),
   },
@@ -214,9 +61,30 @@ const tabs = [
     content: (
       <>
         <h3>Steering & Suspension</h3>
+
         <p>
-          Ride quality, handling, alignment, and suspension issues diagnosed and
-          repaired to restore a smoother, safer drive
+          Your steering and suspension systems control how your vehicle handles
+          the road. When components wear out, you may notice pulling, clunking
+          noises, uneven tire wear, or a rough, unstable ride.
+        </p>
+
+        <p>
+          These issues don’t just affect comfort — they impact braking
+          performance, steering response, and overall safety.
+        </p>
+
+        <ul>
+          <li>Shocks & struts</li>
+          <li>Control arms & suspension bushings</li>
+          <li>Ball joints & tie rods</li>
+          <li>Sway bar links</li>
+          <li>Alignment-related concerns</li>
+        </ul>
+
+        <p>
+          We inspect suspension components methodically, identify worn or unsafe
+          parts, and prioritize repairs based on safety and long-term
+          reliability — not guesswork.
         </p>
       </>
     ),
@@ -227,9 +95,29 @@ const tabs = [
     content: (
       <>
         <h3>AC & Heating</h3>
+
         <p>
-          Climate control system diagnostics and repairs to keep you comfortable
-          year-round.
+          A properly functioning climate control system keeps you comfortable
+          and helps maintain clear visibility in extreme temperatures. If your
+          AC isn’t cooling or your heat isn’t consistent, there’s usually an
+          underlying issue that needs attention.
+        </p>
+
+        <p>
+          Modern climate systems are complex, combining electronics, sensors,
+          and mechanical components.
+        </p>
+
+        <ul>
+          <li>Air conditioning diagnostics & repair</li>
+          <li>Refrigerant leak detection</li>
+          <li>Heater core and blower motor issues</li>
+          <li>Climate control electronics</li>
+        </ul>
+
+        <p>
+          We diagnose the problem accurately before recommending repairs,
+          ensuring comfort without unnecessary parts replacement.
         </p>
       </>
     ),
@@ -240,9 +128,29 @@ const tabs = [
     content: (
       <>
         <h3>Check Engine & Diagnostics</h3>
+
         <p>
-          Warning lights, drivability issues, and performance concerns explained
-          clearly before any work is done.
+          When a warning light appears on your dashboard, it’s your vehicle
+          signaling that something isn’t operating as intended. The cause can
+          range from minor to serious, and ignoring it often leads to larger
+          issues.
+        </p>
+
+        <p>
+          We use professional-grade diagnostic equipment and live data analysis
+          to identify the true source of the problem.
+        </p>
+
+        <ul>
+          <li>Check Engine & warning light diagnostics</li>
+          <li>Performance and drivability concerns</li>
+          <li>Fuel, ignition, and emissions issues</li>
+          <li>Engine management system analysis</li>
+        </ul>
+
+        <p>
+          You’ll receive a clear explanation of what needs immediate attention,
+          what can wait, and what your options are — before any work begins.
         </p>
       </>
     ),
@@ -253,9 +161,26 @@ const tabs = [
     content: (
       <>
         <h3>Electrical Systems</h3>
+
         <p>
-          Battery, starter, alternator, and electrical system diagnostics and
-          repairs you can trust.
+          Electrical systems power nearly every function in today’s vehicles —
+          from starting the engine to operating safety and convenience features.
+          When electrical problems arise, symptoms can be intermittent and
+          difficult to diagnose.
+        </p>
+
+        <p>Proper testing is critical to avoid unnecessary part replacement.</p>
+
+        <ul>
+          <li>Battery testing & replacement</li>
+          <li>Starter & alternator diagnostics</li>
+          <li>Charging system repairs</li>
+          <li>Electrical fault tracing</li>
+        </ul>
+
+        <p>
+          We isolate the root cause of electrical issues and repair them
+          correctly so you can rely on your vehicle every time you start it.
         </p>
       </>
     ),
@@ -281,7 +206,10 @@ function Services() {
           />
         </div>
 
-        <div className={styles.slantContent}>
+        <section
+          id="state-inspections-emissions"
+          className={styles.slantContent}
+        >
           <h3>PA State Inspections & Emissions</h3>
 
           <p>
@@ -362,9 +290,9 @@ function Services() {
               <li>Wheel lock key (if applicable)</li>
             </ul>
           </div>
-        </div>
+        </section>
       </section>
-      <section className={styles.scheduledServices}>
+      <section id="scheduled-maintenance" className={styles.scheduledServices}>
         <h3>Scheduled Maintenance Services</h3>
         <ValueProp
           img={
