@@ -1,5 +1,6 @@
 import PageHeader from "./../../components/PageHeader/PageHeader";
 import ValueProp from "./../../components/ValueProp/ValueProp";
+import styles from "./../../components/AppNav/AppNav.module.css";
 
 function Contact() {
   return (
@@ -20,7 +21,45 @@ function Contact() {
           />
         }
       >
-        <h2>How to reach us:</h2>
+        <div>
+          <h3>How to reach us:</h3>
+          <ul
+            className={`${styles.links} ${styles.linksVert} ${styles.socials}`}
+          >
+            <li>
+              <a href="Tel: (215) 968-3791">(215) 968-3791</a>
+            </li>
+            <li>
+              <a href="mailTo:burnsauto19@gmail.com">burnsauto19@gmail.com</a>
+            </li>
+            <li className={styles.noMargin}>
+              <a
+                href="https://maps.app.goo.gl/XPAXPgE9K1cnejQG6"
+                target="_blank"
+              >
+                19 N Sycamore Street
+                <br />
+                Newtown, PA 18940
+              </a>
+            </li>
+            <div className={styles.socialsInner}>
+              <a
+                className={styles.socialLink}
+                href="https://www.facebook.com/BurnsAutoRepair19/"
+                target="_blank"
+              >
+                <i className="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                className={styles.socialLink}
+                href="https://www.instagram.com/burnsautorepair/"
+                target="_blank"
+              >
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </ul>
+        </div>
       </ValueProp>
     </main>
   );

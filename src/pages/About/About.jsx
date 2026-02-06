@@ -38,7 +38,7 @@ function About() {
             on—it's the foundation of how we do business today. Our story on
             Sycamore Street began decades ago. While the shop originally served
             Newtown under the Steele family, Dave Burns Jr. took the wheel in
-            1977, cementing a legacy of hard work and honest diagnostics.
+            1977, cementing a legacy of hard work and integrity.
             <br />
             <br /> In 1995, the business was purchased by his son, Dave Burns
             III, who had been learning the trade bolt-by-bolt since he was a

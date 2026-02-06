@@ -14,8 +14,8 @@ const tabs = [
         <h3>Brakes & Tires</h3>
 
         <p>
-          Your brakes and tires are your vehicle’s primary safety systems. When
-          either one is compromised, stopping distances increase, handling
+          Your brakes and tires are your vehicle's primary safety systems. When
+          either one is compromised, stopping distance increases, handling
           suffers, and risks rise quickly.
         </p>
 
@@ -36,7 +36,7 @@ const tabs = [
 
         <p>
           We measure components and explain our findings so you understand
-          what’s needed — and why.
+          what's needed — and why.
         </p>
 
         <h4>Tire Services</h4>
@@ -69,7 +69,7 @@ const tabs = [
         </p>
 
         <p>
-          These issues don’t just affect comfort — they impact braking
+          These issues don't just affect comfort — they impact braking
           performance, steering response, and overall safety.
         </p>
 
@@ -99,7 +99,7 @@ const tabs = [
         <p>
           A properly functioning climate control system keeps you comfortable
           and helps maintain clear visibility in extreme temperatures. If your
-          AC isn’t cooling or your heat isn’t consistent, there’s usually an
+          AC isn't cooling or your heat isn't consistent, there's usually an
           underlying issue that needs attention.
         </p>
 
@@ -130,8 +130,8 @@ const tabs = [
         <h3>Check Engine & Diagnostics</h3>
 
         <p>
-          When a warning light appears on your dashboard, it’s your vehicle
-          signaling that something isn’t operating as intended. The cause can
+          When a warning light appears on your dashboard, it's your vehicle
+          signaling that something isn't operating as intended. The cause can
           range from minor to serious, and ignoring it often leads to larger
           issues.
         </p>
@@ -149,7 +149,7 @@ const tabs = [
         </ul>
 
         <p>
-          You’ll receive a clear explanation of what needs immediate attention,
+          You'll receive a clear explanation of what needs immediate attention,
           what can wait, and what your options are — before any work begins.
         </p>
       </>
@@ -163,7 +163,7 @@ const tabs = [
         <h3>Electrical Systems</h3>
 
         <p>
-          Electrical systems power nearly every function in today’s vehicles —
+          Electrical systems power nearly every function in today's vehicles —
           from starting the engine to operating safety and convenience features.
           When electrical problems arise, symptoms can be intermittent and
           difficult to diagnose.
