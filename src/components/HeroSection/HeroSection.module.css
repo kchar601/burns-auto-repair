@@ -53,7 +53,8 @@
 
 .heroOverlay {
   top: 30%;
-  width: 40%;
+  width: 25%;
+  max-width: 700px;
 }
 .heroOverlay h1 {
   margin: 8px 0px;

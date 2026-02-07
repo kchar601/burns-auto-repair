@@ -66,9 +66,9 @@
     width: 100%;
     padding: 1rem;
     font-size: 1.333rem;
-    background-color: var(--primary-700);
+    background-color: var(--accent-600);
     color: var(--text-50);
-    border: 1px solid var(--primary-800);
+    border: 1px solid var(--accent-600);
     border-radius: 8px 8px 0 0;
     font-family: "Rambla";
     font-weight: 700;
@@ -77,8 +77,12 @@
   }
   .tabsSelect:hover,
   .tabsSelect:focus {
-    background-color: var(--primary-600);
+    background-color: var(--accent-700);
     outline: none;
+    border-color: var(--accent-700);
+  }
+  .tabsSelect option {
+    background-color: var(--primary-700);
   }
   .content {
     padding: 1.5rem 2rem;
@@ -130,5 +134,9 @@ table {
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
+  }
+
+  .container {
+    margin: auto auto 4rem;
   }
 }

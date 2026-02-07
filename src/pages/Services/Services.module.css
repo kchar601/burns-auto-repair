@@ -11,7 +11,7 @@
 /* Main slanted section */
 .slantContainer {
   display: grid;
-  grid-template-columns: minmax(260px, 540px) 1fr;
+  grid-template-columns: 800px 1fr;
   align-items: stretch;
   overflow: hidden;
 }
@@ -38,6 +38,8 @@
 .slantContent {
   padding: 2rem 4rem 2rem 0;
   position: relative;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* Optional angled divider for visual continuity */
@@ -60,20 +62,31 @@
 
 /* ---------- Responsive ---------- */
 
+@media (max-width: 1600px) {
+  .slantContainer {
+    grid-template-columns: 500px 1fr;
+  }
+}
+
 /* Tablets */
 @media (max-width: 1024px) {
   .slantContainer {
-    grid-template-columns: minmax(220px, 340px) 1fr;
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .slantContent {
     padding: 1.5rem 1.5rem 1.5rem 0;
+    margin: auto 4rem;
+    order: 1;
   }
 
   .slantImageWrap {
-    min-height: 460px;
-    clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%);
+    clip-path: none;
+    height: 100%;
+    margin: 4rem;
+    border-radius: 32px;
+    order: 2;
   }
 }
 
@@ -90,11 +103,21 @@
   }
 
   .slantContent {
-    padding: 1.5rem;
+    padding: 0rem;
+    margin: 2rem 4rem;
+  }
+
+  .slantContent h3 {
+    margin-left: -1.5rem;
   }
 
   .slantContent::before {
     display: none;
+  }
+
+  .scheduledServices .maintenanceHeader {
+    text-align: left;
+    margin: 0rem 2.5rem;
   }
 }
 

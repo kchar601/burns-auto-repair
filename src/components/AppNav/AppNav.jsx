@@ -26,6 +26,7 @@ function AppNav() {
             <NavLink
               className={({ isActive }) => (isActive ? styles.active : "")}
               to="/"
+              onClick={toggleHide}
             >
               Home
             </NavLink>
@@ -34,6 +35,7 @@ function AppNav() {
             <NavLink
               className={({ isActive }) => (isActive ? styles.active : "")}
               to="/services"
+              onClick={toggleHide}
             >
               Services
             </NavLink>
@@ -42,6 +44,7 @@ function AppNav() {
             <NavLink
               className={({ isActive }) => (isActive ? styles.active : "")}
               to="/about"
+              onClick={toggleHide}
             >
               About
             </NavLink>
@@ -50,6 +53,7 @@ function AppNav() {
             <NavLink
               className={({ isActive }) => (isActive ? styles.active : "")}
               to="/testimonials"
+              onClick={toggleHide}
             >
               Testimonials
             </NavLink>
@@ -58,6 +62,7 @@ function AppNav() {
             <NavLink
               className={({ isActive }) => (isActive ? styles.active : "")}
               to="/contact"
+              onClick={toggleHide}
             >
               Contact
             </NavLink>
@@ -79,6 +84,7 @@ function AppNav() {
   );
 
   async function toggleHide() {
+    if(!document.querySelector({{styles.hamburger}})) return;
     if (navOpen) {
       await setAnimation("animate__fadeOutUp");
       setTimeout(() => {

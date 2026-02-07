@@ -293,7 +293,9 @@ function Services() {
         </section>
       </section>
       <section id="scheduled-maintenance" className={styles.scheduledServices}>
-        <h3>Scheduled Maintenance Services</h3>
+        <h3 className={styles.maintenanceHeader}>
+          Scheduled Maintenance Services
+        </h3>
         <ValueProp
           img={
             "https://www.metromotor.com/sites/default/files/Oil%20Change%20in%20DC%20Maryland%20and%20Northern%20Virginia.jpg"
