@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import CtaLink from "../CtaLink/CtaLink";
 import styles from "./AppNav.module.css";
@@ -8,6 +8,7 @@ import Logo from "../../assets/burnsautologo white.png";
 function AppNav() {
   const [navOpen, setNavOpen] = useState(false);
   const [animation, setAnimation] = useState("");
+  const hamburgerRef = useRef(null);
 
   return (
     <nav className={styles.navbar}>
@@ -76,7 +77,11 @@ function AppNav() {
             215-968-3791
           </CtaLink>
         </div>
-        <button className={styles.hamburger} onClick={toggleHide}>
+        <button
+          className={styles.hamburger}
+          onClick={toggleHide}
+          ref={hamburgerRef}
+        >
           <i className="fa-solid fa-bars"></i>
         </button>
       </div>
@@ -84,7 +89,9 @@ function AppNav() {
   );
 
   async function toggleHide() {
-    if(!document.querySelector({{styles.hamburger}})) return;
+    if (!hamburgerRef.current || hamburgerRef.current.offsetParent === null) {
+      return;
+    }
     if (navOpen) {
       await setAnimation("animate__fadeOutUp");
       setTimeout(() => {
