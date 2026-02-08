@@ -14,7 +14,7 @@
   height: calc(100% - 8rem);
   object-fit: cover;
   border-radius: 16px;
-  margin: 4rem;
+  margin: auto 4rem;
 }
 
 .textColumn {
@@ -54,6 +54,11 @@
   flex-shrink: 0;
 }
 
+.reverse .textColumn {
+  justify-self: end;
+  margin-right: 2rem;
+}
+
 @media screen and (max-width: 1500px) {
   .imageColumn {
     margin: 0;
@@ -80,6 +85,9 @@
   .textColumn ul + * {
     margin: auto;
   }
+  .reverse .textColumn {
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 802px) {
@@ -87,9 +95,12 @@
     text-align: center;
     font-size: 2.369rem;
   }
-  .container {
+  .container.paddingBottom {
     padding: 4rem 4rem 8rem;
     margin: auto;
+  }
+  p {
+    text-align: center;
   }
 }
 

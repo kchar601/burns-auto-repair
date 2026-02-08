@@ -4,6 +4,14 @@
   font-size: 14px;
   text-align: center;
 }
+
+.card {
+  font-size: 1.333rem;
+  background-color: var(--primary-800);
+  border-radius: 16px;
+  display: block;
+}
+
 .row {
   display: flex;
   align-items: center;

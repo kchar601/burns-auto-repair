@@ -63,14 +63,14 @@ const getStatus = (schedule) => {
   };
 };
 
-export default function SmartStatus() {
+export default function SmartStatus({ card }) {
   const [showHours, setShowHours] = useState(false);
 
   const gasStatus = getStatus(HOURS.gas);
   const mechStatus = getStatus(HOURS.mechanics);
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${card ? styles.card : ""} `}>
       <div className={styles.row}>
         <span
           className={styles.dot}

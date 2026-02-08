@@ -2,6 +2,7 @@ import PageHeader from "./../../components/PageHeader/PageHeader";
 import ValueProp from "./../../components/ValueProp/ValueProp";
 import navStyles from "./../../components/AppNav/AppNav.module.css";
 import styles from "./Contact.module.css";
+import SmartStatus from "./../../components/SmartStatus/SmartStatus";
 
 function Contact() {
   return (
@@ -18,53 +19,60 @@ function Contact() {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-74.94414925575258%2C40.227457077182606%2C-74.93138194084169%2C40.23337095408929&amp;layer=hot&amp;marker=40.230414080185014%2C-74.93776559829712"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-74.94396150112154%2C40.22782159006885%2C-74.93156969547273%2C40.232990089763476&amp;layer=mapnik&amp;marker=40.23040588921926%2C-74.93776559829712"
             className={styles.mapFrame}
           />
         }
       >
-        <div>
-          <h3>How to reach us:</h3>
-          <ul
-            className={`${navStyles.links} ${navStyles.linksVert} ${navStyles.socials}`}
-          >
-            <li>
-              <a href="Tel: (215) 968-3791">(215) 968-3791</a>
-            </li>
-            <li>
-              <a href="mailTo:burnsauto19@gmail.com">burnsauto19@gmail.com</a>
-            </li>
-            <li className={navStyles.noMargin}>
-              <a
-                href="https://maps.app.goo.gl/XPAXPgE9K1cnejQG6"
-                target="_blank"
-              >
-                19 N Sycamore Street
-                <br />
-                Newtown, PA 18940
-              </a>
-            </li>
-            <div className={navStyles.socialsInner}>
-              <a
-                className={navStyles.socialLink}
-                href="https://www.facebook.com/BurnsAutoRepair19/"
-                target="_blank"
-              >
-                <i className="fa-brands fa-facebook-f"></i>
-              </a>
-              <a
-                className={navStyles.socialLink}
-                href="https://www.instagram.com/burnsautorepair/"
-                target="_blank"
-              >
-                <i className="fa-brands fa-instagram"></i>
-              </a>
-            </div>
-          </ul>
-          <p className={styles.contactNote}>
-            Or stop by and we'd be happy to help you in person.
-          </p>
+        <h2>How to reach us:</h2>
+        <div className={styles.flex}>
+          <div>
+            <ul
+              className={`${navStyles.links} ${navStyles.linksVert} ${navStyles.socials}`}
+            >
+              <li>
+                <a href="Tel: (215) 968-3791">(215) 968-3791</a>
+              </li>
+              <li>
+                <a href="mailTo:burnsauto19@gmail.com">burnsauto19@gmail.com</a>
+              </li>
+              <li className={navStyles.noMargin}>
+                <a
+                  href="https://maps.app.goo.gl/XPAXPgE9K1cnejQG6"
+                  target="_blank"
+                >
+                  19 N Sycamore Street
+                  <br />
+                  Newtown, PA 18940
+                </a>
+              </li>
+              <div className={navStyles.socialsInner}>
+                <a
+                  className={navStyles.socialLink}
+                  href="https://www.facebook.com/BurnsAutoRepair19/"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  className={navStyles.socialLink}
+                  href="https://www.instagram.com/burnsautorepair/"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </ul>
+          </div>
+          <p className={styles.large}>OR</p>
+          <div>
+            <p className={styles.contactNote}>
+              Prefer personal help? Stop by our shop — we'd love to help you in
+              person
+            </p>
+          </div>
         </div>
+        <SmartStatus card />
       </ValueProp>
     </main>
   );

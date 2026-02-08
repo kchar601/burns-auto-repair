@@ -3,6 +3,7 @@
   height: auto !important;
   aspect-ratio: 1 / 1;
   min-height: 360px;
+  max-width: 600px;
   margin: 2rem auto !important;
 }
 
@@ -15,6 +16,31 @@
 
 .contactNote {
   margin-top: 1.5rem;
-  font-size: 1.05rem;
-  color: #3b3b3b;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.333rem;
+  margin-bottom: 1rem;
+}
+
+.flex p {
+  max-width: 400px;
+}
+
+.large {
+  font-family: "Rambla";
+  font-weight: 700;
+  font-size: 1.777rem;
+}
+
+@media (max-width: 1700px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+.flex * ul {
+  margin-bottom: 1rem;
 }

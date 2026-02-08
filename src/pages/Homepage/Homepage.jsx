@@ -5,12 +5,45 @@ import TestimonialsCarousel from "../../components/TestimonialsCarousel/Testimon
 import CtaLink from "../../components/CtaLink/CtaLink";
 import shopUpclosImage from "../../assets/shop-upclose.jpeg";
 import styles from "../../components/ValueProp/ValueProp.module.css";
+import ServiceCard from "../../components/ServiceCard/ServiceCard";
 
 function Homepage() {
   return (
     <main>
       <HeroSection />
-      <FeaturedServices outline={true} />
+      <FeaturedServices
+        CTALink={<CtaLink link="/services">View All Services</CtaLink>}
+      >
+        <ServiceCard
+          icon={<i className="fa-solid fa-wrench"></i>}
+          cardTitle={"General Repairs"}
+          outline
+        >
+          From minor fixes to major repairs, we handle all your automotive
+          needs.
+        </ServiceCard>
+        <ServiceCard
+          cardTitle={"Engine Diagnostics"}
+          icon={<i className="fa-solid fa-gauge-high"></i>}
+          outline
+        >
+          Advanced diagnostic tools to identify and resolve engine issues
+        </ServiceCard>
+        <ServiceCard
+          cardTitle={"Oil Changes"}
+          icon={<i className="fa-solid fa-droplet"></i>}
+          outline
+        >
+          Regular maintenance to keep your engine running smoothly.
+        </ServiceCard>
+        <ServiceCard
+          icon={<i className="fa-solid fa-car-battery"></i>}
+          cardTitle={"Electrical Systems"}
+          outline
+        >
+          Expert repair of batteries, alternators, and electrical components.
+        </ServiceCard>
+      </FeaturedServices>
 
       <ValueProp img={shopUpclosImage}>
         <h2>Our Integrity Speaks for Itself</h2>
