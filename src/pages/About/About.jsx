@@ -3,9 +3,9 @@ import YouTube from "react-youtube";
 import ValueProp from "./../../components/ValueProp/ValueProp";
 import founderImg from "./../../assets/Burns-Auto_Founder_Gray.jpg";
 import groupImg from "./../../assets/Burns-Auto_Old-Pic-Large.jpg";
-import styles from "./About.module.css";
 import FeaturedServices from "./../../components/FeaturedServices/FeaturedServices";
 import ServiceCard from "./../../components/ServiceCard/ServiceCard";
+import CtaBanner from "./../../components/CtaBanner/CtaBanner";
 
 function About() {
   const opts = {
@@ -31,42 +31,41 @@ function About() {
       />
       <ValueProp
         iframe={
-          <div className="video-container">
-            <YouTube opts={opts} videoId="lQAWI_3EKV0" onReady={_onReady} />
-          </div>
+          <YouTube opts={opts} videoId="lQAWI_3EKV0" onReady={_onReady} />
         }
-        mediaClassName={styles.video}
       >
         <h3>Our Story</h3>
         <p>
           At Burns' Auto Repair, history isn't something we dust off for
           nostalgia — it's the foundation of how we do business today. Our story
           on Sycamore Street began decades ago, long before modern diagnostics
-          and computerized engines. Originally operated under the Steele family,
-          the shop became a fixture in Newtown as a place where people brought
-          their cars — and their trust. In 1977, Dave Burns Jr. took the wheel,
-          continuing the tradition of honest work, fair pricing, and treating
-          customers like neighbors rather than transactions.
+          and computerized engines. The shop was originally operated by Dick and
+          Dottie, the aunt and uncle of Dave Burns Jr., who built a reputation
+          in Newtown for honest work and treating customers the right way.
+        </p>
+        <p>
+          In 1977, Dave Burns Jr. took the wheel, carrying that same standard
+          forward and establishing Burns' Auto Repair as a trusted neighborhood
+          shop built on integrity, fair pricing, and personal service.
         </p>
         <p>
           In 1995, the business was purchased by his son, Dave Burns III, who
-          had been learning the trade bolt-by-bolt since he was a teenager. Like
-          many family shops of that era, the education didn't happen in a
-          classroom — it happened after school, on weekends, and under the hood.
-          Skills were passed down the old-fashioned way: by doing the work,
+          had been learning the trade hands-on since his teenage years. The
+          skills were passed down the old-fashioned way — by doing the work,
           fixing mistakes, and standing behind the results.
         </p>
         <p>
-          Today, Dave Burns IV carries that same legacy forward as a mechanic at
-          the shop. Burns' Auto Repair is now a multi-generational business
-          serving multi-generational customers. We're fixing vehicles for the
-          grandchildren of some of our very first patrons — a responsibility we
-          don't take lightly.
+          Today, Dave Burns IV continues that legacy as a mechanic at the shop,
+          working alongside longtime team members Douglas Gensbauer and John
+          Dalton. With over 50 combined years at Burns' Auto Repair, they are
+          familiar faces to generations of Newtown families who have trusted the
+          same hands year after year.
         </p>
         <p>
-          When you bring your car to Burns', you aren't just a ticket number.
-          You're part of a story that's been unfolding in Newtown for
-          generations.
+          Burns' Auto Repair is now a multi-generational business serving
+          multi-generational customers. When you bring your car to Burns', you
+          aren't just a ticket number — you're part of a story that's been
+          unfolding in Newtown for generations.
         </p>
       </ValueProp>
       <ValueProp reverse img={founderImg}>
@@ -120,14 +119,54 @@ function About() {
       </ValueProp>
       <FeaturedServices>
         <ServiceCard
-          icon={<i className="fa-solid fa-wrench"></i>}
+          icon={
+            <i className="fa-solid fa-star" style={{ color: "#facc15" }}></i>
+          }
           cardTitle={"5-Star Customer Service"}
           outline
         >
-          Clear explanations. No pressure. No work done until you understand and
-          approve.
+          We believe you should understand your car before approving any work.
+          Our ASE-certified technicians explain issues clearly, answer questions
+          honestly, and never begin repairs until you're comfortable with the
+          plan.
+        </ServiceCard>
+        <ServiceCard
+          icon={<i className="fa-solid fa-comment-dots"></i>}
+          cardTitle={"Clear Communication"}
+          outline
+        >
+          Life doesn't stop when your car's in the shop. If something changes,
+          we'll let you know right away so you can plan accordingly. As soon as
+          we know — you'll know.
+        </ServiceCard>
+        <ServiceCard
+          icon={<i className="fa-solid fa-screwdriver-wrench"></i>}
+          cardTitle={"Doing the Job Right"}
+          outline
+        >
+          We believe good mechanics don't hide behind jargon or rush cars
+          through the bay. We diagnose first, explain your options, and
+          recommend only what your vehicle actually needs — nothing more.
+        </ServiceCard>
+        <ServiceCard
+          icon={
+            <i className="fa-solid fa-trophy" style={{ color: "#facc15" }}></i>
+          }
+          cardTitle={"Going the Extra Mile"}
+          outline
+        >
+          Since 1957, our reputation has been built on trust, not transactions.
+          We stand behind our work, treat customers like neighbors, and take
+          pride in earning repeat business across generations — because our name
+          is on the sign.
         </ServiceCard>
       </FeaturedServices>
+      <CtaBanner
+        title={"Ready When You Are."}
+        body={"When you need service, we're here — no pressure, no surprises."}
+        ctaText={"Call the Shop"}
+        link={"Tel: (215) 968-3791"}
+      />
     </main>
   );
 }

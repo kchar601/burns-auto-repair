@@ -1,6 +1,5 @@
 import PageHeader from "./../../components/PageHeader/PageHeader";
 import styles from "./Services.module.css";
-import AccordionCard from "./../../components/AccordionCard/AccordionCard";
 import TabsCard from "./../../components/TabsCard/TabsCard";
 import CtaBanner from "./../../components/CtaBanner/CtaBanner";
 import ValueProp from "./../../components/ValueProp/ValueProp";

@@ -11,16 +11,16 @@ function ValueProp({
   // Choose the media: prefer iframe when provided and no img is passed
   const media =
     iframe && !img ? (
-      <div className={`${styles.imageColumn} ${mediaClassName || ""}`}>
-        {iframe}
-      </div>
+      <div className={`${styles.imageColumn} ${styles.iframe}`}>{iframe}</div>
     ) : img ? (
       <img
-        className={`${styles.imageColumn} ${mediaClassName || ""}`}
+        className={`${styles.imageColumn} ${mediaClassName ? mediaClassName : ""}`}
         src={img}
         alt=""
       />
     ) : null;
+
+  console.log(mediaClassName);
 
   if (reverse)
     return (

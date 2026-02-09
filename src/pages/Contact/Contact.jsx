@@ -46,29 +46,13 @@ function Contact() {
                   Newtown, PA 18940
                 </a>
               </li>
-              <div className={navStyles.socialsInner}>
-                <a
-                  className={navStyles.socialLink}
-                  href="https://www.facebook.com/BurnsAutoRepair19/"
-                  target="_blank"
-                >
-                  <i className="fa-brands fa-facebook-f"></i>
-                </a>
-                <a
-                  className={navStyles.socialLink}
-                  href="https://www.instagram.com/burnsautorepair/"
-                  target="_blank"
-                >
-                  <i className="fa-brands fa-instagram"></i>
-                </a>
-              </div>
             </ul>
           </div>
           <p className={styles.large}>OR</p>
           <div>
             <p className={styles.contactNote}>
-              Prefer personal help? Stop by our shop — we'd love to help you in
-              person
+              Prefer personal attention? Come by the shop and we'll take care of
+              everything.
             </p>
           </div>
         </div>
