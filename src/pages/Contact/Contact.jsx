@@ -51,8 +51,7 @@ function Contact() {
           <p className={styles.large}>OR</p>
           <div>
             <p className={styles.contactNote}>
-              Prefer personal attention? Come by the shop and we'll take care of
-              everything.
+              Have questions? Stop by anytime — we're always happy to help.
             </p>
           </div>
         </div>

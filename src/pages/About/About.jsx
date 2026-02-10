@@ -64,8 +64,7 @@ function About() {
         <p>
           Burns' Auto Repair is now a multi-generational business serving
           multi-generational customers. When you bring your car to Burns', you
-          aren't just a ticket number — you're part of a story that's been
-          unfolding in Newtown for generations.
+          aren't just a ticket number — you're a part of the Burns family.
         </p>
       </ValueProp>
       <ValueProp reverse img={founderImg}>
@@ -141,12 +140,12 @@ function About() {
         </ServiceCard>
         <ServiceCard
           icon={<i className="fa-solid fa-screwdriver-wrench"></i>}
-          cardTitle={"Doing the Job Right"}
+          cardTitle={"Integrity in Every Repair"}
           outline
         >
-          We believe good mechanics don't hide behind jargon or rush cars
-          through the bay. We diagnose first, explain your options, and
-          recommend only what your vehicle actually needs — nothing more.
+          Decades of hands-on experience mean we know when a repair is necessary
+          — and when it isn't. Our approach is measured, deliberate, and built
+          around doing the job right the first time.
         </ServiceCard>
         <ServiceCard
           icon={
