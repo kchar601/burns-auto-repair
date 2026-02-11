@@ -1,12 +1,16 @@
 import CtaLink from "../CtaLink/CtaLink";
 import styles from "./HeroSection.module.css";
 import heroImage from "../../assets/shopzoomed.jpg";
+import noBreak from "./../../hooks/noBreak.module.css";
 
 function HeroSection() {
   return (
     <div className={styles.hero}>
       <div className={styles.heroOverlay}>
-        <h1>Newtown's Most Trusted Garage Since 1957</h1>
+        <h1>
+          Newtown's Most Trusted{" "}
+          <span className={noBreak.noBreak}>Garage Since 1957</span>
+        </h1>
         <p>
           From our family to yours—we don't just fix cars; we keep our neighbors
           safe on the road. Experience the peace of mind that comes with a

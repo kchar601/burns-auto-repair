@@ -51,15 +51,18 @@ function TabsCard({ tabs, title, id = "services-tabs" }) {
     };
   }, [activeTab, tabs]);
 
-  const setHash = (slug) => {
+  const setHash = (slug, scroll = true) => {
     // ✅ Update hash THROUGH react-router (no lint issues, consistent behavior)
     navigate({ hash: `#${slug}` });
 
     // Scroll TabsCard into view so tab change feels responsive
-    document.getElementById(id)?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    if (scroll) {
+      console.log(scroll);
+      document.getElementById(id)?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   };
 
   return (
@@ -72,7 +75,7 @@ function TabsCard({ tabs, title, id = "services-tabs" }) {
             <button
               key={tab.slug}
               type="button"
-              onClick={() => setHash(tab.slug)}
+              onClick={() => setHash(tab.slug, false)}
               className={`${styles.tab} ${index === activeTab ? styles.activeTab : ""}`}
             >
               {tab.title}

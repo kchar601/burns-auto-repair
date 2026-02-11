@@ -199,7 +199,7 @@ h5:has(+ .linksVert) {
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 750px) {
   .navbar {
     display: block;
   }

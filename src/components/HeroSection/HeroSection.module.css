@@ -67,14 +67,7 @@
   .heroOverlay {
     top: 25%;
     left: 5%;
-  }
-}
-
-@media (max-width: 1290px) {
-  .heroOverlay {
-    top: 25%;
-    left: 5%;
-    width: 45%;
+    width: 530px;
   }
 }
 
@@ -116,6 +109,7 @@
   }
   .heroOverlay {
     text-align: center;
+    margin: auto;
   }
   .heroOverlay p {
     max-width: 80%;

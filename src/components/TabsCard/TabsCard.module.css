@@ -75,14 +75,32 @@
     cursor: pointer;
     appearance: none;
   }
-  .tabsSelect:hover,
-  .tabsSelect:focus {
-    background-color: var(--accent-700);
-    outline: none;
-    border-color: var(--accent-700);
-  }
-  .tabsSelect option {
+  .tabsSelect {
     background-color: var(--primary-700);
+    border-color: var(--primary-700);
+    color: var(--text-50);
+
+    /* optional: nicer feel */
+    transition:
+      background-color 0.15s ease,
+      border-color 0.15s ease,
+      box-shadow 0.15s ease;
+  }
+
+  .tabsSelect:hover {
+    background-color: var(--primary-600);
+    border-color: var(--primary-600);
+  }
+
+  .tabsSelect:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(from var(--accent-600) r g b / 0.45);
+  }
+
+  /* dropdown items (limited support across browsers, but harmless) */
+  .tabsSelect option {
+    background-color: var(--primary-800);
+    color: var(--text-50);
   }
   .content {
     padding: 1.5rem 2rem;
@@ -139,4 +157,53 @@ table {
   .container {
     margin: auto auto 4rem;
   }
+}
+
+.tab {
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+/* strong hover cue */
+.tab:hover,
+.tab:focus-visible {
+  background-color: var(--primary-600);
+  transform: translateX(2px);
+  outline: none;
+}
+
+/* left indicator bar (hover + focus) */
+.tab::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: transparent;
+  transition: background-color 0.15s ease;
+}
+
+.tab:hover::before,
+.tab:focus-visible::before {
+  background: rgb(from var(--text-50) r g b / 0.6);
+}
+
+/* active tab: make the indicator match accent */
+.tab.activeTab::before {
+  background: var(--text-50);
+}
+
+/* optional: make active tab feel a bit more “pressed” */
+.tab.activeTab {
+  background-color: var(--accent-600);
+}
+.tab.activeTab:hover,
+.tab.activeTab:focus-visible {
+  background-color: var(--accent-700);
+  transform: translateX(0);
 }

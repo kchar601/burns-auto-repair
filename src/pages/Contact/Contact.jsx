@@ -24,7 +24,7 @@ function Contact() {
           />
         }
       >
-        <h2>How to reach us:</h2>
+        <h2 className={styles.header}>How to reach us:</h2>
         <div className={styles.flex}>
           <div>
             <ul

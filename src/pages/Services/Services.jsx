@@ -3,6 +3,7 @@ import styles from "./Services.module.css";
 import TabsCard from "./../../components/TabsCard/TabsCard";
 import CtaBanner from "./../../components/CtaBanner/CtaBanner";
 import ValueProp from "./../../components/ValueProp/ValueProp";
+import noBreak from "./../../hooks/noBreak.module.css";
 
 const tabs = [
   {
@@ -190,7 +191,12 @@ function Services() {
   return (
     <main className="subPage">
       <PageHeader
-        title={"Old-School Service, Modern Technology"}
+        title={
+          <>
+            Old-School Service,{" "}
+            <span className={noBreak.noBreak}>Modern Technology</span>
+          </>
+        }
         sub={
           "Whether you drive a classic domestic or a modern import, our team combines advanced diagnostic tools with the honest, hard-working values of a traditional garage."
         }

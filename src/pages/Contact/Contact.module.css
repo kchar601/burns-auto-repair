@@ -41,6 +41,39 @@
   }
 }
 
+@media (max-width: 1150px) {
+  .flex {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 3fr;
+    width: 100%;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .header {
+    width: 100%;
+    text-align: center;
+  }
+  .contactNote,
+  .large {
+    margin-inline: auto;
+  }
+  .mapFrame {
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .large {
+    margin-block: 0.5rem;
+  }
+}
+
 .flex * ul {
   margin-bottom: 1rem;
 }

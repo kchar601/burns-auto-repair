@@ -10,6 +10,8 @@
   max-height: 220vh;
   overflow: hidden;
 
+  margin-inline: 2rem;
+
   /* Fade out bottom */
   -webkit-mask-image: linear-gradient(
     to bottom,
@@ -59,15 +61,19 @@
   font-size: 1.2rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) and (min-width: 740px) {
   .reviewsContent {
     column-count: 2;
+    max-height: 200vh;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 740px) {
   .reviewsContent {
     column-count: 1;
+  }
+  .body {
+    text-align: left;
   }
 }
 

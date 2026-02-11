@@ -12,11 +12,12 @@
 
 .header {
   margin-bottom: 1rem;
+  padding-inline: 2rem;
 }
 
 .subText {
   margin-top: 0px;
-  max-width: 40%;
+  max-width: 500px;
   margin: auto;
 }
 

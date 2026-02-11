@@ -22,7 +22,7 @@ function ReviewList() {
               <div>{renderStars(t.rating)}</div>
               <p className={styles.cardHeader}>{t.title}</p>
 
-              <p>{t.text}</p>
+              <p className={styles.body}>{t.text}</p>
             </div>
           ))}
         </div>

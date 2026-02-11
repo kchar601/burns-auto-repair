@@ -1,0 +1,9 @@
+.noBreak {
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .noBreak {
+    white-space: normal;
+  }
+}
