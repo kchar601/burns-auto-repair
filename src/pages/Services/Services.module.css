@@ -1,7 +1,7 @@
 .serviceContainer {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 2rem 2rem 0rem 2rem;
   max-width: 1600px;
   gap: 2rem;
   margin: auto;
@@ -14,6 +14,7 @@
   grid-template-columns: 800px 1fr;
   align-items: stretch;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 /* Left: image */
@@ -109,11 +110,7 @@
 
   .slantContent {
     padding: 0rem;
-    margin: 2rem 4rem;
-  }
-
-  .slantContent h3 {
-    margin-left: -1.5rem;
+    margin: 2rem;
   }
 
   .slantContent::before {
@@ -121,7 +118,11 @@
   }
 
   .scheduledServices .maintenanceHeader {
-    margin: 0rem 2.5rem;
+    margin: 0rem 2rem;
+  }
+
+  .slantImageWrap {
+    margin: 0.5rem 1rem;
   }
 }
 

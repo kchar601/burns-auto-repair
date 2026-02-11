@@ -7,7 +7,9 @@
   justify-content: center;
   background-color: var(--secondary-700);
 }
-
+.container * {
+  margin: auto;
+}
 .container h4 {
   margin-top: 0;
 }

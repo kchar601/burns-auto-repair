@@ -1,53 +1,73 @@
 .container {
+  --tabs-bg: var(--primary-700);
+  --tabs-bg-hover: var(--primary-600);
+  --tabs-panel-bg: var(--primary-800);
+  --tabs-accent: var(--accent-700);
+  --tabs-accent-hover: var(--accent-700);
+  --tabs-text: var(--text-50);
+
   display: grid;
   grid-template-columns: 1fr 3fr;
-  /* border: 2px solid var(--primary-700); */
   width: 80%;
   overflow: hidden;
   border-radius: 16px;
-  /* box-shadow: 5px 5px 10px 6px rgb(from var(--primary-800) r g b / 0.5); */
-  background-color: var(--primary-800);
-  color: var(--text-50);
+  background-color: var(--tabs-panel-bg);
+  color: var(--tabs-text);
   margin: 4rem 10%;
 }
+
 .tabsContainer {
   display: flex;
   flex-direction: column;
-  height: auto;
 }
+
 .tab {
+  text-align: left;
+  cursor: pointer;
   padding: 2rem;
-  border: 1px solid var(--primary-800);
+  border: 1px solid var(--tabs-panel-bg);
   border-top: none;
   border-left: none;
   font-size: 1.333rem;
-  background-color: var(--primary-700);
+  background-color: var(--tabs-bg);
   font-family: "Rambla";
   font-weight: 700;
-  color: var(--text-50);
+  color: var(--tabs-text);
   height: -webkit-fill-available;
+  transition: background-color 0.15s ease;
 }
+
 .tab:last-child {
   border-bottom: none;
 }
+
 .tab:hover,
-.tab:active,
-.tab:focus {
-  background-color: var(--primary-600);
+.tab:focus-visible {
+  outline: none;
 }
-.tab.activeTab {
-  background-color: var(--accent-600);
+
+.activeTab {
+  background-color: var(--tabs-accent);
 }
-.tab.activeTab:hover,
-.tab.activeTab.active,
-.tab.activeTab.focus {
-  background-color: var(--accent-700);
+
+.activeTab:hover,
+.activeTab:focus-visible {
+  background-color: var(--tabs-accent-hover);
+}
+
+.rightColumn {
+  min-width: 0;
 }
 
 .content {
-  padding: 2rem 4rem 0rem;
+  padding: 2rem 4rem 0;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
+}
+
+.selectWrap,
+.selectIcon {
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -56,40 +76,40 @@
     grid-template-rows: fit-content 1fr;
     height: fit-content;
     width: 92%;
-    margin: 2rem 4%;
+    margin: auto auto 4rem;
+    cursor: pointer;
   }
+
   .tabsContainer {
     display: none;
   }
+
+  .selectWrap {
+    display: block;
+    position: relative;
+  }
+
   .tabsSelect {
     display: block;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 2.75rem 1rem 1.25rem;
     font-size: 1.333rem;
-    background-color: var(--accent-600);
-    color: var(--text-50);
-    border: 1px solid var(--accent-600);
+    background-color: var(--tabs-bg);
+    color: var(--tabs-text);
+    border: 1px solid var(--tabs-bg);
     border-radius: 8px 8px 0 0;
     font-family: "Rambla";
     font-weight: 700;
     cursor: pointer;
     appearance: none;
-  }
-  .tabsSelect {
-    background-color: var(--primary-700);
-    border-color: var(--primary-700);
-    color: var(--text-50);
-
-    /* optional: nicer feel */
     transition:
       background-color 0.15s ease,
-      border-color 0.15s ease,
       box-shadow 0.15s ease;
   }
 
   .tabsSelect:hover {
-    background-color: var(--primary-600);
-    border-color: var(--primary-600);
+    background-color: var(--tabs-bg-hover);
+    border-color: var(--tabs-bg-hover);
   }
 
   .tabsSelect:focus-visible {
@@ -97,11 +117,26 @@
     box-shadow: 0 0 0 3px rgb(from var(--accent-600) r g b / 0.45);
   }
 
-  /* dropdown items (limited support across browsers, but harmless) */
   .tabsSelect option {
-    background-color: var(--primary-800);
-    color: var(--text-50);
+    background-color: var(--tabs-panel-bg);
+    color: var(--tabs-text);
   }
+
+  .tabsSelect option:hover,
+  .tabsSelect option:focus {
+    background-color: var(--tabs-bg-hover);
+    color: var(--tabs-text);
+  }
+
+  .selectIcon {
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
   .content {
     padding: 1.5rem 2rem;
   }
@@ -122,88 +157,4 @@ h5 {
 
 table {
   border-spacing: 16px;
-}
-
-.selectWrap {
-  display: none;
-}
-
-.selectIcon {
-  display: none;
-}
-
-@media (max-width: 800px) {
-  .selectWrap {
-    display: block;
-    position: relative;
-  }
-
-  .tabsSelect {
-    display: block;
-    width: 100%;
-    padding: 1rem 1.25rem;
-    /* … keep your existing select styles … */
-  }
-
-  .selectIcon {
-    display: block;
-    position: absolute;
-    right: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-  }
-
-  .container {
-    margin: auto auto 4rem;
-  }
-}
-
-.tab {
-  position: relative;
-  text-align: left;
-  cursor: pointer;
-  transition:
-    background-color 0.15s ease,
-    transform 0.15s ease;
-}
-
-/* strong hover cue */
-.tab:hover,
-.tab:focus-visible {
-  background-color: var(--primary-600);
-  transform: translateX(2px);
-  outline: none;
-}
-
-/* left indicator bar (hover + focus) */
-.tab::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: transparent;
-  transition: background-color 0.15s ease;
-}
-
-.tab:hover::before,
-.tab:focus-visible::before {
-  background: rgb(from var(--text-50) r g b / 0.6);
-}
-
-/* active tab: make the indicator match accent */
-.tab.activeTab::before {
-  background: var(--text-50);
-}
-
-/* optional: make active tab feel a bit more “pressed” */
-.tab.activeTab {
-  background-color: var(--accent-600);
-}
-.tab.activeTab:hover,
-.tab.activeTab:focus-visible {
-  background-color: var(--accent-700);
-  transform: translateX(0);
 }

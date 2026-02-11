@@ -49,9 +49,11 @@ function Homepage() {
         <h2>Our Integrity Speaks for Itself</h2>
         <p className={styles.center}>
           We know the anxiety that comes with visiting an auto repair shop: "Do
-          I really need this part? Are they overcharging me?" At Burns' Auto
-          Repair, our customers' trust and satisfaction is what drives our
-          Business.
+          I really need this part? Are they overcharging me?"
+          <br />
+          <br />
+          At Burns' Auto Repair, our customers' trust and satisfaction is what
+          drives our Business.
         </p>
         <ul className={styles.home}>
           <li className={styles.check}>

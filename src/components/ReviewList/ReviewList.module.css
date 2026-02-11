@@ -7,7 +7,7 @@
   column-count: 3;
   column-gap: 1.5rem;
 
-  max-height: 220vh;
+  max-height: 1600px;
   overflow: hidden;
 
   margin-inline: 2rem;
@@ -28,7 +28,8 @@
 }
 
 .card {
-  break-inside: avoid;
+  /* Allow partial cards at the clip edge instead of leaving empty column gaps. */
+  break-inside: auto;
   margin-bottom: 1.5rem;
 
   border-radius: 12px;
@@ -61,10 +62,9 @@
   font-size: 1.2rem;
 }
 
-@media (max-width: 1280px) and (min-width: 740px) {
+@media (max-width: 1280px) {
   .reviewsContent {
     column-count: 2;
-    max-height: 200vh;
   }
 }
 

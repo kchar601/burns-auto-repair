@@ -7,6 +7,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .imageColumn {
@@ -95,8 +96,11 @@
     text-align: center;
     font-size: 2.369rem;
   }
+  .container {
+    padding: 2rem;
+  }
   .container.paddingBottom {
-    padding: 4rem 4rem 8rem;
+    padding: 2rem 2rem 4rem;
     margin: auto;
   }
   .center {
@@ -115,4 +119,16 @@
 
 .iframe div {
   width: 100%;
+}
+
+@media (max-width: 500px) {
+  .textColumn ul.home {
+    margin-inline: 0;
+    padding-inline-start: 0;
+    margin-top: 1rem;
+  }
+  .textColumn h2,
+  .textColumn h3 {
+    text-align: center;
+  }
 }
