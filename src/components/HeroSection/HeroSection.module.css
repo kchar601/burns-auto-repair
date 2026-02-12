@@ -53,7 +53,7 @@
 
 .heroOverlay {
   top: 30%;
-  width: 25%;
+  width: 550px;
   max-width: 700px;
 }
 .heroOverlay h1 {
@@ -67,7 +67,6 @@
   .heroOverlay {
     top: 25%;
     left: 5%;
-    width: 530px;
   }
 }
 
@@ -124,5 +123,46 @@
 @media (max-width: 560px) {
   .heroOverlay h1 {
     font-size: 3.158rem;
+  }
+}
+
+.banner {
+  width: calc(100% - 8rem);
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 4rem 4rem;
+  height: 96px;
+  text-align: center;
+}
+.banner img {
+  height: 100%;
+}
+
+@media (max-width: 1100px) {
+  .banner {
+    height: 72px;
+  }
+  .banner h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .banner {
+    margin-inline: 2rem;
+    width: calc(100% - 4rem);
+  }
+  .banner h5 {
+    text-wrap: wrap;
+  }
+}
+
+@media (max-width: 750px) {
+  .banner {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .banner img {
+    height: 64px;
   }
 }

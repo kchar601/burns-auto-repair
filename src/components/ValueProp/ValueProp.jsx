@@ -17,6 +17,7 @@ function ValueProp({
         className={`${styles.imageColumn} ${mediaClassName ? mediaClassName : ""}`}
         src={img}
         alt=""
+        loading="lazy"
       />
     ) : null;
 

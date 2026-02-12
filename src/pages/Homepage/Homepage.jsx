@@ -3,7 +3,7 @@ import FeaturedServices from "../../components/FeaturedServices/FeaturedServices
 import ValueProp from "../../components/ValueProp/ValueProp";
 import TestimonialsCarousel from "../../components/TestimonialsCarousel/TestimonialsCarousel";
 import CtaLink from "../../components/CtaLink/CtaLink";
-import shopUpclosImage from "../../assets/shop-upclose.jpeg";
+import shopUpcloseImage from "../../assets/shop-upclose.jpeg";
 import styles from "../../components/ValueProp/ValueProp.module.css";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 
@@ -45,7 +45,7 @@ function Homepage() {
         </ServiceCard>
       </FeaturedServices>
 
-      <ValueProp img={shopUpclosImage}>
+      <ValueProp img={shopUpcloseImage}>
         <h2>Our Integrity Speaks for Itself</h2>
         <p className={styles.center}>
           We know the anxiety that comes with visiting an auto repair shop: "Do

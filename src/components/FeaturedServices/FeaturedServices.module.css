@@ -1,6 +1,7 @@
 .serviceContainer {
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
   padding: 4rem 4rem 2rem;
   margin: auto;
   column-gap: 16px;
