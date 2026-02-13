@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import AppNav from "../../components/AppNav/AppNav";
 import AppFooter from "../../components/AppFooter/AppFooter";
 import { useScrollManager } from "./../../hooks/useScrollManager";
-import { usePageTitle } from "./hooks/usePageTitle";
+import { usePageTitle } from "./../../hooks/usePageTitle";
 
 function AppLayout({ theme }) {
   useScrollManager({
