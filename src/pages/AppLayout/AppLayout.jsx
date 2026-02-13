@@ -4,6 +4,16 @@ import AppFooter from "../../components/AppFooter/AppFooter";
 import { useScrollManager } from "./../../hooks/useScrollManager";
 import { usePageTitle } from "./../../hooks/usePageTitle";
 
+const SERVICE_TITLES = {
+  "brakes-tires": "Brakes & Tires",
+  "steering-suspension": "Steering & Suspension",
+  "ac-heating": "AC & Heating",
+  "check-engine-diagnostics": "Check Engine & Diagnostics",
+  "electrical-systems": "Electrical Systems",
+  "scheduled-maintenance": "Scheduled Maintenance",
+  "state-inspections-emissions": "State Inspections & Emissions",
+};
+
 function AppLayout({ theme }) {
   useScrollManager({
     offset: 96, // your sticky header height
@@ -20,13 +30,9 @@ function AppLayout({ theme }) {
     const base = "Burns Auto Repair";
 
     if (pathname.startsWith("/services")) {
-      const slug = hash?.replace("#", "");
-      const nice =
-        slug
-          ?.split("-")
-          .map((w) => w[0]?.toUpperCase() + w.slice(1))
-          .join(" ") || "Services";
-      return `${nice} | ${base}`;
+      const raw = (hash || "").replace("#", "").trim();
+      const label = SERVICE_TITLES[raw];
+      return `${label ? `${label} | ` : "Services | "}${base}`;
     }
     if (pathname === "/") return base;
     if (pathname.startsWith("/services")) return `Services | ${base}`;
