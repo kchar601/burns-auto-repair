@@ -42,6 +42,7 @@ export default function TestimonialsCarousel() {
             alt="Burns Auto Repair reviews"
             loading="lazy"
             decoding="async"
+            width={240}
           />
         </a>
         <Swiper
