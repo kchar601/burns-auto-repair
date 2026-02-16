@@ -31,7 +31,6 @@ function TabsCard({ tabs, title, id = "services-tabs" }) {
     setContentHeight(`${inner.getBoundingClientRect().height}px`);
   };
 
-  // Animate height on tab/content change and keep it in sync for late layout shifts
   useLayoutEffect(() => {
     syncContentHeight();
 
@@ -52,12 +51,9 @@ function TabsCard({ tabs, title, id = "services-tabs" }) {
   }, [activeTab, tabs]);
 
   const setHash = (slug, scroll = true) => {
-    // ✅ Update hash THROUGH react-router (no lint issues, consistent behavior)
-    navigate({ hash: `#${slug}` });
+    navigate({ hash: `#${slug}` }, { replace: true });
 
-    // Scroll TabsCard into view so tab change feels responsive
     if (scroll) {
-      console.log(scroll);
       document.getElementById(id)?.scrollIntoView({
         behavior: "smooth",
         block: "start",
@@ -68,7 +64,7 @@ function TabsCard({ tabs, title, id = "services-tabs" }) {
   return (
     <>
       {title && <h3>{title}</h3>}
-      <div id="services-tabs" className={styles.anchor} />
+      <div id={id} className={styles.anchor} />
       <section className={styles.container}>
         <div className={styles.tabsContainer}>
           {tabs.map((tab, index) => (

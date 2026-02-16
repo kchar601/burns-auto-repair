@@ -31,15 +31,16 @@ function Contact() {
               className={`${navStyles.links} ${navStyles.linksVert} ${navStyles.socials}`}
             >
               <li>
-                <a href="Tel: (215) 968-3791">(215) 968-3791</a>
+                <a href="tel:+12159683791">(215) 968-3791</a>
               </li>
               <li>
-                <a href="mailTo:burnsauto19@gmail.com">burnsauto19@gmail.com</a>
+                <a href="mailto:burnsauto19@gmail.com">burnsauto19@gmail.com</a>
               </li>
               <li className={navStyles.noMargin}>
                 <a
                   href="https://maps.app.goo.gl/XPAXPgE9K1cnejQG6"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   19 N Sycamore Street
                   <br />

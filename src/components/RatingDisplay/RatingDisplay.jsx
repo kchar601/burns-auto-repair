@@ -12,11 +12,12 @@ function RatingDisplay() {
       <a
         target="_blank"
         href="https://www.surecritic.com/reviews/burns-auto-repair-inc?nhd=1"
+        rel="noopener noreferrer"
       >
         <img
           src={sureCriticLogo}
-          alt="Burns Auto Repair  Reviews"
-          width="240px"
+          alt="Burns Auto Repair reviews"
+          width={240}
         />
       </a>
     </div>

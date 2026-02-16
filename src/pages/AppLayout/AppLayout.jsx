@@ -14,33 +14,37 @@ const SERVICE_TITLES = {
   "state-inspections-emissions": "State Inspections & Emissions",
 };
 
+const SERVICE_TAB_SLUGS = [
+  "brakes-tires",
+  "steering-suspension",
+  "ac-heating",
+  "check-engine-diagnostics",
+  "electrical-systems",
+];
+
+function getPageTitle({ pathname, hash }) {
+  const base = "Burns Auto Repair";
+
+  if (pathname.startsWith("/services")) {
+    const raw = (hash || "").replace("#", "").trim();
+    const label = SERVICE_TITLES[raw];
+    return `${label ? `${label} | ` : "Services | "}${base}`;
+  }
+  if (pathname === "/") return base;
+  if (pathname.startsWith("/services")) return `Services | ${base}`;
+  if (pathname.startsWith("/about")) return `About | ${base}`;
+  if (pathname.startsWith("/testimonials")) return `Reviews | ${base}`;
+  if (pathname.startsWith("/contact")) return `Contact | ${base}`;
+  return base;
+}
+
 function AppLayout({ theme }) {
   useScrollManager({
-    offset: 96, // your sticky header height
+    offset: 96,
     tabsAnchorId: "services-tabs",
-    tabSlugs: [
-      "brakes-tires",
-      "steering-suspension",
-      "ac-heating",
-      "check-engine-diagnostics",
-      "electrical-systems",
-    ],
+    tabSlugs: SERVICE_TAB_SLUGS,
   });
-  usePageTitle(({ pathname, hash }) => {
-    const base = "Burns Auto Repair";
-
-    if (pathname.startsWith("/services")) {
-      const raw = (hash || "").replace("#", "").trim();
-      const label = SERVICE_TITLES[raw];
-      return `${label ? `${label} | ` : "Services | "}${base}`;
-    }
-    if (pathname === "/") return base;
-    if (pathname.startsWith("/services")) return `Services | ${base}`;
-    if (pathname.startsWith("/about")) return `About | ${base}`;
-    if (pathname.startsWith("/testimonials")) return `Reviews | ${base}`;
-    if (pathname.startsWith("/contact")) return `Contact | ${base}`;
-    return base;
-  });
+  usePageTitle(getPageTitle);
 
   return (
     <div>

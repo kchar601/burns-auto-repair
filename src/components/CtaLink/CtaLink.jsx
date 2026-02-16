@@ -6,19 +6,19 @@ function CtaLink({ link, icon, altColor, iconEnd, targetBlank, children }) {
 
   if (targetBlank) {
     return (
-      <a className={classNames} href={link} target="_blank">
-        {icon && !iconEnd ? <span>{icon}</span> : ""}
+      <a className={classNames} href={link} target="_blank" rel="noopener noreferrer">
+        {icon && !iconEnd ? <span>{icon}</span> : null}
         {children}
-        {icon && iconEnd ? <span>{icon}</span> : ""}
+        {icon && iconEnd ? <span>{icon}</span> : null}
       </a>
     );
   }
 
   return (
     <NavLink className={classNames} to={link}>
-      {icon && !iconEnd ? <span>{icon}</span> : ""}
+      {icon && !iconEnd ? <span>{icon}</span> : null}
       {children}
-      {icon && iconEnd ? <span>{icon}</span> : ""}
+      {icon && iconEnd ? <span>{icon}</span> : null}
     </NavLink>
   );
 }

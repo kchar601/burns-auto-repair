@@ -12,7 +12,11 @@ function AppFooter() {
             className={`${styles.logoContainer} ${styles.logoContainerFooter}`}
             to="/"
           >
-            <img src={Logo} className={styles.logo}></img>
+            <img
+              src={Logo}
+              className={styles.logo}
+              alt="Burns Auto Repair logo"
+            />
           </NavLink>
           <SmartStatus />
         </div>
@@ -78,37 +82,42 @@ function AppFooter() {
             className={`${styles.links} ${styles.linksVert} ${styles.socials}`}
           >
             <li>
-              <a href="Tel: (215) 968-3791">(215) 968-3791</a>
+              <a href="tel:+12159683791">(215) 968-3791</a>
             </li>
             <li>
-              <a href="mailTo:burnsauto19@gmail.com">burnsauto19@gmail.com</a>
+              <a href="mailto:burnsauto19@gmail.com">burnsauto19@gmail.com</a>
             </li>
             <li className={styles.noMargin}>
               <a
                 href="https://maps.app.goo.gl/XPAXPgE9K1cnejQG6"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 19 N Sycamore Street
                 <br />
                 Newtown, PA 18940
               </a>
             </li>
-            <div className={styles.socialsInner}>
-              <a
-                className={styles.socialLink}
-                href="https://www.facebook.com/BurnsAutoRepair19/"
-                target="_blank"
-              >
-                <i className="fa-brands fa-facebook-f"></i>
-              </a>
-              <a
-                className={styles.socialLink}
-                href="https://www.instagram.com/burnsautorepair/"
-                target="_blank"
-              >
-                <i className="fa-brands fa-instagram"></i>
-              </a>
-            </div>
+            <li className={styles.noMargin}>
+              <div className={styles.socialsInner}>
+                <a
+                  className={styles.socialLink}
+                  href="https://www.facebook.com/BurnsAutoRepair19/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  className={styles.socialLink}
+                  href="https://www.instagram.com/burnsautorepair/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
       </div>

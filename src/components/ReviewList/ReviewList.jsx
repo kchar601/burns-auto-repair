@@ -9,13 +9,18 @@ function ReviewList() {
       <section className={styles.container}>
         <div className={styles.reviewsContent}>
           {sortedTestimonials.map((t, i) => (
-            <div key={i} className={styles.card}>
+            <div key={t.link || `${t.name}-${t.date}-${i}`} className={styles.card}>
               <div className={styles.flexApart}>
                 <div className={styles.nameLine}>
                   <span className={styles.custName}>{t.name}</span>
                   <span>{t.date}</span>
                 </div>
-                <a className={styles.reviewLink} href={t.link} target="_blank">
+                <a
+                  className={styles.reviewLink}
+                  href={t.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
               </div>

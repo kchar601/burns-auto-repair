@@ -1,22 +1,31 @@
-import { React, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import CtaLink from "../CtaLink/CtaLink";
 import styles from "./AppNav.module.css";
 import "animate.css";
 import Logo from "../../assets/burnsautologo white.png";
 
+const CLOSE_ANIMATION_MS = 700;
+
 function AppNav() {
   const [navOpen, setNavOpen] = useState(false);
   const [animation, setAnimation] = useState("");
   const hamburgerRef = useRef(null);
+  const closeTimeoutRef = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (closeTimeoutRef.current) {
+        clearTimeout(closeTimeoutRef.current);
+      }
+    };
+  }, []);
 
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarInner}>
         <NavLink className={styles.logoContainer} to="/">
-          <img src={Logo} className={styles.logo}></img>
-
-          <img className={styles.logo} />
+          <img src={Logo} className={styles.logo} alt="Burns Auto Repair logo" />
         </NavLink>
         <ul
           className={`${styles.links} ${
@@ -78,9 +87,11 @@ function AppNav() {
           </CtaLink>
         </div>
         <button
+          type="button"
           className={styles.hamburger}
           onClick={toggleHide}
           ref={hamburgerRef}
+          aria-label="Toggle navigation menu"
         >
           <i className="fa-solid fa-bars"></i>
         </button>
@@ -88,18 +99,23 @@ function AppNav() {
     </nav>
   );
 
-  async function toggleHide() {
+  function toggleHide() {
     if (!hamburgerRef.current || hamburgerRef.current.offsetParent === null) {
       return;
     }
+
     if (navOpen) {
-      await setAnimation("animate__fadeOutUp");
-      setTimeout(() => {
-        setNavOpen(!navOpen);
-      }, 700);
+      setAnimation("animate__fadeOutUp");
+      closeTimeoutRef.current = setTimeout(() => {
+        setNavOpen(false);
+      }, CLOSE_ANIMATION_MS);
     } else {
-      await setAnimation("animate__fadeInDown");
-      setNavOpen(!navOpen);
+      if (closeTimeoutRef.current) {
+        clearTimeout(closeTimeoutRef.current);
+        closeTimeoutRef.current = null;
+      }
+      setAnimation("animate__fadeInDown");
+      setNavOpen(true);
     }
   }
 }
