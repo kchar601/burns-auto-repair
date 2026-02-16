@@ -4,6 +4,8 @@ import TabsCard from "./../../components/TabsCard/TabsCard";
 import CtaBanner from "./../../components/CtaBanner/CtaBanner";
 import ValueProp from "./../../components/ValueProp/ValueProp";
 import noBreak from "./../../hooks/noBreak.module.css";
+import serviceInspectionImage from "./../../assets/shopzoomed.jpg";
+import scheduledMaintenanceImage from "./../../assets/shop-upclose.jpeg";
 
 const tabs = [
   {
@@ -205,9 +207,12 @@ function Services() {
         <div className={styles.slantImageWrap}>
           <img
             className={styles.slantImage}
-            src="https://media.gettyimages.com/id/dv485039/photo/smiling-car-mechanic-working-on-car-engine.jpg?s=1024x1024&w=gi&k=20&c=k14xtvIS-QZSkgcBsOj1ExiqawNTxirG1reelzPXHLw="
+            src={serviceInspectionImage}
             alt="Mechanic working on car engine"
             loading="lazy"
+            decoding="async"
+            width={2200}
+            height={1001}
           />
         </div>
 
@@ -302,9 +307,10 @@ function Services() {
           Scheduled Maintenance Services
         </h3>
         <ValueProp
-          img={
-            "https://www.metromotor.com/sites/default/files/Oil%20Change%20in%20DC%20Maryland%20and%20Northern%20Virginia.jpg"
-          }
+          img={scheduledMaintenanceImage}
+          imgAlt="Technician performing scheduled vehicle maintenance"
+          imgWidth={1920}
+          imgHeight={1440}
           reverse
         >
           <div>

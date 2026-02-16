@@ -41,6 +41,9 @@ export default function TestimonialsCarousel() {
             src={sureCriticLogo}
             alt="Burns Auto Repair reviews"
             width={240}
+            height={57}
+            loading="lazy"
+            decoding="async"
           />
         </a>
         <Swiper

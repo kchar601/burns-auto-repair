@@ -25,23 +25,60 @@ function HeroSection() {
             <CtaLink link="Tel: (215) 968-3791">Schedule Service</CtaLink>
           </span>
         </div>
-        <img className={styles.heroImg} src={heroImage} />
+        <img
+          className={styles.heroImg}
+          src={heroImage}
+          alt="Burns Auto Repair garage exterior in Newtown, PA"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+          width={2200}
+          height={1001}
+        />
       </div>
       <div className={styles.banner}>
         <div>
-          <img src={aseImg} loading="lazy" />
+          <img
+            src={aseImg}
+            alt="ASE Certified logo"
+            loading="lazy"
+            decoding="async"
+            width={632}
+            height={630}
+          />
           <h5>ASE Certified Technicians</h5>
         </div>
         <div>
-          <img src={bumperImg} loading="lazy" />
+          <img
+            src={bumperImg}
+            alt="Bumper to Bumper certified parts logo"
+            loading="lazy"
+            decoding="async"
+            width={656}
+            height={356}
+          />
           <h5>Certified Parts</h5>
         </div>
         <div>
-          <img src={confidencePlus} loading="lazy" />
+          <img
+            src={confidencePlus}
+            alt="Confidence Plus certified service logo"
+            loading="lazy"
+            decoding="async"
+            width={474}
+            height={140}
+          />
           <h5>Certified Service</h5>
         </div>
         <div>
-          <img src={shell} loading="lazy" />
+          <img
+            src={shell}
+            alt="Shell gasoline logo"
+            loading="lazy"
+            decoding="async"
+            width={1280}
+            height={1187}
+          />
           <h5>Premium Gasoline</h5>
         </div>
       </div>

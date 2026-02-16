@@ -45,7 +45,12 @@ function Homepage() {
         </ServiceCard>
       </FeaturedServices>
 
-      <ValueProp img={shopUpcloseImage}>
+      <ValueProp
+        img={shopUpcloseImage}
+        imgAlt="Technician working on a vehicle at Burns Auto Repair"
+        imgWidth={1920}
+        imgHeight={1440}
+      >
         <h2>Our Integrity Speaks for Itself</h2>
         <p className={styles.center}>
           We know the anxiety that comes with visiting an auto repair shop: "Do

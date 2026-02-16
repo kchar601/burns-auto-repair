@@ -25,7 +25,16 @@ function AppNav() {
     <nav className={styles.navbar}>
       <div className={styles.navbarInner}>
         <NavLink className={styles.logoContainer} to="/">
-          <img src={Logo} className={styles.logo} alt="Burns Auto Repair logo" />
+          <img
+            src={Logo}
+            className={styles.logo}
+            alt="Burns Auto Repair logo"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
+            width={941}
+            height={301}
+          />
         </NavLink>
         <ul
           className={`${styles.links} ${

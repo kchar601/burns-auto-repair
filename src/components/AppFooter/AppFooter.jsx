@@ -16,6 +16,10 @@ function AppFooter() {
               src={Logo}
               className={styles.logo}
               alt="Burns Auto Repair logo"
+              loading="lazy"
+              decoding="async"
+              width={941}
+              height={301}
             />
           </NavLink>
           <SmartStatus />

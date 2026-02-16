@@ -67,7 +67,13 @@ function About() {
           aren't just a ticket number — you're a part of the Burns family.
         </p>
       </ValueProp>
-      <ValueProp reverse img={founderImg}>
+      <ValueProp
+        reverse
+        img={founderImg}
+        imgAlt="Historic portrait of the Burns family leadership"
+        imgWidth={811}
+        imgHeight={613}
+      >
         <h3>Rooted in Newtown</h3>
         <p>
           Located in the heart of Newtown, Burns' Auto Repair has served people
@@ -93,7 +99,13 @@ function About() {
           something we live every day.
         </p>
       </ValueProp>
-      <ValueProp img={groupImg} paddingBottom>
+      <ValueProp
+        img={groupImg}
+        imgAlt="Historic photo of the Burns Auto Repair team"
+        imgWidth={811}
+        imgHeight={613}
+        paddingBottom
+      >
         <h3>Old-School Values. Modern Technology.</h3>
         <p>
           While our values are rooted in tradition, our approach is anything but

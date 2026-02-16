@@ -2,6 +2,9 @@ import styles from "./ValueProp.module.css";
 
 function ValueProp({
   img,
+  imgAlt = "",
+  imgWidth,
+  imgHeight,
   iframe,
   children,
   reverse,
@@ -16,12 +19,13 @@ function ValueProp({
       <img
         className={`${styles.imageColumn} ${mediaClassName ? mediaClassName : ""}`}
         src={img}
-        alt=""
+        alt={imgAlt}
         loading="lazy"
+        decoding="async"
+        width={imgWidth}
+        height={imgHeight}
       />
     ) : null;
-
-  console.log(mediaClassName);
 
   if (reverse)
     return (
