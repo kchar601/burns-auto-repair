@@ -43,8 +43,6 @@ function HeroSection() {
             alt="ASE Certified logo"
             loading="lazy"
             decoding="async"
-            width={632}
-            height={630}
           />
           <h5>ASE Certified Technicians</h5>
         </div>
@@ -54,8 +52,6 @@ function HeroSection() {
             alt="Bumper to Bumper certified parts logo"
             loading="lazy"
             decoding="async"
-            width={656}
-            height={356}
           />
           <h5>Certified Parts</h5>
         </div>
@@ -65,8 +61,6 @@ function HeroSection() {
             alt="Confidence Plus certified service logo"
             loading="lazy"
             decoding="async"
-            width={474}
-            height={140}
           />
           <h5>Certified Service</h5>
         </div>
@@ -76,8 +70,6 @@ function HeroSection() {
             alt="Shell gasoline logo"
             loading="lazy"
             decoding="async"
-            width={1280}
-            height={1187}
           />
           <h5>Premium Gasoline</h5>
         </div>

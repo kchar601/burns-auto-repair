@@ -307,7 +307,7 @@ function Services() {
           Scheduled Maintenance Services
         </h3>
         <ValueProp
-          img={scheduledMaintenanceImage}
+          img="https://www.metromotor.com/sites/default/files/Oil%20Change%20in%20DC%20Maryland%20and%20Northern%20Virginia.jpg"
           imgAlt="Technician performing scheduled vehicle maintenance"
           imgWidth={1920}
           imgHeight={1440}
