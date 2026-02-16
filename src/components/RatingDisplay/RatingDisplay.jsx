@@ -18,6 +18,7 @@ function RatingDisplay() {
           src={sureCriticLogo}
           alt="Burns Auto Repair reviews"
           decoding="async"
+          width={240}
         />
       </a>
     </div>
