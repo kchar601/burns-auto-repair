@@ -99,7 +99,7 @@
   .swiper-container .swiper-button-prev,
   .swiper-container .swiper-button-next {
     background: none !important;
-    color: black;
+    color: black !important;
   }
 }
 

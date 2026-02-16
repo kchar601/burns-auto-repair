@@ -35,11 +35,12 @@ export default function TestimonialsCarousel() {
         <a
           target="_blank"
           href="https://www.surecritic.com/reviews/burns-auto-repair-inc?nhd=1"
+          rel="noopener noreferrer"
         >
           <img
             src={sureCriticLogo}
-            alt="Burns Auto Repair  Reviews"
-            width="240px"
+            alt="Burns Auto Repair reviews"
+            width={240}
           />
         </a>
         <Swiper
@@ -57,7 +58,7 @@ export default function TestimonialsCarousel() {
           className={styles.swiperContainer}
         >
           {testimonials.map((t, i) => (
-            <SwiperSlide key={i} className={styles.slide}>
+            <SwiperSlide key={t.link || `${t.name}-${t.date}-${i}`} className={styles.slide}>
               <div className={styles.card}>
                 <div className={styles.flexApart}>
                   <span className={styles.custName}>{t.name}</span>
