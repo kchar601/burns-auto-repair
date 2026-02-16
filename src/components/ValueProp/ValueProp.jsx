@@ -3,8 +3,6 @@ import styles from "./ValueProp.module.css";
 function ValueProp({
   img,
   imgAlt = "",
-  imgWidth,
-  imgHeight,
   iframe,
   children,
   reverse,
@@ -22,8 +20,6 @@ function ValueProp({
         alt={imgAlt}
         loading="lazy"
         decoding="async"
-        width={imgWidth}
-        height={imgHeight}
       />
     ) : null;
 

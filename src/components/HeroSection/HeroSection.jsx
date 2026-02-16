@@ -1,11 +1,11 @@
 import CtaLink from "../CtaLink/CtaLink";
 import styles from "./HeroSection.module.css";
-import heroImage from "../../assets/shopzoomed.jpg";
+import heroImage from "../../assets/shopzoomed.webp";
 import noBreak from "./../../hooks/noBreak.module.css";
-import aseImg from "./../../assets/ASE-Logo_190312_132616.png";
-import bumperImg from "./../../assets/bumper2bumper.png";
-import confidencePlus from "./../../assets/confidencePlus.png";
-import shell from "./../../assets/Shell_logo.svg.png";
+import aseImg from "./../../assets/ASE-Logo_190312_132616.webp";
+import bumperImg from "./../../assets/bumper2bumper.webp";
+import confidencePlus from "./../../assets/confidencePlus.webp";
+import shell from "./../../assets/Shell_logo.svg.webp";
 
 function HeroSection() {
   return (
@@ -32,8 +32,6 @@ function HeroSection() {
           loading="eager"
           decoding="async"
           fetchPriority="high"
-          width={2200}
-          height={1001}
         />
       </div>
       <div className={styles.banner}>

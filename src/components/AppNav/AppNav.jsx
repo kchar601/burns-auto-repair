@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import CtaLink from "../CtaLink/CtaLink";
 import styles from "./AppNav.module.css";
 import "animate.css";
-import Logo from "../../assets/burnsautologo white.png";
+import Logo from "../../assets/burnsautologo white.webp";
 
 const CLOSE_ANIMATION_MS = 700;
 

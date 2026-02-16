@@ -1,5 +1,5 @@
 import styles from "./RatingDisplay.module.css";
-import sureCriticLogo from "../../assets/SURECRITIC.png";
+import sureCriticLogo from "../../assets/SURECRITIC.webp";
 
 function RatingDisplay() {
   return (
@@ -17,8 +17,6 @@ function RatingDisplay() {
         <img
           src={sureCriticLogo}
           alt="Burns Auto Repair reviews"
-          width={240}
-          height={57}
           decoding="async"
         />
       </a>

@@ -1,8 +1,8 @@
 import PageHeader from "./../../components/PageHeader/PageHeader";
 import YouTube from "react-youtube";
 import ValueProp from "./../../components/ValueProp/ValueProp";
-import founderImg from "./../../assets/Burns-Auto_Founder_Gray.jpg";
-import groupImg from "./../../assets/Burns-Auto_Old-Pic-Large.jpg";
+import founderImg from "./../../assets/Burns-Auto_Founder_Gray.webp";
+import groupImg from "./../../assets/Burns-Auto_Old-Pic-Large.webp";
 import FeaturedServices from "./../../components/FeaturedServices/FeaturedServices";
 import ServiceCard from "./../../components/ServiceCard/ServiceCard";
 import CtaBanner from "./../../components/CtaBanner/CtaBanner";
@@ -71,8 +71,6 @@ function About() {
         reverse
         img={founderImg}
         imgAlt="Historic portrait of the Burns family leadership"
-        imgWidth={811}
-        imgHeight={613}
       >
         <h3>Rooted in Newtown</h3>
         <p>
@@ -102,8 +100,6 @@ function About() {
       <ValueProp
         img={groupImg}
         imgAlt="Historic photo of the Burns Auto Repair team"
-        imgWidth={811}
-        imgHeight={613}
         paddingBottom
       >
         <h3>Old-School Values. Modern Technology.</h3>

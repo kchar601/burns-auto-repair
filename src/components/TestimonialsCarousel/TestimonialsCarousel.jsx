@@ -8,7 +8,7 @@ import "../../swiper-navigation.css";
 import styles from "./TestimonialsCarousel.module.css";
 import testimonials from "../../data/testimonials.json";
 import renderStars from "./RenderStars";
-import sureCriticLogo from "../../assets/SURECRITIC.png";
+import sureCriticLogo from "../../assets/SURECRITIC.webp";
 
 export default function TestimonialsCarousel() {
   const prevRef = useRef(null);
@@ -40,8 +40,6 @@ export default function TestimonialsCarousel() {
           <img
             src={sureCriticLogo}
             alt="Burns Auto Repair reviews"
-            width={240}
-            height={57}
             loading="lazy"
             decoding="async"
           />
@@ -61,7 +59,10 @@ export default function TestimonialsCarousel() {
           className={styles.swiperContainer}
         >
           {testimonials.map((t, i) => (
-            <SwiperSlide key={t.link || `${t.name}-${t.date}-${i}`} className={styles.slide}>
+            <SwiperSlide
+              key={t.link || `${t.name}-${t.date}-${i}`}
+              className={styles.slide}
+            >
               <div className={styles.card}>
                 <div className={styles.flexApart}>
                   <span className={styles.custName}>{t.name}</span>

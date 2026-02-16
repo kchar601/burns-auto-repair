@@ -3,7 +3,7 @@ import FeaturedServices from "../../components/FeaturedServices/FeaturedServices
 import ValueProp from "../../components/ValueProp/ValueProp";
 import TestimonialsCarousel from "../../components/TestimonialsCarousel/TestimonialsCarousel";
 import CtaLink from "../../components/CtaLink/CtaLink";
-import shopUpcloseImage from "../../assets/shop-upclose.jpeg";
+import shopUpcloseImage from "../../assets/shop-upclose.webp";
 import styles from "../../components/ValueProp/ValueProp.module.css";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 
@@ -48,8 +48,6 @@ function Homepage() {
       <ValueProp
         img={shopUpcloseImage}
         imgAlt="Technician working on a vehicle at Burns Auto Repair"
-        imgWidth={1920}
-        imgHeight={1440}
       >
         <h2>Our Integrity Speaks for Itself</h2>
         <p className={styles.center}>
