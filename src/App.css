@@ -1,36 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Rambla:700|Poppins:400;500;600;700");
-
 :root {
-  font-family: "Poppins";
+  font-family: "Poppins", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-size: 100%;
-
-  /* --text: #f6f7f9;
-  --text-variant: #999a9b;
-  --surface: rgb(7, 3, 3);
-  --surface-rgb: 3, 4, 7;
-  --surface-elevated: rgb(99, 19, 19);
-  --surface-elevated: rgb(71, 71, 71);
-  --surface-elevated: rgb(17, 23, 39);
-   --surface-elevated-2: rgb(27, 37, 63);
-  --primary: #7b9ed4;
-  --primary-variant: #4d89dd;
-  --accent: #bd0000;
-  --accent-variant: #8f0101;
-  --secondary: #bd0000;
-  --secondary-variant: #8f0101;
-  --secondary: #0a42b2;
-  --secondary-variant: #2e55a1;
-  --accent: #0a42b2;
-  --accent-variant: #2e55a1;
-  --swiper-navigation-color: var(--text);
-
-  --surface: #0b0909;
-  --text: #fcfbfb;
-  --secondary: #ff0000;
-  --secondary-variant: #bb0202;
-  --primary: #bfbfad;
-  --secondary: #a3aa91; */
 
   --text-50: #f6f5ef;
   --text-100: #edebde;
@@ -102,7 +73,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Rambla";
+  font-family: "Rambla", "Trebuchet MS", "Segoe UI", Arial, sans-serif;
   font-weight: 700;
 }
 
