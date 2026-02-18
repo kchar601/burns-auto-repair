@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import AppLayout from "./pages/AppLayout/AppLayout";
-import NotFound, { RouteErrorBoundary } from "./pages/NotFound/NotFound";
+import RouteErrorBoundary from "./pages/NotFound/RouteErrorBoundary";
 import "./App.css";
 import Homepage from "./pages/Homepage/Homepage";
 
@@ -14,6 +14,7 @@ const Services = lazy(() => import("./pages/Services/Services"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
 const About = lazy(() => import("./pages/About/About"));
 const Testimonials = lazy(() => import("./pages/Testimonials/Testimonials"));
+const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
 const ROUTE_FALLBACK_STYLE = { minHeight: "calc(100vh - 120px)" };
 
 function withSuspense(element) {
@@ -38,12 +39,12 @@ const router = createBrowserRouter(
       <Route path="testimonials" element={withSuspense(<Testimonials />)} />
       <Route
         path="*"
-        element={
+        element={withSuspense(
           <NotFound
             status={404}
             description="The page you are looking for cannot be found."
-          />
-        }
+          />,
+        )}
       />
     </Route>,
   ),
