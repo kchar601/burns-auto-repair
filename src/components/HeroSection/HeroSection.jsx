@@ -42,7 +42,7 @@ function HeroSection() {
             loading="lazy"
             decoding="async"
           />
-          <h5>ASE Certified Technicians</h5>
+          <p>ASE Certified Technicians</p>
         </div>
         <div>
           <img
@@ -51,7 +51,7 @@ function HeroSection() {
             loading="lazy"
             decoding="async"
           />
-          <h5>Certified Parts</h5>
+          <p>Certified Parts</p>
         </div>
         <div>
           <img
@@ -60,7 +60,7 @@ function HeroSection() {
             loading="lazy"
             decoding="async"
           />
-          <h5>Certified Service</h5>
+          <p>Certified Service</p>
         </div>
         <div>
           <img
@@ -69,7 +69,7 @@ function HeroSection() {
             loading="lazy"
             decoding="async"
           />
-          <h5>Premium Gasoline</h5>
+          <p>Premium Gasoline</p>
         </div>
       </div>
     </>

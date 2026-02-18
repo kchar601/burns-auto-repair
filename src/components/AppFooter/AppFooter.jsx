@@ -107,6 +107,7 @@ function AppFooter() {
                   href="https://www.facebook.com/BurnsAutoRepair19/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Burns' Auto Repair's Facebook Page"
                 >
                   <i className="fa-brands fa-facebook-f"></i>
                 </a>
@@ -115,6 +116,7 @@ function AppFooter() {
                   href="https://www.instagram.com/burnsautorepair/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Burns' Auto Repair's Instagram Page"
                 >
                   <i className="fa-brands fa-instagram"></i>
                 </a>
@@ -127,7 +129,10 @@ function AppFooter() {
         © {new Date().getFullYear()} Burns Auto Repair, Inc. All rights
         reserved.
         <br />
-        <a href="https://" className={styles.callingCard}>
+        <a
+          href="https://www.linkedin.com/in/kchar/"
+          className={styles.callingCard}
+        >
           Made by Keith Charlton
         </a>
       </small>
