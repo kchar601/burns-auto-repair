@@ -8,15 +8,20 @@ import {
 import AppLayout from "./pages/AppLayout/AppLayout";
 import NotFound, { RouteErrorBoundary } from "./pages/NotFound/NotFound";
 import "./App.css";
+import Homepage from "./pages/Homepage/Homepage";
 
-const Homepage = lazy(() => import("./pages/Homepage/Homepage"));
 const Services = lazy(() => import("./pages/Services/Services"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
 const About = lazy(() => import("./pages/About/About"));
 const Testimonials = lazy(() => import("./pages/Testimonials/Testimonials"));
+const ROUTE_FALLBACK_STYLE = { minHeight: "calc(100vh - 120px)" };
 
 function withSuspense(element) {
-  return <Suspense fallback={null}>{element}</Suspense>;
+  return (
+    <Suspense fallback={<div aria-hidden="true" style={ROUTE_FALLBACK_STYLE} />}>
+      {element}
+    </Suspense>
+  );
 }
 
 const router = createBrowserRouter(

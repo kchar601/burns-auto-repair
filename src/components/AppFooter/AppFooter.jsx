@@ -16,6 +16,8 @@ function AppFooter() {
               src={Logo}
               className={styles.logo}
               alt="Burns Auto Repair logo"
+              width="941"
+              height="301"
               loading="lazy"
               decoding="async"
             />
