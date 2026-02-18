@@ -6,10 +6,18 @@ import CtaLink from "../../components/CtaLink/CtaLink";
 import shopUpcloseImage from "../../assets/shop-upclose.webp";
 import styles from "../../components/ValueProp/ValueProp.module.css";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
+import { Helmet } from "react-helmet";
 
 function Homepage() {
   return (
     <main>
+      <Helmet>
+        <title>Auto Repair & Mechanics in Newtown, PA | Burns' Auto Repair</title>
+        <meta
+          name="description"
+          content="Family-owned Burns' Auto Repair in Newtown, PA offers ASE-certified mechanics, honest diagnostics, and dependable maintenance and repair since 1957."
+        ></meta>
+      </Helmet>
       <HeroSection />
       <FeaturedServices
         CTALink={<CtaLink link="/services">View All Services</CtaLink>}

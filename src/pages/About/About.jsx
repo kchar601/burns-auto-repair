@@ -6,6 +6,7 @@ import groupImg from "./../../assets/Burns-Auto_Old-Pic-Large.webp";
 import FeaturedServices from "./../../components/FeaturedServices/FeaturedServices";
 import ServiceCard from "./../../components/ServiceCard/ServiceCard";
 import CtaBanner from "./../../components/CtaBanner/CtaBanner";
+import { Helmet } from "react-helmet";
 
 function About() {
   const opts = {
@@ -22,7 +23,20 @@ function About() {
 
   return (
     <main>
-      <title>About | Burns Auto Repair | Newtown, PA</title>
+      <Helmet>
+        <title>
+          About Our Family-Owned Auto Repair Shop in Newtown, PA | Burns' Auto
+          Repair
+        </title>
+        <meta
+          name="description"
+          content="Learn the story of Burns' Auto Repair, a family-owned mechanic shop in Newtown, PA trusted since 1957 for honest diagnostics, quality repairs, and personal service."
+        ></meta>
+        <meta
+          name="keywords"
+          content="auto repair Newtown PA, mechanic Newtown PA, car repair Newtown, family-owned auto repair, ASE certified mechanics, Burns Auto Repair"
+        />
+      </Helmet>
       <PageHeader
         title={"A Legacy Under the Hood"}
         sub={
@@ -70,7 +84,7 @@ function About() {
       <ValueProp
         reverse
         img={founderImg}
-        imgAlt="Historic portrait of the Burns family leadership"
+        imgAlt="Historic portrait of the Burns' family leadership"
       >
         <h3>Rooted in Newtown</h3>
         <p>
@@ -99,7 +113,7 @@ function About() {
       </ValueProp>
       <ValueProp
         img={groupImg}
-        imgAlt="Historic photo of the Burns Auto Repair team"
+        imgAlt="Historic photo of the Burns' Auto Repair team"
         paddingBottom
       >
         <h3>Old-School Values. Modern Technology.</h3>

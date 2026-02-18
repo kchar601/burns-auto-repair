@@ -5,6 +5,8 @@ import CtaBanner from "./../../components/CtaBanner/CtaBanner";
 import ValueProp from "./../../components/ValueProp/ValueProp";
 import noBreak from "./../../hooks/noBreak.module.css";
 import serviceInspectionImage from "./../../assets/shopzoomed.webp";
+import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 
 const tabs = [
   {
@@ -188,9 +190,31 @@ const tabs = [
   },
 ];
 
+const SERVICE_HASH_TITLES = {
+  "brakes-tires": "Brake & Tire Repair",
+  "steering-suspension": "Steering & Suspension Repair",
+  "ac-heating": "Auto AC & Heating Repair",
+  "check-engine-diagnostics": "Check Engine Diagnostics",
+  "electrical-systems": "Auto Electrical Repair",
+  "scheduled-maintenance": "Scheduled Auto Maintenance",
+  "state-inspections-emissions": "PA State Inspection & Emissions",
+};
+
 function Services() {
+  const { hash } = useLocation();
+  const rawHash = (hash || "").replace("#", "").trim();
+  const titlePrefix = SERVICE_HASH_TITLES[rawHash] || "Auto Repair Services";
+  const pageTitle = `${titlePrefix} in Newtown, PA | Burns' Auto Repair`;
+
   return (
     <main className="subPage">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta
+          name="description"
+          content="Get expert auto repair services in Newtown, PA, including PA inspections, emissions, brakes, tires, diagnostics, electrical, AC/heating, and maintenance."
+        ></meta>
+      </Helmet>
       <PageHeader
         title={
           <>
@@ -358,7 +382,7 @@ function Services() {
               </li>
             </ul>
 
-            <h4>The Burns Approach</h4>
+            <h4>The Burns' Approach</h4>
 
             <p>
               Many shops treat scheduled maintenance as a checklist. We treat it
