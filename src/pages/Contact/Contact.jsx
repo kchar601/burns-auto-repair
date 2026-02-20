@@ -16,7 +16,7 @@ function Contact() {
         ></meta>
       </Helmet>
       <PageHeader
-        title={"Contact Us"}
+        title={"Contact"}
         sub={
           "Have questions or ready to schedule service? We're here to help! Reach out to us by phone, email, or stop by our shop. We look forward to serving you."
         }

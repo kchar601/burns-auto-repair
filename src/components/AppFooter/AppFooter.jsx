@@ -81,7 +81,7 @@ function AppFooter() {
           </ul>
         </div>
         <div>
-          <h5>Contact Us</h5>
+          <h5>Contact</h5>
           <ul
             className={`${styles.links} ${styles.linksVert} ${styles.socials}`}
           >
