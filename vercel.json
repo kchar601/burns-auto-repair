@@ -7,13 +7,17 @@
       "handle": "filesystem"
     },
     {
-      "src": "/404(?:\\.html)?$",
-      "status": 404,
-      "dest": "/404.html"
+      "src": "^/$",
+      "dest": "/index.html"
     },
     {
-      "src": "\/(.*)",
-      "dest": "/"
+      "src": "^/(services|about|contact|testimonials)/?$",
+      "dest": "/index.html"
+    },
+    {
+      "src": "^/.*$",
+      "status": 404,
+      "dest": "/404.html"
     }
   ]
 }
