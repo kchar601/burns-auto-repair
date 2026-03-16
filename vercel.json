@@ -4,6 +4,21 @@
   "installCommand": "npm install",
   "routes": [
     {
+      "src": "^/(services|about|contact|testimonials)/$",
+      "status": 308,
+      "dest": "/$1"
+    },
+    {
+      "src": "^/contact-us/?$",
+      "status": 308,
+      "dest": "/contact"
+    },
+    {
+      "src": "^/index\\.php$",
+      "status": 410,
+      "dest": "/404.html"
+    },
+    {
       "handle": "filesystem"
     },
     {
@@ -11,7 +26,7 @@
       "dest": "/index.html"
     },
     {
-      "src": "^/(services|about|contact|testimonials)/?$",
+      "src": "^/(services|about|contact|testimonials)$",
       "dest": "/index.html"
     },
     {
