@@ -4,6 +4,29 @@
   "installCommand": "npm install",
   "routes": [
     {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "et_core_page_resource"
+        }
+      ],
+      "status": 410,
+      "dest": "/404.html"
+    },
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "query",
+          "key": "option",
+          "value": "com_content"
+        }
+      ],
+      "status": 410,
+      "dest": "/404.html"
+    },
+    {
       "src": "^/(services|about|contact|testimonials)/$",
       "status": 308,
       "dest": "/$1"
