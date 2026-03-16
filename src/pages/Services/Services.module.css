@@ -35,6 +35,13 @@
   display: block;
 }
 
+@media screen and (max-width: 520px) {
+  .slantImage {
+    height: 240px;
+    object-position: 75% 50%;
+  }
+}
+
 /* Right: content */
 .slantContent {
   padding: 2rem 4rem 2rem 0;
@@ -84,10 +91,15 @@
 
   .slantImageWrap {
     clip-path: none;
-    height: 100%;
+    height: fit-content;
     margin: 4rem;
     border-radius: 32px;
     order: 2;
+    min-height: unset;
+  }
+
+  .slantImage {
+    height: 100%;
   }
 
   .scheduledServices .maintenanceHeader {

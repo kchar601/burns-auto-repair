@@ -8,6 +8,7 @@ function ValueProp({
   reverse,
   mediaClassName,
   paddingBottom,
+  lowPaddingOnSmallScreen,
 }) {
   // Choose the media: prefer iframe when provided and no img is passed
   const media =
@@ -26,7 +27,7 @@ function ValueProp({
   if (reverse)
     return (
       <div
-        className={`${styles.container} ${styles.reverse} ${paddingBottom ? styles.paddingBottom : ""}`}
+        className={`${styles.container} ${styles.reverse} ${paddingBottom ? styles.paddingBottom : ""} ${lowPaddingOnSmallScreen ? styles.lowPaddingTop : ""}`}
       >
         <div className={styles.textColumn}>{children}</div>
         {media}

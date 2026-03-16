@@ -5,7 +5,6 @@ import CtaBanner from "./../../components/CtaBanner/CtaBanner";
 import ValueProp from "./../../components/ValueProp/ValueProp";
 import noBreak from "./../../hooks/noBreak.module.css";
 import serviceInspectionImage from "./../../assets/shopzoomed.webp";
-import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 
 const tabs = [
@@ -208,13 +207,11 @@ function Services() {
 
   return (
     <main className="subPage">
-      <Helmet>
-        <title>{pageTitle}</title>
-        <meta
-          name="description"
-          content="Get expert auto repair services in Newtown, PA, including PA inspections, emissions, brakes, tires, diagnostics, electrical, AC/heating, and maintenance."
-        ></meta>
-      </Helmet>
+      <title>{pageTitle}</title>
+      <meta
+        name="description"
+        content="Get expert auto repair services in Newtown, PA, including PA inspections, emissions, brakes, tires, diagnostics, electrical, AC/heating, and maintenance."
+      ></meta>
       <PageHeader
         title={
           <>

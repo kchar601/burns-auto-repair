@@ -3,18 +3,15 @@ import ValueProp from "./../../components/ValueProp/ValueProp";
 import navStyles from "./../../components/AppNav/AppNav.module.css";
 import styles from "./Contact.module.css";
 import SmartStatus from "./../../components/SmartStatus/SmartStatus";
-import { Helmet } from "react-helmet";
 
 function Contact() {
   return (
     <main>
-      <Helmet>
-        <title>Contact a Mechanic in Newtown, PA | Burns' Auto Repair</title>
-        <meta
-          name="description"
-          content="Contact Burns' Auto Repair in Newtown, PA to schedule auto service, call our shop, or visit us at 19 N Sycamore Street."
-        ></meta>
-      </Helmet>
+      <title>Contact a Mechanic in Newtown, PA | Burns' Auto Repair</title>
+      <meta
+        name="description"
+        content="Contact Burns' Auto Repair in Newtown, PA to schedule auto service, call our shop, or visit us at 19 N Sycamore Street."
+      ></meta>
       <PageHeader
         title={"Contact"}
         sub={

@@ -1,20 +1,18 @@
+import React from "react";
 import PageHeader from "./../../components/PageHeader/PageHeader";
 import RatingDisplay from "./../../components/RatingDisplay/RatingDisplay";
 import ReviewList from "./../../components/ReviewList/ReviewList";
 import CtaLink from "./../../components/CtaLink/CtaLink";
 import noBreak from "./../../hooks/noBreak.module.css";
-import { Helmet } from "react-helmet";
 
 function Testimonials() {
   return (
     <main className="subPage">
-      <Helmet>
-        <title>Auto Repair Reviews in Newtown, PA | Burns' Auto Repair</title>
-        <meta
-          name="description"
-          content="Read reviews from Newtown-area drivers who trust Burns' Auto Repair for honest mechanics, clear communication, and reliable auto repair service."
-        ></meta>
-      </Helmet>
+      <title>Auto Repair Reviews in Newtown, PA | Burns' Auto Repair</title>
+      <meta
+        name="description"
+        content="Read reviews from Newtown-area drivers who trust Burns' Auto Repair for honest mechanics, clear communication, and reliable auto repair service."
+      ></meta>
       <PageHeader
         title={
           <>

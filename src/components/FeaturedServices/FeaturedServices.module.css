@@ -32,3 +32,9 @@
     gap: 16px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .serviceContainer {
+    padding: 2rem 4rem;
+  }
+}

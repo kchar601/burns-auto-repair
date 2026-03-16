@@ -135,4 +135,8 @@
   .textColumn h3 {
     text-align: center;
   }
+
+  .lowPaddingTop.container {
+    padding: 0rem 4rem 2rem;
+  }
 }

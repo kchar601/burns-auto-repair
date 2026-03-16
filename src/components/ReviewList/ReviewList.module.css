@@ -31,7 +31,6 @@
 }
 
 .card {
-  /* Allow partial cards at the clip edge instead of leaving empty column gaps. */
   break-inside: avoid-column;
   margin-bottom: 1.5rem;
 
