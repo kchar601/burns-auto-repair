@@ -43,8 +43,8 @@
       "dest": "/$1"
     },
     {
-      "src": "^/contact-us/?$",
-      "status": 308,
+      "src": "^/contact-us(?:/.*)?$",
+      "status": 301,
       "dest": "/contact"
     },
     {
