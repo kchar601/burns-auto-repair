@@ -6,6 +6,15 @@ import groupImg from "./../../assets/Burns-Auto_Old-Pic-Large.webp";
 import FeaturedServices from "./../../components/FeaturedServices/FeaturedServices";
 import ServiceCard from "./../../components/ServiceCard/ServiceCard";
 import CtaBanner from "./../../components/CtaBanner/CtaBanner";
+import Seo from "../../components/Seo/Seo";
+import { buildBreadcrumbSchema } from "../../seo/seoConfig";
+
+const ABOUT_TITLE =
+  "About Our Family-Owned Auto Repair Shop in Newtown, PA | Burns' Auto Repair";
+const ABOUT_DESCRIPTION =
+  "Learn the story of Burns' Auto Repair, a family-owned mechanic shop in Newtown, PA trusted since 1957 for honest diagnostics, quality repairs, and personal service.";
+const ABOUT_KEYWORDS =
+  "auto repair Newtown PA, mechanic Newtown PA, car repair Newtown, family-owned auto repair, ASE certified mechanics, Burns Auto Repair";
 
 function About() {
   const opts = {
@@ -22,17 +31,17 @@ function About() {
 
   return (
     <main>
-      <title>
-        About Our Family-Owned Auto Repair Shop in Newtown, PA | Burns' Auto
-        Repair
-      </title>
-      <meta
-        name="description"
-        content="Learn the story of Burns' Auto Repair, a family-owned mechanic shop in Newtown, PA trusted since 1957 for honest diagnostics, quality repairs, and personal service."
-      ></meta>
-      <meta
-        name="keywords"
-        content="auto repair Newtown PA, mechanic Newtown PA, car repair Newtown, family-owned auto repair, ASE certified mechanics, Burns Auto Repair"
+      <Seo
+        title={ABOUT_TITLE}
+        description={ABOUT_DESCRIPTION}
+        keywords={ABOUT_KEYWORDS}
+        canonicalPath="/about"
+        structuredData={[
+          buildBreadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+          ]),
+        ]}
       />
       <PageHeader
         title={"A Legacy Under the Hood"}

@@ -6,6 +6,8 @@ import ValueProp from "./../../components/ValueProp/ValueProp";
 import noBreak from "./../../hooks/noBreak.module.css";
 import serviceInspectionImage from "./../../assets/shopzoomed.webp";
 import { useLocation } from "react-router-dom";
+import Seo from "../../components/Seo/Seo";
+import { buildBreadcrumbSchema } from "../../seo/seoConfig";
 
 const tabs = [
   {
@@ -199,6 +201,9 @@ const SERVICE_HASH_TITLES = {
   "state-inspections-emissions": "PA State Inspection & Emissions",
 };
 
+const SERVICES_DESCRIPTION =
+  "Get expert auto repair services in Newtown, PA, including PA inspections, emissions, brakes, tires, diagnostics, electrical, AC/heating, and maintenance.";
+
 function Services() {
   const { hash } = useLocation();
   const rawHash = (hash || "").replace("#", "").trim();
@@ -207,11 +212,17 @@ function Services() {
 
   return (
     <main className="subPage">
-      <title>{pageTitle}</title>
-      <meta
-        name="description"
-        content="Get expert auto repair services in Newtown, PA, including PA inspections, emissions, brakes, tires, diagnostics, electrical, AC/heating, and maintenance."
-      ></meta>
+      <Seo
+        title={pageTitle}
+        description={SERVICES_DESCRIPTION}
+        canonicalPath="/services"
+        structuredData={[
+          buildBreadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Services", path: "/services" },
+          ]),
+        ]}
+      />
       <PageHeader
         title={
           <>

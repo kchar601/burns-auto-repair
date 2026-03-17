@@ -3,15 +3,37 @@ import ValueProp from "./../../components/ValueProp/ValueProp";
 import navStyles from "./../../components/AppNav/AppNav.module.css";
 import styles from "./Contact.module.css";
 import SmartStatus from "./../../components/SmartStatus/SmartStatus";
+import Seo from "../../components/Seo/Seo";
+import { buildBreadcrumbSchema, toAbsoluteUrl } from "../../seo/seoConfig";
+
+const CONTACT_TITLE = "Contact a Mechanic in Newtown, PA | Burns' Auto Repair";
+const CONTACT_DESCRIPTION =
+  "Contact Burns' Auto Repair in Newtown, PA to schedule auto service, call our shop, or visit us at 19 N Sycamore Street.";
+
+const CONTACT_PAGE_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": `${toAbsoluteUrl("/contact")}#webpage`,
+  url: toAbsoluteUrl("/contact"),
+  name: "Contact Burns' Auto Repair",
+  description: CONTACT_DESCRIPTION,
+};
 
 function Contact() {
   return (
     <main>
-      <title>Contact a Mechanic in Newtown, PA | Burns' Auto Repair</title>
-      <meta
-        name="description"
-        content="Contact Burns' Auto Repair in Newtown, PA to schedule auto service, call our shop, or visit us at 19 N Sycamore Street."
-      ></meta>
+      <Seo
+        title={CONTACT_TITLE}
+        description={CONTACT_DESCRIPTION}
+        canonicalPath="/contact"
+        structuredData={[
+          CONTACT_PAGE_SCHEMA,
+          buildBreadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Contact", path: "/contact" },
+          ]),
+        ]}
+      />
       <PageHeader
         title={"Contact"}
         sub={

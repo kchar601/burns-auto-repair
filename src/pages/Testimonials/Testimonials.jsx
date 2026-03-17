@@ -4,15 +4,27 @@ import RatingDisplay from "./../../components/RatingDisplay/RatingDisplay";
 import ReviewList from "./../../components/ReviewList/ReviewList";
 import CtaLink from "./../../components/CtaLink/CtaLink";
 import noBreak from "./../../hooks/noBreak.module.css";
+import Seo from "../../components/Seo/Seo";
+import { buildBreadcrumbSchema } from "../../seo/seoConfig";
+
+const TESTIMONIALS_TITLE = "Auto Repair Reviews in Newtown, PA | Burns' Auto Repair";
+const TESTIMONIALS_DESCRIPTION =
+  "Read reviews from Newtown-area drivers who trust Burns' Auto Repair for honest mechanics, clear communication, and reliable auto repair service.";
 
 function Testimonials() {
   return (
     <main className="subPage">
-      <title>Auto Repair Reviews in Newtown, PA | Burns' Auto Repair</title>
-      <meta
-        name="description"
-        content="Read reviews from Newtown-area drivers who trust Burns' Auto Repair for honest mechanics, clear communication, and reliable auto repair service."
-      ></meta>
+      <Seo
+        title={TESTIMONIALS_TITLE}
+        description={TESTIMONIALS_DESCRIPTION}
+        canonicalPath="/testimonials"
+        structuredData={[
+          buildBreadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Testimonials", path: "/testimonials" },
+          ]),
+        ]}
+      />
       <PageHeader
         title={
           <>

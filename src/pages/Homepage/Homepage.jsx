@@ -6,10 +6,28 @@ import CtaLink from "../../components/CtaLink/CtaLink";
 import shopUpcloseImage from "../../assets/shop-upclose.webp";
 import styles from "../../components/ValueProp/ValueProp.module.css";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
+import Seo from "../../components/Seo/Seo";
+import {
+  AUTO_REPAIR_SCHEMA,
+  buildBreadcrumbSchema,
+} from "../../seo/seoConfig";
+
+const HOME_TITLE = "Auto Repair & Mechanics in Newtown, PA | Burns' Auto Repair";
+const HOME_DESCRIPTION =
+  "Family-owned Burns' Auto Repair in Newtown, PA offers ASE-certified mechanics, honest diagnostics, and dependable maintenance and repair since 1957.";
 
 function Homepage() {
   return (
     <main>
+      <Seo
+        title={HOME_TITLE}
+        description={HOME_DESCRIPTION}
+        canonicalPath="/"
+        structuredData={[
+          AUTO_REPAIR_SCHEMA,
+          buildBreadcrumbSchema([{ name: "Home", path: "/" }]),
+        ]}
+      />
       <link
         rel="preload"
         as="image"
@@ -17,11 +35,6 @@ function Homepage() {
         type="image/webp"
         fetchPriority="high"
       />
-      <title>Auto Repair & Mechanics in Newtown, PA | Burns' Auto Repair</title>
-      <meta
-        name="description"
-        content="Family-owned Burns' Auto Repair in Newtown, PA offers ASE-certified mechanics, honest diagnostics, and dependable maintenance and repair since 1957."
-      ></meta>
       <HeroSection />
       <FeaturedServices
         CTALink={<CtaLink link="/services">View All Services</CtaLink>}
