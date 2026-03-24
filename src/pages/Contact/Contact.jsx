@@ -61,7 +61,7 @@ function Contact() {
                 <a href="tel:+12159683791">(215) 968-3791</a>
               </li>
               <li>
-                <a href="mailto:burnsauto19@gmail.com">burnsauto19@gmail.com</a>
+                <a href="mailto:office+website@burnsautorepair.com">office@burnsautorepair.com</a>
               </li>
               <li className={navStyles.noMargin}>
                 <a

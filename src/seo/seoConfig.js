@@ -19,7 +19,7 @@ export const AUTO_REPAIR_SCHEMA = {
   url: `${SITE_URL}/`,
   image: DEFAULT_OG_IMAGE,
   telephone: "+12159683791",
-  email: "burnsauto19@gmail.com",
+  email: "office@burnsautorepair.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "19 N Sycamore Street",
