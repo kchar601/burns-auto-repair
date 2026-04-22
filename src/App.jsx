@@ -5,6 +5,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import AppLayout from "./pages/AppLayout/AppLayout";
 import RouteErrorBoundary from "./pages/NotFound/RouteErrorBoundary";
 import "./App.css";
@@ -19,7 +20,9 @@ const ROUTE_FALLBACK_STYLE = { minHeight: "calc(100vh - 120px)" };
 
 function withSuspense(element) {
   return (
-    <Suspense fallback={<div aria-hidden="true" style={ROUTE_FALLBACK_STYLE} />}>
+    <Suspense
+      fallback={<div aria-hidden="true" style={ROUTE_FALLBACK_STYLE} />}
+    >
       {element}
     </Suspense>
   );
