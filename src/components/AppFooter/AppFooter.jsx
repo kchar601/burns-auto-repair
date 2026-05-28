@@ -133,11 +133,8 @@ function AppFooter() {
         © {new Date().getFullYear()} Burns Auto Repair, Inc. All rights
         reserved.
         <br />
-        <a
-          href="https://www.linkedin.com/in/kchar/"
-          className={styles.callingCard}
-        >
-          Made by Keith Charlton
+        <a href="https://www.charltonit.com" className={styles.callingCard}>
+          Made by Charlton IT
         </a>
       </small>
     </footer>
