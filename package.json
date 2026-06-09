@@ -4,8 +4,9 @@
   "version": "1.1.1",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "dev": "npm run blog:build && vite --host 0.0.0.0",
+    "build": "npm run blog:build && vite build",
+    "blog:build": "node scripts/build-blog.mjs",
     "lint": "eslint .",
     "preview": "vite preview --host"
   },
