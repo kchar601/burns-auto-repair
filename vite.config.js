@@ -43,6 +43,17 @@ function heroImagePreloadPlugin() {
         if (!ctx.bundle) return html;
 
         const keys = Object.keys(ctx.bundle);
+
+        // Inject a CSS preload right after <meta charset> so the browser
+        // starts fetching the stylesheet as early as possible.
+        const cssKey = keys.find((k) => /assets\/index-[^/]+\.css$/.test(k));
+        if (cssKey) {
+          html = html.replace(
+            /(<meta charset[^>]+>)/,
+            (_, m) => `${m}\n    <link rel="preload" as="style" href="/${cssKey}">`
+          );
+        }
+
         const find = (substr) =>
           keys.find((k) => k.includes(substr) && k.endsWith(".webp"));
 

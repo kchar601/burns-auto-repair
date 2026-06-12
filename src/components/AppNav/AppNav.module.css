@@ -175,8 +175,11 @@ h5:has(+ .linksVert) {
   margin-right: 16px;
   cursor: pointer;
 }
-.hamburger > i {
+.hamburger > i,
+.hamburger > svg {
   font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .logoAndHours {

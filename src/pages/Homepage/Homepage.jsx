@@ -1,7 +1,7 @@
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import FeaturedServices from "../../components/FeaturedServices/FeaturedServices";
 import ValueProp from "../../components/ValueProp/ValueProp";
-import TestimonialsCarousel from "../../components/TestimonialsCarousel/TestimonialsCarousel";
 import CtaLink from "../../components/CtaLink/CtaLink";
 import shopUpcloseImage from "../../assets/shop-upclose.webp";
 import shopUpclose640 from "../../assets/responsive/shop-upclose-640.webp";
@@ -15,9 +15,48 @@ import {
   buildBreadcrumbSchema,
 } from "../../seo/seoConfig";
 
+const TestimonialsCarousel = lazy(
+  () => import("../../components/TestimonialsCarousel/TestimonialsCarousel")
+);
+
 const HOME_TITLE = "Auto Repair & Mechanics in Newtown, PA | Burns' Auto Repair";
 const HOME_DESCRIPTION =
   "Family-owned Burns' Auto Repair in Newtown, PA offers ASE-certified mechanics, honest diagnostics, and dependable maintenance and repair since 1957.";
+
+// Defers mounting until the section is within 400px of the viewport.
+// Keeps Swiper CSS and JS out of the initial render-blocking bundle.
+function LazyTestimonials() {
+  const [load, setLoad] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoad(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "400px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref}>
+      {load ? (
+        <Suspense fallback={null}>
+          <TestimonialsCarousel />
+        </Suspense>
+      ) : (
+        <div style={{ minHeight: "480px" }} aria-hidden="true" />
+      )}
+    </div>
+  );
+}
 
 function Homepage() {
   return (
@@ -93,7 +132,7 @@ function Homepage() {
         </ul>
         <CtaLink link={"/about"}>Learn More About Us</CtaLink>
       </ValueProp>
-      <TestimonialsCarousel />
+      <LazyTestimonials />
     </main>
   );
 }
