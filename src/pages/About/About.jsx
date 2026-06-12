@@ -1,8 +1,10 @@
 import PageHeader from "./../../components/PageHeader/PageHeader";
-import YouTube from "react-youtube";
+import YouTubeFacade from "./../../components/YouTubeFacade/YouTubeFacade";
 import ValueProp from "./../../components/ValueProp/ValueProp";
 import founderImg from "./../../assets/Burns-Auto_Founder_Gray.webp";
+import founderImg640 from "./../../assets/responsive/founder-640.webp";
 import groupImg from "./../../assets/Burns-Auto_Old-Pic-Large.webp";
+import groupImg640 from "./../../assets/responsive/group-640.webp";
 import FeaturedServices from "./../../components/FeaturedServices/FeaturedServices";
 import ServiceCard from "./../../components/ServiceCard/ServiceCard";
 import CtaBanner from "./../../components/CtaBanner/CtaBanner";
@@ -17,18 +19,6 @@ const ABOUT_KEYWORDS =
   "auto repair Newtown PA, mechanic Newtown PA, car repair Newtown, family-owned auto repair, ASE certified mechanics, Burns Auto Repair";
 
 function About() {
-  const opts = {
-    height: "480px",
-    width: "100%",
-    playerVars: {
-      autoplay: 1,
-    },
-  };
-
-  const _onReady = (event) => {
-    event.target.setVolume(0);
-  };
-
   return (
     <main>
       <Seo
@@ -51,10 +41,10 @@ function About() {
       />
       <ValueProp
         iframe={
-          <YouTube opts={opts} videoId="lQAWI_3EKV0" onReady={_onReady} />
+          <YouTubeFacade videoId="lQAWI_3EKV0" title="Burns' Auto Repair — Our Story" />
         }
       >
-        <h3>Our Story</h3>
+        <h2>Our Story</h2>
         <p>
           At Burns' Auto Repair, history isn't something we dust off for
           nostalgia — it's the foundation of how we do business today. Our story
@@ -90,10 +80,14 @@ function About() {
       <ValueProp
         reverse
         img={founderImg}
+        imgSrcSet={`${founderImg640} 640w, ${founderImg} 811w`}
+        imgSizes="(max-width: 1150px) 90vw, 45vw"
+        imgWidth="811"
+        imgHeight="613"
         imgAlt="Historic portrait of the Burns' family leadership"
         lowPaddingOnSmallScreen
       >
-        <h3>Rooted in Newtown</h3>
+        <h2>Rooted in Newtown</h2>
         <p>
           Located in the heart of Newtown, Burns' Auto Repair has served people
           from every walk of life — commuters, tradespeople, families, small
@@ -120,10 +114,14 @@ function About() {
       </ValueProp>
       <ValueProp
         img={groupImg}
+        imgSrcSet={`${groupImg640} 640w, ${groupImg} 811w`}
+        imgSizes="(max-width: 1150px) 90vw, 45vw"
+        imgWidth="811"
+        imgHeight="613"
         imgAlt="Historic photo of the Burns' Auto Repair team"
         paddingBottom
       >
-        <h3>Old-School Values. Modern Technology.</h3>
+        <h2>Old-School Values. Modern Technology.</h2>
         <p>
           While our values are rooted in tradition, our approach is anything but
           outdated.

@@ -3,7 +3,7 @@ function ServiceCard({ icon, cardTitle, outline, children }) {
   return (
     <div className={`${styles.cardContainer} ${outline && styles.outline}`}>
       <div className={styles.iconContainer}>{icon}</div>
-      <h5>{cardTitle}</h5>
+      <h3>{cardTitle}</h3>
       <p>{children}</p>
     </div>
   );

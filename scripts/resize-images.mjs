@@ -21,6 +21,9 @@ const jobs = [
   { input: "shop-upclose.webp", output: "shop-upclose-1000.webp", width: 1000, quality: 72 },
   // Nav/footer logo — max ~187px wide at display size (60px tall × aspect ratio)
   { input: "burnsautologo white.webp", output: "logo-400.webp", width: 400, quality: 75 },
+  // About page photos — 811×613 originals; 640w covers 1x DPR mobile and low-DPR desktop
+  { input: "Burns-Auto_Founder_Gray.webp", output: "founder-640.webp", width: 640, quality: 72 },
+  { input: "Burns-Auto_Old-Pic-Large.webp", output: "group-640.webp", width: 640, quality: 72 },
   // Banner logos — displayed at fixed small sizes
   { input: "Shell_logo.svg.webp", output: "shell-logo-242.webp", width: 242, quality: 75 },
   { input: "ASE-Logo_190312_132616.webp", output: "ase-logo-224.webp", width: 224, quality: 75 },
