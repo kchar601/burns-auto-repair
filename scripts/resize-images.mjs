@@ -10,34 +10,29 @@ const out = join(__dirname, "../src/assets/responsive");
 mkdirSync(out, { recursive: true });
 
 const jobs = [
-  // Hero image — full-width on all viewports, generate 640w and 1000w variants
-  { input: "shopzoomed.webp", output: "shopzoomed-640.webp", width: 640 },
-  { input: "shopzoomed.webp", output: "shopzoomed-1000.webp", width: 1000 },
-  // Shop interior — half-width on desktop, full-width on mobile
-  { input: "shop-upclose.webp", output: "shop-upclose-640.webp", width: 640 },
-  { input: "shop-upclose.webp", output: "shop-upclose-1000.webp", width: 1000 },
-  // Nav/footer logo — max ~187px wide at display size, generate 2x for retina
-  { input: "burnsautologo white.webp", output: "logo-400.webp", width: 400 },
-  // Banner logos — small fixed display size, just properly sized for 2x retina
-  { input: "Shell_logo.svg.webp", output: "shell-logo-242.webp", width: 242 },
-  {
-    input: "ASE-Logo_190312_132616.webp",
-    output: "ase-logo-224.webp",
-    width: 224,
-  },
-  { input: "bumper2bumper.webp", output: "bumper2bumper-412.webp", width: 412 },
-  {
-    input: "confidencePlus.webp",
-    output: "confidenceplus-400.webp",
-    width: 400,
-  },
-  { input: "SURECRITIC.webp", output: "surecritic-480.webp", width: 480 },
+  // Hero (shopzoomed) — full-width on all viewports
+  // 640w: 1× DPR mobile; 800w: 2× DPR small phones; 1000w: high-DPR mobile / slow-network desktop
+  { input: "shopzoomed.webp", output: "shopzoomed-640.webp", width: 640, quality: 72 },
+  { input: "shopzoomed.webp", output: "shopzoomed-800.webp", width: 800, quality: 72 },
+  { input: "shopzoomed.webp", output: "shopzoomed-1000.webp", width: 1000, quality: 72 },
+  // Shop interior (shop-upclose) — 50vw on desktop, 100vw on mobile
+  { input: "shop-upclose.webp", output: "shop-upclose-640.webp", width: 640, quality: 72 },
+  { input: "shop-upclose.webp", output: "shop-upclose-800.webp", width: 800, quality: 72 },
+  { input: "shop-upclose.webp", output: "shop-upclose-1000.webp", width: 1000, quality: 72 },
+  // Nav/footer logo — max ~187px wide at display size (60px tall × aspect ratio)
+  { input: "burnsautologo white.webp", output: "logo-400.webp", width: 400, quality: 75 },
+  // Banner logos — displayed at fixed small sizes
+  { input: "Shell_logo.svg.webp", output: "shell-logo-242.webp", width: 242, quality: 75 },
+  { input: "ASE-Logo_190312_132616.webp", output: "ase-logo-224.webp", width: 224, quality: 75 },
+  { input: "bumper2bumper.webp", output: "bumper2bumper-412.webp", width: 412, quality: 75 },
+  { input: "confidencePlus.webp", output: "confidenceplus-400.webp", width: 400, quality: 75 },
+  { input: "SURECRITIC.webp", output: "surecritic-480.webp", width: 480, quality: 75 },
 ];
 
-for (const { input, output, width } of jobs) {
+for (const { input, output, width, quality } of jobs) {
   await sharp(join(src, input))
     .resize(width)
-    .webp({ quality: 82 })
+    .webp({ quality })
     .toFile(join(out, output));
   console.log(`✓ ${output}`);
 }

@@ -33,7 +33,6 @@ function AppNav() {
             height="128"
             loading="eager"
             decoding="async"
-            fetchPriority="high"
           />
         </NavLink>
         <ul

@@ -5,6 +5,7 @@ import TestimonialsCarousel from "../../components/TestimonialsCarousel/Testimon
 import CtaLink from "../../components/CtaLink/CtaLink";
 import shopUpcloseImage from "../../assets/shop-upclose.webp";
 import shopUpclose640 from "../../assets/responsive/shop-upclose-640.webp";
+import shopUpclose800 from "../../assets/responsive/shop-upclose-800.webp";
 import shopUpclose1000 from "../../assets/responsive/shop-upclose-1000.webp";
 import styles from "../../components/ValueProp/ValueProp.module.css";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
@@ -67,7 +68,7 @@ function Homepage() {
 
       <ValueProp
         img={shopUpcloseImage}
-        imgSrcSet={`${shopUpclose640} 640w, ${shopUpclose1000} 1000w, ${shopUpcloseImage} 1920w`}
+        imgSrcSet={`${shopUpclose640} 640w, ${shopUpclose800} 800w, ${shopUpclose1000} 1000w, ${shopUpcloseImage} 1920w`}
         imgSizes="(max-width: 1150px) 100vw, 50vw"
         imgWidth="1920"
         imgHeight="1440"
