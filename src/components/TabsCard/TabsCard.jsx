@@ -82,6 +82,7 @@ function TabsCard({ tabs, title, id = "services-tabs" }) {
         <div className={styles.rightColumn}>
           <div className={styles.selectWrap}>
             <select
+              aria-label="Select a service category"
               className={styles.tabsSelect}
               value={tabs[activeTab]?.slug ?? tabs[0]?.slug}
               onChange={(e) => setHash(e.target.value)}

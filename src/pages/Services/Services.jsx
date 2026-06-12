@@ -5,6 +5,13 @@ import CtaBanner from "./../../components/CtaBanner/CtaBanner";
 import ValueProp from "./../../components/ValueProp/ValueProp";
 import noBreak from "./../../hooks/noBreak.module.css";
 import serviceInspectionImage from "./../../assets/shopzoomed.webp";
+import serviceInspection640 from "./../../assets/responsive/shopzoomed-640.webp";
+import serviceInspection800 from "./../../assets/responsive/shopzoomed-800.webp";
+import serviceInspection1000 from "./../../assets/responsive/shopzoomed-1000.webp";
+import maintenanceImage from "./../../assets/shop-upclose.webp";
+import maintenance640 from "./../../assets/responsive/shop-upclose-640.webp";
+import maintenance800 from "./../../assets/responsive/shop-upclose-800.webp";
+import maintenance1000 from "./../../assets/responsive/shop-upclose-1000.webp";
 import { useLocation } from "react-router-dom";
 import Seo from "../../components/Seo/Seo";
 import { buildBreadcrumbSchema } from "../../seo/seoConfig";
@@ -15,7 +22,7 @@ const tabs = [
     slug: "brakes-tires",
     content: (
       <>
-        <h3>Brakes & Tires</h3>
+        <h2>Brakes & Tires</h2>
 
         <p>
           Your brakes and tires are your vehicle's primary safety systems. When
@@ -23,7 +30,7 @@ const tabs = [
           suffers, and risks rise quickly.
         </p>
 
-        <h4>Brake Services</h4>
+        <h3>Brake Services</h3>
 
         <p>
           Squealing, grinding, vibration, or a soft pedal are all signs your
@@ -43,7 +50,7 @@ const tabs = [
           what's needed — and why.
         </p>
 
-        <h4>Tire Services</h4>
+        <h3>Tire Services</h3>
 
         <p>
           Tires affect braking, steering, ride quality, and fuel efficiency. We
@@ -64,7 +71,7 @@ const tabs = [
     slug: "steering-suspension",
     content: (
       <>
-        <h3>Steering & Suspension</h3>
+        <h2>Steering & Suspension</h2>
 
         <p>
           Your steering and suspension systems control how your vehicle handles
@@ -98,7 +105,7 @@ const tabs = [
     slug: "ac-heating",
     content: (
       <>
-        <h3>AC & Heating</h3>
+        <h2>AC & Heating</h2>
 
         <p>
           A properly functioning climate control system keeps you comfortable
@@ -131,7 +138,7 @@ const tabs = [
     slug: "check-engine-diagnostics",
     content: (
       <>
-        <h3>Check Engine & Diagnostics</h3>
+        <h2>Check Engine & Diagnostics</h2>
 
         <p>
           When a warning light appears on your dashboard, it's your vehicle
@@ -164,7 +171,7 @@ const tabs = [
     slug: "electrical-systems",
     content: (
       <>
-        <h3>Electrical Systems</h3>
+        <h2>Electrical Systems</h2>
 
         <p>
           Electrical systems power nearly every function in today's vehicles —
@@ -239,7 +246,11 @@ function Services() {
           <img
             className={styles.slantImage}
             src={serviceInspectionImage}
-            alt="Mechanic working on car engine"
+            srcSet={`${serviceInspection640} 640w, ${serviceInspection800} 800w, ${serviceInspection1000} 1000w, ${serviceInspectionImage} 1582w`}
+            sizes="(max-width: 1024px) 100vw, 800px"
+            alt="Burns Auto Repair shop exterior"
+            width="1582"
+            height="1001"
             loading="lazy"
             decoding="async"
           />
@@ -249,7 +260,7 @@ function Services() {
           id="state-inspections-emissions"
           className={styles.slantContent}
         >
-          <h3>PA State Inspections & Emissions</h3>
+          <h2>PA State Inspections & Emissions</h2>
 
           <p>
             If you're a Pennsylvania resident, you already know the routine:
@@ -264,7 +275,7 @@ function Services() {
             safe, compliant, and evaluated honestly.
           </p>
 
-          <h4>The Safety Inspection</h4>
+          <h3>The Safety Inspection</h3>
 
           <p>
             When your car comes into the bay, we're looking for real safety
@@ -299,7 +310,7 @@ function Services() {
             </li>
           </ul>
 
-          <h4>Emissions Testing</h4>
+          <h3>Emissions Testing</h3>
 
           <p>
             Because we're in the Philadelphia region, emissions standards are
@@ -322,7 +333,7 @@ function Services() {
           </p>
 
           <div className="checklist-box">
-            <h4>📝 What to Bring</h4>
+            <h3>📝 What to Bring</h3>
             <ul>
               <li>Valid PA registration</li>
               <li>Valid insurance (physical or digital)</li>
@@ -332,12 +343,16 @@ function Services() {
         </section>
       </section>
       <section id="scheduled-maintenance" className={styles.scheduledServices}>
-        <h3 className={styles.maintenanceHeader}>
+        <h2 className={styles.maintenanceHeader}>
           Scheduled Maintenance Services
-        </h3>
+        </h2>
         <ValueProp
-          img="https://www.metromotor.com/sites/default/files/Oil%20Change%20in%20DC%20Maryland%20and%20Northern%20Virginia.jpg"
-          imgAlt="Technician performing scheduled vehicle maintenance"
+          img={maintenanceImage}
+          imgSrcSet={`${maintenance640} 640w, ${maintenance800} 800w, ${maintenance1000} 1000w, ${maintenanceImage} 1920w`}
+          imgSizes="(max-width: 1150px) 100vw, 50vw"
+          imgWidth="1920"
+          imgHeight="1440"
+          imgAlt="Technician working on a vehicle at Burns Auto Repair"
           reverse
         >
           <div>
@@ -353,7 +368,7 @@ function Services() {
               No guessing. No blanket schedules. Just data-backed decisions.
             </p>
 
-            <h4>Common Maintenance Services</h4>
+            <h3>Common Maintenance Services</h3>
 
             <ul>
               <li className={styles.services}>
@@ -390,7 +405,7 @@ function Services() {
               </li>
             </ul>
 
-            <h4>The Burns' Approach</h4>
+            <h3>The Burns' Approach</h3>
 
             <p>
               Many shops treat scheduled maintenance as a checklist. We treat it

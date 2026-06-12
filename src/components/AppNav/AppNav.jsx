@@ -32,7 +32,6 @@ function AppNav() {
             width="400"
             height="128"
             loading="eager"
-            decoding="async"
           />
         </NavLink>
         <ul
