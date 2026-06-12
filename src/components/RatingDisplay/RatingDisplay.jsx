@@ -1,5 +1,5 @@
 import styles from "./RatingDisplay.module.css";
-import sureCriticLogo from "../../assets/SURECRITIC.webp";
+import sureCriticLogo from "../../assets/responsive/surecritic-480.webp";
 
 function RatingDisplay() {
   return (

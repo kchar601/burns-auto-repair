@@ -1,11 +1,13 @@
 import CtaLink from "../CtaLink/CtaLink";
 import styles from "./HeroSection.module.css";
 import heroImage from "../../assets/shopzoomed.webp";
+import heroImage640 from "../../assets/responsive/shopzoomed-640.webp";
+import heroImage1000 from "../../assets/responsive/shopzoomed-1000.webp";
 import noBreak from "./../../hooks/noBreak.module.css";
-import aseImg from "./../../assets/ASE-Logo_190312_132616.webp";
-import bumperImg from "./../../assets/bumper2bumper.webp";
-import confidencePlus from "./../../assets/confidencePlus.webp";
-import shell from "./../../assets/Shell_logo.svg.webp";
+import aseImg from "./../../assets/responsive/ase-logo-224.webp";
+import bumperImg from "./../../assets/responsive/bumper2bumper-412.webp";
+import confidencePlus from "./../../assets/responsive/confidenceplus-400.webp";
+import shell from "./../../assets/responsive/shell-logo-242.webp";
 
 function HeroSection() {
   return (
@@ -28,7 +30,11 @@ function HeroSection() {
         <img
           className={styles.heroImg}
           src={heroImage}
+          srcSet={`${heroImage640} 640w, ${heroImage1000} 1000w, ${heroImage} 1582w`}
+          sizes="100vw"
           alt="Burns Auto Repair garage exterior in Newtown, PA"
+          width="1582"
+          height="1001"
           loading="eager"
           decoding="async"
           fetchPriority="high"

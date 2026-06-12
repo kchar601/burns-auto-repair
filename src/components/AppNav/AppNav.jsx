@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import CtaLink from "../CtaLink/CtaLink";
 import styles from "./AppNav.module.css";
 import "animate.css";
-import Logo from "../../assets/burnsautologo white.webp";
+import Logo from "../../assets/responsive/logo-400.webp";
 
 const CLOSE_ANIMATION_MS = 700;
 
@@ -29,8 +29,8 @@ function AppNav() {
             src={Logo}
             className={styles.logo}
             alt="Burns Auto Repair logo"
-            width="941"
-            height="301"
+            width="400"
+            height="128"
             loading="eager"
             decoding="async"
             fetchPriority="high"

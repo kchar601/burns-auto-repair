@@ -8,7 +8,7 @@ import "../../swiper-navigation.css";
 import styles from "./TestimonialsCarousel.module.css";
 import testimonials from "../../data/testimonials.json";
 import renderStars from "./RenderStars";
-import sureCriticLogo from "../../assets/SURECRITIC.webp";
+import sureCriticLogo from "../../assets/responsive/surecritic-480.webp";
 
 export default function TestimonialsCarousel() {
   const prevRef = useRef(null);

@@ -7,6 +7,7 @@
     "dev": "npm run blog:build && vite --host 0.0.0.0",
     "build": "npm run blog:build && vite build",
     "blog:build": "node scripts/build-blog.mjs",
+    "images:resize": "node scripts/resize-images.mjs",
     "lint": "eslint .",
     "preview": "vite preview --host"
   },
@@ -29,6 +30,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "sharp": "^0.35.1",
     "vite": "^7.2.4"
   }
 }

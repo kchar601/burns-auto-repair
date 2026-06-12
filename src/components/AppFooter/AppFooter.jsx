@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styles from "../AppNav/AppNav.module.css";
 import SmartStatus from "../SmartStatus/SmartStatus";
-import Logo from "../../assets/burnsautologo white.webp";
+import Logo from "../../assets/responsive/logo-400.webp";
 
 function AppFooter() {
   return (
@@ -16,8 +16,8 @@ function AppFooter() {
               src={Logo}
               className={styles.logo}
               alt="Burns Auto Repair logo"
-              width="941"
-              height="301"
+              width="400"
+              height="128"
               loading="lazy"
               decoding="async"
             />

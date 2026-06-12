@@ -4,6 +4,8 @@ import ValueProp from "../../components/ValueProp/ValueProp";
 import TestimonialsCarousel from "../../components/TestimonialsCarousel/TestimonialsCarousel";
 import CtaLink from "../../components/CtaLink/CtaLink";
 import shopUpcloseImage from "../../assets/shop-upclose.webp";
+import shopUpclose640 from "../../assets/responsive/shop-upclose-640.webp";
+import shopUpclose1000 from "../../assets/responsive/shop-upclose-1000.webp";
 import styles from "../../components/ValueProp/ValueProp.module.css";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import Seo from "../../components/Seo/Seo";
@@ -27,13 +29,6 @@ function Homepage() {
           AUTO_REPAIR_SCHEMA,
           buildBreadcrumbSchema([{ name: "Home", path: "/" }]),
         ]}
-      />
-      <link
-        rel="preload"
-        as="image"
-        href="./src/assets/shopzoomed.webp"
-        type="image/webp"
-        fetchPriority="high"
       />
       <HeroSection />
       <FeaturedServices
@@ -72,6 +67,10 @@ function Homepage() {
 
       <ValueProp
         img={shopUpcloseImage}
+        imgSrcSet={`${shopUpclose640} 640w, ${shopUpclose1000} 1000w, ${shopUpcloseImage} 1920w`}
+        imgSizes="(max-width: 1150px) 100vw, 50vw"
+        imgWidth="1920"
+        imgHeight="1440"
         imgAlt="Technician working on a vehicle at Burns Auto Repair"
       >
         <h2>Our Integrity Speaks for Itself</h2>

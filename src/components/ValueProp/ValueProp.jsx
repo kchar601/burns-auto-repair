@@ -3,6 +3,10 @@ import styles from "./ValueProp.module.css";
 function ValueProp({
   img,
   imgAlt = "",
+  imgSrcSet,
+  imgSizes,
+  imgWidth,
+  imgHeight,
   iframe,
   children,
   reverse,
@@ -18,6 +22,10 @@ function ValueProp({
       <img
         className={`${styles.imageColumn} ${mediaClassName ? mediaClassName : ""}`}
         src={img}
+        srcSet={imgSrcSet}
+        sizes={imgSizes}
+        width={imgWidth}
+        height={imgHeight}
         alt={imgAlt}
         loading="lazy"
         decoding="async"
