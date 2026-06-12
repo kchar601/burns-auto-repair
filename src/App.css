@@ -111,9 +111,12 @@ th {
   letter-spacing: 1.2px;
 }
 
-.fa-solid {
-  background-color: transparent;
+.icon-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
   font-size: 1.333rem;
+  vertical-align: -0.125em;
 }
 
 @media screen and (max-width: 453px) {

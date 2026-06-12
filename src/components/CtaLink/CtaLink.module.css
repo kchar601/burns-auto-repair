@@ -21,11 +21,13 @@
   border: none;
 }
 
-.icon:not(.iconEnd) i {
+.icon:not(.iconEnd) i,
+.icon:not(.iconEnd) svg {
   margin-right: 0.5rem;
 }
 
-.iconEnd i {
+.iconEnd i,
+.iconEnd svg {
   margin-left: 0.5rem;
 }
 

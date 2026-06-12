@@ -69,12 +69,11 @@ a {
 
 .logo {
   display: block;
+  height: 60px;
   width: auto;
-  height: auto;
   max-width: 100%;
-  max-height: 60px;
   margin: auto;
-  aspect-ratio: 400 / 128;
+  object-fit: contain;
 }
 
 .links {
@@ -154,7 +153,8 @@ h5:has(+ .linksVert) {
   background-color: var(--accent-700);
 }
 
-.socials * a i {
+.socials * a i,
+.socials * a svg {
   margin: auto;
   padding: 10px 8px 8px 6px;
 }
@@ -201,9 +201,6 @@ h5:has(+ .linksVert) {
 }
 
 @media (max-width: 800px) {
-  .logo {
-    max-height: 60px;
-  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -229,11 +226,6 @@ h5:has(+ .linksVert) {
 
   .hide {
     display: none;
-  }
-
-  .logo {
-    width: auto;
-    height: auto;
   }
 
   .hamburger {
