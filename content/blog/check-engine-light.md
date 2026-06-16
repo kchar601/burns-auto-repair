@@ -14,7 +14,7 @@ Few dashboard warnings cause as much concern as the check engine light. One minu
 
 At Burns Auto Repair, one of the most common questions we hear from drivers in Newtown and Yardley is: **"My check engine light came on. What should I do?"**
 
-The good news is that a [check engine light](https://www.burnsautorepair.com/services#check-engine-diagnostics) doesn't always mean a major repair is needed. However, it should never be ignored. Whether you're commuting through Newtown, driving around Yardley, or heading down I-295, addressing the issue early can help prevent more expensive repairs down the road.
+The good news is that a [check engine light](/services#check-engine-diagnostics) doesn't always mean a major repair is needed. However, it should never be ignored. Whether you're commuting through Newtown, driving around Yardley, or heading down I-295, addressing the issue early can help prevent more expensive repairs down the road.
 
 ### First: Don't Panic
 
@@ -34,7 +34,7 @@ If the light is on but not flashing, the vehicle may still be safe to drive for 
 * Evaporative emissions system leaks
 * Minor ignition or fuel system problems
 
-Even if the vehicle seems to run normally, it's important to have the issue [diagnosed](https://www.burnsautorepair.com/services#check-engine-diagnostics) as soon as possible. Many small problems become larger and more expensive if left unresolved.
+Even if the vehicle seems to run normally, it's important to have the issue [diagnosed](/services#check-engine-diagnostics) as soon as possible. Many small problems become larger and more expensive if left unresolved.
 
 #### Flashing Check Engine Light
 
@@ -90,7 +90,7 @@ For example:
 * Emissions system problems can cause inspection failures.
 * Engine performance issues can worsen over time.
 
-Drivers in Pennsylvania should be especially aware that certain check engine light issues can cause a vehicle to fail [emissions testing](https://www.burnsautorepair.com/services#state-inspections-emissions).
+Drivers in Pennsylvania should be especially aware that certain check engine light issues can cause a vehicle to fail [emissions testing](/services#state-inspections-emissions).
 
 ### Professional Check Engine Light Diagnostics
 
@@ -106,7 +106,7 @@ Professional diagnostic testing allows technicians to:
 
 Proper diagnosis saves time, money, and frustration.
 
-At Burns Auto Repair, we use [professional diagnostic equipment](https://www.burnsautorepair.com/services#check-engine-diagnostics) to pinpoint the source of the problem rather than simply replacing parts based on a code.
+At Burns Auto Repair, we use [professional diagnostic equipment](/services#check-engine-diagnostics) to pinpoint the source of the problem rather than simply replacing parts based on a code.
 
 ### Need Check Engine Light Service in Newtown or Yardley?
 
@@ -116,10 +116,9 @@ Whether it's a loose gas cap, a faulty sensor, an ignition problem, or a more co
 
 Don't wait for a small problem to become a major repair.
 
-[Contact](https://www.burnsautorepair.com/contact) Burns Auto Repair today to schedule your check engine diagnostic service.
+[Contact](/contact) Burns Auto Repair today to schedule your check engine diagnostic service.
 
 #### Relevant Links
 
-* [Schedule your check engine diagnostic service](https://www.burnsautorepair.com/contact)
-* [Check Engine Diagnostics](https://www.burnsautorepair.com/services#check-engine-diagnostics)
-* [PA State Inspections & Emissions](https://www.burnsautorepair.com/services#state-inspections-emissions)
+* [Check Engine Diagnostics](/services#check-engine-diagnostics)
+* [PA State Inspections & Emissions](/services#state-inspections-emissions)

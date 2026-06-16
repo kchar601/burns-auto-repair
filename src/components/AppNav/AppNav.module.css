@@ -136,7 +136,22 @@ h5:has(+ .linksVert) {
   margin: 2rem auto 0;
 }
 
+.socialsInner{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
 .socials * .socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  border-radius: 100%;
+  padding: 0.2rem 0.4rem 0.6rem;
+  background-color: var(--accent-600);
+  font-weight: 700;
   color: var(--text-50);
   background-color: var(--accent-600);
   width: fit-content;
@@ -144,19 +159,21 @@ h5:has(+ .linksVert) {
   aspect-ratio: 1;
   margin-right: 1rem;
   font-size: 22px;
-  /* padding: 2px; */
 }
 
 .socials * .socialLink:hover,
 .socials * .socialLink:focus,
 .socials * .socialLink:active {
+  color: var(--text-50);
   background-color: var(--accent-700);
 }
 
 .socials * a i,
 .socials * a svg {
-  margin: auto;
-  padding: 10px 8px 8px 6px;
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 
 .socialsInner {

@@ -117,6 +117,7 @@ th {
   height: 1em;
   font-size: 1.333rem;
   vertical-align: -0.125em;
+  color: inherit;
 }
 
 @media screen and (max-width: 453px) {
