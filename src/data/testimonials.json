@@ -1,10 +1,114 @@
 [
+    {
+    "name": "Francis M.",
+    "rating": 5,
+    "title": "Excellent Service",
+    "date": "06/20/2026",
+    "text": "I have been taking my vehicles to Burns Auto since 2015. Although I moved further away I still bring both cars back when maintenance or repairs are due. Honest, Friendly and knowledgeable mechanics who do a fine job.",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11087373#reviews-pagination"
+  },
+    {
+    "name": "Eric P.",
+    "rating": 5,
+    "title": "2008 Ford F-150",
+    "date": "06/20/2026",
+    "text": "Had my truck inspected, oil changed, and brake light on the dash staying on. Also had Burns look over the truck since it's not used too often. They were able to repair dash light issue for a reasonable price. Left truck for the day, was done mid-afternoon. Mechanic called and explained everything.",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11087338#reviews-pagination"
+  },
+    {
+    "name": "Bessie S.",
+    "rating": 5,
+    "title": "06/16/2026",
+    "date": "06/16/2026",
+    "text": "As always, everyone and everything was professional and courteous",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11080819#reviews-pagination"
+  },
+    {
+    "name": "Lisa F.",
+    "rating": 5,
+    "title": "Excellent customer service!",
+    "date": "06/16/2026",
+    "text": "Burns Auto has been servicing all of our vehicles since we moved here over 20 years ago, and they are simply the best in every attribute!",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11080646#reviews-pagination"
+  },
+    {
+    "name": "Kenneth C.",
+    "rating": 5,
+    "title": "Awesome work . Always done right the first time.",
+    "date": "06/12/2026",
+    "text": "Friendly professional",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11076986#reviews-pagination"
+  },
+    {
+    "name": "Steven P.",
+    "rating": 5,
+    "title": "Great service",
+    "date": "06/11/2026",
+    "text": "Always provides excellent and friendly service at a great price.",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11074643#reviews-pagination"
+  },
+    {
+    "name": "Jane S.",
+    "rating": 5,
+    "title": "Came in for an oil change and a battery check",
+    "date": "06/02/2026",
+    "text": "As always, great job! Everyone is very helpful and informative. Quick efficient. Thanks so much.",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11063132#reviews-pagination"
+  },
+    {
+    "name": "Jacqueline C.",
+    "rating": 5,
+    "title": "Always does a great job",
+    "date": "05/29/2026",
+    "text": "We have been going to Burns for years and they have always done a great job. They are able fit us in, even when we call a couple of days before the inspection is due, like for this trip. We have had inspections, oil changes, brakes and many other repairs to name a few.",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11058147#reviews-pagination"
+  },
+    {
+    "name": "James P.",
+    "rating": 5,
+    "title": "Always professional",
+    "date": "05/27/2026",
+    "text": "Lucky to have Burns in the neighborhood",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11054957#reviews-pagination"
+  },
+    {
+    "name": "Ronald L.",
+    "rating": 5,
+    "title": "Always quick friendly service",
+    "date": "05/26/2026",
+    "text": "We have been getting our cars serviced here for 10+ years. Hope things never change. Fair, quick, reliable service from a family owned business. The same quality and care that goes into the business (shop & garage are always clean and organized; employees always friendly and courteous) goes into your vehicles. Excellent & much appreciated work and service Burns, thank you!",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11054411#reviews-pagination"
+  },
+    {
+    "name": "Judy W.",
+    "rating": 5,
+    "title": "Always excellent!!",
+    "date": "05/26/2026",
+    "text": "We have been taking our cars to Burns Auto for many many years. It is easy to get an appointment, the service is always excellent, and the advice extremely helpful. I recommend them without reservation.",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11054026#reviews-pagination"
+  },
+    {
+    "name": "Jody C.",
+    "rating": 5,
+    "title": "Honesty",
+    "date": "05/21/2026",
+    "text": "If you are looking for an honest and professional auto repair company, Burns Auto repair is the place to go.",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11050443#reviews-pagination"
+  },
+    {
+    "name": "Frank B.",
+    "rating": 5,
+    "title": "Car inspection",
+    "date": "04/20/2026",
+    "text": "Very thorough very professional. Great people to work with will bring all my cars there anytime any day.",
+    "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=11009171#reviews-pagination"
+  },
   {
     "name": "Shannon T.",
     "rating": 5,
     "title": "Wonderful service with a smile!",
     "date": "03/31/2026",
-    "text": "I’m always pleased with service done on my vehicle and the customer service at Burn’s Auto. Every single person there is so friendly and helpful. They do a great job! Honest and reasonably priced.",
+    "text": "I'm always pleased with service done on my vehicle and the customer service at Burn's Auto. Every single person there is so friendly and helpful. They do a great job! Honest and reasonably priced.",
     "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=10983071#reviews-pagination"
   },
   {
@@ -44,7 +148,7 @@
     "rating": 5,
     "title": "Always the best",
     "date": "03/19/2026",
-    "text": "We’ve been going to Burns for all our auto servicing needs for over 20 years. Always friendly, efficient and reliable, our only disappointment is not chatting with Dave (Senior) when we’re there. But he richly deserved to retire and his son and crew are carrying on this family business superbly!",
+    "text": "We've been going to Burns for all our auto servicing needs for over 20 years. Always friendly, efficient and reliable, our only disappointment is not chatting with Dave (Senior) when we're there. But he richly deserved to retire and his son and crew are carrying on this family business superbly!",
     "link": "https://www.surecritic.com/reviews/burns-auto-repair-inc?review_id=10967355#reviews-pagination"
   },
   {
