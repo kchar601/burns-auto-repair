@@ -464,6 +464,7 @@ function renderFooter() {
             <li><a href="/services#steering-suspension">Steering &amp; Suspension</a></li>
             <li><a href="/services#ac-heating">AC &amp; Heating</a></li>
             <li><a href="/services#check-engine-diagnostics">Check Engine &amp; Diagnostics</a></li>
+            <li><a href="/services#electrical-systems">Electrical Systems</a></li>
           </ul>
         </div>
         <div>

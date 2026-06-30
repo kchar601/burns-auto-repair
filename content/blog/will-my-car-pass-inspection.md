@@ -7,7 +7,7 @@ slug: "will-my-car-pass-pa-state-inspection-newtown"
 tags:
   - State Inspections
   - Maintenance
-draft: true
+draft: false
 ---
 
 Pennsylvania requires annual safety and emissions inspections for most registered vehicles. For many drivers, the inspection comes around once a year without much thought—until it doesn't go smoothly.
@@ -48,7 +48,7 @@ For most vehicles, emissions is performed first and acts as a prerequisite—if 
 
 Two of the most common reasons a vehicle fails emissions:
 
-**1. The check engine light is on.** For vehicles subject to emissions testing, an illuminated check engine light will typically cause a failure. The light doesn't have to be emissions-specific—many engine and sensor faults will trigger it. If a vehicle doesn't pass, it may still qualify for a waiver after a certain amount has been spent toward qualifying emissions-related repairs, so it's worth asking us about your options.
+**1. The check engine light is on.** For vehicles subject to emissions testing, an illuminated check engine light will typically cause a failure. The light doesn't have to be emissions specific—many engine and sensor faults will trigger it. If a vehicle doesn't pass, it may still qualify for a waiver after a certain amount has been spent toward qualifying emissions-related repairs, so it's worth asking us about your options.
 
 **2. Readiness monitors are incomplete.** Your vehicle runs a series of internal self-checks called readiness monitors. After a dead battery or a battery replacement, these monitors reset, and the vehicle may not be ready to test even with no warning lights on. Restoring them requires a period of normal driving—sometimes a few hundred miles—before the vehicle can be tested.
 
@@ -68,7 +68,7 @@ If your check engine light is on, it's worth having it [diagnosed](/services#che
 
 If your vehicle doesn't pass, it receives a rejection sticker. You'll have a defined period to have the issues repaired and return for a re-inspection. The shop that performed the original inspection can re-inspect the failed components once repairs are complete.
 
-It's also possible for a vehicle to pass emissions but still fail the safety portion. When that happens, an emissions-only sticker may be issued *until* the safety issues are repaired and a full passing sticker can be applied.
+It's also possible for a vehicle to pass emissions but still fail the safety portion. When that happens, an emissions-only sticker may be issued *until* the safety issues are repaired and a safety sticker can be applied.
 
 Catching potential problems before the inspection is almost always less stressful than dealing with a rejection, waiting on parts, and making a second trip.
 
@@ -76,7 +76,9 @@ Catching potential problems before the inspection is almost always less stressfu
 
 If you're not confident your vehicle will pass or just want peace of mind before your sticker expires, Burns Auto Repair can take a look. Our team serves drivers throughout Newtown, Yardley, Langhorne, and the surrounding Bucks County communities.
 
-We're open **Monday through Friday from 8:00am to 5:00pm** and **Saturday from 7:00am to 12:00pm**.
+Our repair shop is open **Monday through Friday from 8:00 am to 5:00 pm** and **Saturday from 7:00 am to 12:00 pm**.
+
+Need to fill up or grab your keys? Our gas station and vehicle pickup desk are open extended hours: **Monday through Friday from 7:00 am to 8:00 pm**, **Saturday from 7:00am to 5:00pm**, and **Sunday from 8:00am to 4:00pm**.
 
 [Contact](/contact) Burns Auto Repair to schedule your PA state inspection or a pre-inspection vehicle check.
 
