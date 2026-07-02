@@ -86,5 +86,10 @@
       "status": 404,
       "dest": "/404.html"
     }
+  ],
+  "redirects": [
+    { "source": "/services-2", "destination": "/services", "permanent": true },
+    { "source": "/contact-us", "destination": "/contact", "permanent": true },
+    { "source": "/about-us", "destination": "/about", "permanent": true }
   ]
 }
