@@ -48,16 +48,16 @@
       "dest": "/blog/"
     },
     {
-      "src": "^/blog/([^/.]+)$",
+      "src": "^/blog/([^/.]+)/$",
       "status": 308,
-      "dest": "/blog/$1/"
+      "dest": "/blog/$1"
     },
     {
       "src": "^/blog/$",
       "dest": "/blog/index.html"
     },
     {
-      "src": "^/blog/([^/.]+)/$",
+      "src": "^/blog/([^/.]+)$",
       "dest": "/blog/$1/index.html"
     },
     {

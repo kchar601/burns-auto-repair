@@ -139,8 +139,8 @@ function parsePost(source, filePath) {
     image,
     bodyHtml,
     draft: data.draft === true,
-    canonicalPath: `/blog/${slug}/`,
-    url: toAbsoluteUrl(`/blog/${slug}/`),
+    canonicalPath: `/blog/${slug}`,
+    url: toAbsoluteUrl(`/blog/${slug}`),
     readTime: `${Math.max(1, Math.ceil(wordCount / 220))} min read`,
   };
 }
