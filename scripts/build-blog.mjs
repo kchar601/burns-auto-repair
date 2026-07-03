@@ -218,7 +218,7 @@ function renderBlogIndex(posts) {
     title: "Auto Repair Blog | Burns' Auto Repair in Newtown, PA",
     description:
       "Maintenance tips, repair guidance, and local auto care articles from Burns' Auto Repair in Newtown, PA.",
-    canonicalPath: "/blog/",
+    canonicalPath: "/blog",
     extraHead: '<link rel="alternate" type="application/rss+xml" title="Burns Auto Repair Blog" href="/blog/feed.xml" />',
     structuredData: [
       {
