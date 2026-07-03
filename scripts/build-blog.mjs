@@ -29,7 +29,7 @@ const BASE_PAGES = [
   { path: "/about", changefreq: "monthly", priority: "0.8" },
   { path: "/testimonials", changefreq: "daily", priority: "0.8" },
   { path: "/contact", changefreq: "monthly", priority: "0.8" },
-  { path: "/blog/", changefreq: "weekly", priority: "0.7" },
+  { path: "/blog", changefreq: "weekly", priority: "0.7" },
 ];
 
 const DEFAULT_AUTHOR = SITE_NAME;
@@ -224,8 +224,8 @@ function renderBlogIndex(posts) {
       {
         "@context": "https://schema.org",
         "@type": "Blog",
-        "@id": `${toAbsoluteUrl("/blog/")}#blog`,
-        url: toAbsoluteUrl("/blog/"),
+        "@id": `${toAbsoluteUrl("/blog")}#blog`,
+        url: toAbsoluteUrl("/blog"),
         name: "Burns' Auto Repair Blog",
         description:
           "Maintenance tips, repair guidance, and local auto care articles from Burns' Auto Repair.",
@@ -242,7 +242,7 @@ function renderBlogIndex(posts) {
       },
       breadcrumbSchema([
         { name: "Home", path: "/" },
-        { name: "Blog", path: "/blog/" },
+        { name: "Blog", path: "/blog" },
       ]),
     ],
     body: `
@@ -304,13 +304,13 @@ function renderBlogPost(post) {
       },
       breadcrumbSchema([
         { name: "Home", path: "/" },
-        { name: "Blog", path: "/blog/" },
+        { name: "Blog", path: "/blog" },
         { name: post.title, path: post.canonicalPath },
       ]),
     ],
     body: `
       <article class="article-shell">
-        <a class="back-link" href="/blog/">Back to blog</a>
+        <a class="back-link" href="/blog">Back to blog</a>
         <header class="article-header">
           <p class="post-meta">${escapeHtml(post.displayDate)} <span aria-hidden="true">/</span> ${escapeHtml(post.readTime)}</p>
           <h1>${escapeHtml(post.title)}</h1>
@@ -451,7 +451,7 @@ function renderFooter() {
             <li><a href="/services">Services</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/testimonials">Testimonials</a></li>
-            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/blog">Blog</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
@@ -661,7 +661,7 @@ function renderFeed(posts) {
 <rss version="2.0">
   <channel>
     <title>${escapeXml(SITE_NAME)} Blog</title>
-    <link>${escapeXml(toAbsoluteUrl("/blog/"))}</link>
+    <link>${escapeXml(toAbsoluteUrl("/blog"))}</link>
     <description>Auto repair and maintenance articles from ${escapeXml(SITE_NAME)}.</description>
     <language>en-us</language>
 ${posts

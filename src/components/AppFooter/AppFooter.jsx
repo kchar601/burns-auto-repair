@@ -40,7 +40,7 @@ function AppFooter() {
               <NavLink to="/testimonials">Testimonials</NavLink>
             </li>
             <li>
-              <a href="/blog/">Blog</a>
+              <a href="/blog">Blog</a>
             </li>
             <li>
               <NavLink to="/contact">Contact</NavLink>
