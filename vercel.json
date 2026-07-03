@@ -87,7 +87,6 @@
       "dest": "/404.html"
     }
   ],
-  "trailingSlash": false,
   "redirects": [
     { "source": "/services-2", "destination": "/services", "permanent": true },
     { "source": "/contact-us", "destination": "/contact", "permanent": true },
