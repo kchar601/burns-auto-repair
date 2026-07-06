@@ -1,8 +1,8 @@
 ---
 title: "PA vs. NJ State Inspection: What's the Difference?"
 description: "A side-by-side comparison of Pennsylvania and New Jersey vehicle inspection requirements for drivers who cross the border regularly."
-date: "2026-07-07"
-updated: "2026-07-07"
+date: "2026-07-06"
+updated: "2026-07-06"
 slug: "pa-vs-nj-state-inspection-difference"
 tags:
 - State Inspections
@@ -11,7 +11,7 @@ tags:
 - New Jersey
 - Bucks County
 - Newtown
-draft: true
+draft: false
 ---
 
 Newtown sits just a few miles from the New Jersey border, and plenty of drivers in Bucks County cross between the two states regularly—for work, errands, or the commute down I-295. If you've ever wondered whether your PA inspection is valid in NJ, or what actually differs between the two states' requirements, here's a clear breakdown.
@@ -30,7 +30,7 @@ Pennsylvania requires **annual** inspections for most registered vehicles. The i
 
 Both are typically done during the same appointment. In Bucks County, emissions testing is required for most vehicles. Passing both earns you an annual sticker that goes on your windshield.
 
-If a vehicle fails either portion, it receives a rejection sticker. The owner then has a set period to make repairs and return for re-inspection.
+If a vehicle fails either portion, it fails testing. The owner then has a set period to make repairs and return for re-inspection and a sticker.
 
 For more detail on what PA inspectors check during the safety portion, see our post on [how to know if your car will pass PA state inspection](/blog/will-my-car-pass-pa-state-inspection-newtown).
 
@@ -48,7 +48,7 @@ However, there are exceptions:
 
 New Jersey inspection frequency depends on the vehicle:
 
-* New vehicles are typically exempt for the first few model years.
+* New vehicles are typically exempt for the first few years.
 * Most other vehicles require inspection **every two years**.
 
 New Jersey uses both OBD-II scanning (similar to PA) and a tailpipe emissions test for older vehicles that predate OBD-II systems.
