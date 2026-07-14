@@ -1,28 +1,25 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-function staticBlogRoutes() {
+function staticContentRoutes() {
   return {
-    name: "static-blog-routes",
+    name: "static-content-routes",
     configureServer(server) {
-      server.middlewares.use(rewriteBlogRequest);
+      server.middlewares.use(rewriteStaticContentRequest);
     },
     configurePreviewServer(server) {
-      server.middlewares.use(rewriteBlogRequest);
+      server.middlewares.use(rewriteStaticContentRequest);
     },
   };
 }
 
-function rewriteBlogRequest(request, _response, next) {
+function rewriteStaticContentRequest(request, _response, next) {
   const [pathname, query = ""] = request.url.split("?");
+  const match = pathname.match(/^\/(blog|careers)(?:\/([^/.]+))?\/?$/);
 
-  if (pathname === "/blog" || pathname === "/blog/") {
-    request.url = withQuery("/blog/index.html", query);
-  } else {
-    const postMatch = pathname.match(/^\/blog\/([^/.]+)\/?$/);
-    if (postMatch) {
-      request.url = withQuery(`/blog/${postMatch[1]}/index.html`, query);
-    }
+  if (match) {
+    const dir = match[2] ? `/${match[1]}/${match[2]}` : `/${match[1]}`;
+    request.url = withQuery(`${dir}/index.html`, query);
   }
 
   next();
@@ -89,7 +86,7 @@ function heroImagePreloadPlugin() {
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), heroImagePreloadPlugin(), staticBlogRoutes()],
+  plugins: [react(), heroImagePreloadPlugin(), staticContentRoutes()],
   server: {
     port: 80,
   },

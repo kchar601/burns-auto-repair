@@ -91,6 +91,7 @@ out
 .nuxt
 dist
 public/blog/
+public/careers/
 
 # Gatsby files
 .cache/

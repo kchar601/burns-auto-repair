@@ -43,6 +43,9 @@ function AppFooter() {
               <a href="/blog">Blog</a>
             </li>
             <li>
+              <a href="/careers">Careers</a>
+            </li>
+            <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>

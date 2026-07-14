@@ -1,8 +1,8 @@
 ---
 title: "How Long Does a PA State Inspection Take?"
 description: "How long a Pennsylvania safety and emissions inspection usually takes, plus the factors that can make your visit longer or shorter."
-date: "2026-07-13"
-updated: "2026-07-13"
+date: "2026-07-14"
+updated: "2026-07-14"
 slug: "how-long-does-pa-state-inspection-take-newtown"
 tags:
   - State Inspections
@@ -10,7 +10,7 @@ tags:
   - Bucks County
   - Pennsylvania
   - Newtown
-draft: true
+draft: false
 ---
 
 If you're planning to get your vehicle inspected, one of the first questions on your mind is probably how much of your day it's going to take.
