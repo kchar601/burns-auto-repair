@@ -225,6 +225,21 @@ img {
   border-color: var(--accent-700);
 }
 
+.nav-toggle {
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: var(--text-50);
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.nav-toggle svg {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+}
+
 main {
   min-height: 58vh;
 }
@@ -558,8 +573,33 @@ figure img {
 }
 
 @media only screen and (max-width: 750px) {
+  .site-header-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    justify-self: end;
+  }
+
   .site-nav {
-    width: 100%;
+    display: none;
+    position: absolute;
+    top: 92px;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+  }
+
+  .site-nav.is-open {
+    display: block;
+    animation: nav-fade-in-down 0.7s both;
+  }
+
+  .site-nav.is-closing {
+    animation: nav-fade-out-up 0.7s both;
   }
 
   .site-nav-links {
@@ -613,4 +653,27 @@ figure img {
   fill: currentColor;
   margin-right: 0.5rem;
   flex-shrink: 0;
+}
+
+/* Mirrors the animate.css fadeInDown/fadeOutUp pair used by the React nav. */
+@keyframes nav-fade-in-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes nav-fade-out-up {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
 }

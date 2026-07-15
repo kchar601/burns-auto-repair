@@ -155,7 +155,7 @@ export function renderHeader() {
             decoding="async"
           />
         </a>
-        <nav class="site-nav" aria-label="Main navigation">
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
           <ul class="site-nav-links">
             <li><a href="/">Home</a></li>
             <li><a href="/services">Services</a></li>
@@ -167,8 +167,37 @@ export function renderHeader() {
         <div class="nav-cta-wrap">
           <a class="nav-cta" href="${PHONE_HREF}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"/></svg>${PHONE_DISPLAY}</a>
         </div>
+        <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </button>
       </div>
     </header>
+    <script>
+      (function () {
+        var toggle = document.querySelector(".nav-toggle");
+        var nav = document.getElementById("site-nav");
+        if (!toggle || !nav) return;
+        var closeTimeout = null;
+        toggle.addEventListener("click", function () {
+          var isOpen = nav.classList.contains("is-open") && !nav.classList.contains("is-closing");
+          if (isOpen) {
+            nav.classList.add("is-closing");
+            toggle.setAttribute("aria-expanded", "false");
+            closeTimeout = setTimeout(function () {
+              nav.classList.remove("is-open", "is-closing");
+            }, 700);
+          } else {
+            if (closeTimeout) {
+              clearTimeout(closeTimeout);
+              closeTimeout = null;
+            }
+            nav.classList.remove("is-closing");
+            nav.classList.add("is-open");
+            toggle.setAttribute("aria-expanded", "true");
+          }
+        });
+      })();
+    </script>
   `;
 }
 
