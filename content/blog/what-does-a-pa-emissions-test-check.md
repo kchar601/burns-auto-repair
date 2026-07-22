@@ -1,8 +1,8 @@
 ---
 title: "What Does a PA Emissions Test Check?"
 description: "A plain-English explanation of what a Pennsylvania emissions inspection actually checks, why vehicles fail, and how to prepare."
-date: "2026-07-20"
-updated: "2026-07-20"
+date: "2026-07-22"
+updated: "2026-07-22"
 slug: "what-does-pa-emissions-test-check-newtown"
 tags:
   - Emissions
@@ -10,7 +10,7 @@ tags:
   - Diagnostics
   - Bucks County
   - Pennsylvania
-draft: true
+draft: false
 ---
 
 Most drivers in Bucks County know their vehicle needs an emissions test each year, but far fewer know what the test actually checks. Understanding it can take a lot of the guesswork out of your inspection—and help you avoid a failure.
