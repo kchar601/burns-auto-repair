@@ -8,7 +8,7 @@ function RatingDisplay() {
         <span className={styles.stars}>★★★★★</span>
         <span className={styles.rating}>5.0</span>
       </div>
-      <p className={styles.subRating}>Based on 1400+ customer reviews</p>
+      <p className={styles.subRating}>Based on 1500+ customer reviews</p>
       <a
         target="_blank"
         href="https://www.surecritic.com/reviews/burns-auto-repair-inc?nhd=1"
