@@ -32,7 +32,7 @@ function Testimonials() {
             <span className={noBreak.noBreak}>Are Saying</span>
           </>
         }
-        sub="Don't just take our word for it. With a 5.0 rating across 1,400+ reviews, we are proud to be Newtown's most trusted mechanics."
+        sub="Don't just take our word for it. With a 5.0 rating across 1,500+ reviews, we are proud to be Newtown's most trusted mechanics."
       />
       <RatingDisplay />
       <ReviewList />
